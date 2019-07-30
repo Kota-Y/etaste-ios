@@ -1,0 +1,740 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05F896BC1F7BF329BFCB5A9C /* Pods_ETASTETests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F05A866A05821655B0026D /* Pods_ETASTETests.framework */; };
+		5F00C28698EFA1596C043C9C /* Pods_ETASTE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A94D815313D9931E83C197B /* Pods_ETASTE.framework */; };
+		6301B02422EF36B30078844C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6301B02322EF36B30078844C /* AppDelegate.swift */; };
+		6301B02B22EF36B60078844C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6301B02A22EF36B60078844C /* Assets.xcassets */; };
+		6301B03922EF36B60078844C /* ETASTETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6301B03822EF36B60078844C /* ETASTETests.swift */; };
+		6301B04422EF36B60078844C /* ETASTEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6301B04322EF36B60078844C /* ETASTEUITests.swift */; };
+		6301B05522EF382B0078844C /* SplashViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6301B05422EF382B0078844C /* SplashViewController.storyboard */; };
+		6301B05722EF38410078844C /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6301B05622EF38410078844C /* SplashViewController.swift */; };
+		630EEFF222EF3DC50030E302 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 630EEFF122EF3DC50030E302 /* HomeViewController.storyboard */; };
+		630EEFF422EF3DDD0030E302 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630EEFF322EF3DDD0030E302 /* HomeViewController.swift */; };
+		630EEFF622F08D820030E302 /* ShopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630EEFF522F08D820030E302 /* ShopModel.swift */; };
+		630EEFF822F091D70030E302 /* key.plist in Resources */ = {isa = PBXBuildFile; fileRef = 630EEFF722F091D70030E302 /* key.plist */; };
+		BBA0A12EC71EDA05B5EC4674 /* Pods_ETASTEUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77BE23D1B7392795678CE704 /* Pods_ETASTEUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6301B03522EF36B60078844C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6301B01822EF36B30078844C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6301B01F22EF36B30078844C;
+			remoteInfo = ETASTE;
+		};
+		6301B04022EF36B60078844C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6301B01822EF36B30078844C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6301B01F22EF36B30078844C;
+			remoteInfo = ETASTE;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		000352EB52E2EF1FEB522FDA /* Pods-ETASTETests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETASTETests.debug.xcconfig"; path = "Target Support Files/Pods-ETASTETests/Pods-ETASTETests.debug.xcconfig"; sourceTree = "<group>"; };
+		37F05A866A05821655B0026D /* Pods_ETASTETests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ETASTETests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A94D815313D9931E83C197B /* Pods_ETASTE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ETASTE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44D4B27AA0C7F00A6929DC16 /* Pods-ETASTE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETASTE.release.xcconfig"; path = "Target Support Files/Pods-ETASTE/Pods-ETASTE.release.xcconfig"; sourceTree = "<group>"; };
+		6301B02022EF36B30078844C /* ETASTE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ETASTE.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6301B02322EF36B30078844C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6301B02A22EF36B60078844C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6301B02F22EF36B60078844C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6301B03422EF36B60078844C /* ETASTETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ETASTETests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6301B03822EF36B60078844C /* ETASTETests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETASTETests.swift; sourceTree = "<group>"; };
+		6301B03A22EF36B60078844C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6301B03F22EF36B60078844C /* ETASTEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ETASTEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6301B04322EF36B60078844C /* ETASTEUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETASTEUITests.swift; sourceTree = "<group>"; };
+		6301B04522EF36B60078844C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6301B05422EF382B0078844C /* SplashViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashViewController.storyboard; sourceTree = "<group>"; };
+		6301B05622EF38410078844C /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		630EEFF122EF3DC50030E302 /* HomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
+		630EEFF322EF3DDD0030E302 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		630EEFF522F08D820030E302 /* ShopModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopModel.swift; sourceTree = "<group>"; };
+		630EEFF722F091D70030E302 /* key.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = key.plist; sourceTree = "<group>"; };
+		77BE23D1B7392795678CE704 /* Pods_ETASTEUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ETASTEUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		785291696FA3228D4BE184BC /* Pods-ETASTE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETASTE.debug.xcconfig"; path = "Target Support Files/Pods-ETASTE/Pods-ETASTE.debug.xcconfig"; sourceTree = "<group>"; };
+		A12D2E41460E47E723746E5E /* Pods-ETASTEUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETASTEUITests.release.xcconfig"; path = "Target Support Files/Pods-ETASTEUITests/Pods-ETASTEUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DB3A248EB3E412C20BE8EE9F /* Pods-ETASTEUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETASTEUITests.debug.xcconfig"; path = "Target Support Files/Pods-ETASTEUITests/Pods-ETASTEUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E086B855740E4679EBD13C88 /* Pods-ETASTETests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETASTETests.release.xcconfig"; path = "Target Support Files/Pods-ETASTETests/Pods-ETASTETests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6301B01D22EF36B30078844C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F00C28698EFA1596C043C9C /* Pods_ETASTE.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6301B03122EF36B60078844C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05F896BC1F7BF329BFCB5A9C /* Pods_ETASTETests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6301B03C22EF36B60078844C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBA0A12EC71EDA05B5EC4674 /* Pods_ETASTEUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6301B01722EF36B30078844C = {
+			isa = PBXGroup;
+			children = (
+				6301B02222EF36B30078844C /* ETASTE */,
+				6301B03722EF36B60078844C /* ETASTETests */,
+				6301B04222EF36B60078844C /* ETASTEUITests */,
+				6301B02122EF36B30078844C /* Products */,
+				A97AC5B20D2420B327D8CFD1 /* Pods */,
+				EE57F7E2EE92F135E12F7EEA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6301B02122EF36B30078844C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6301B02022EF36B30078844C /* ETASTE.app */,
+				6301B03422EF36B60078844C /* ETASTETests.xctest */,
+				6301B03F22EF36B60078844C /* ETASTEUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6301B02222EF36B30078844C /* ETASTE */ = {
+			isa = PBXGroup;
+			children = (
+				6301B05222EF37A70078844C /* ViewControllers */,
+				6301B05122EF379E0078844C /* Models */,
+				6301B02322EF36B30078844C /* AppDelegate.swift */,
+				6301B02A22EF36B60078844C /* Assets.xcassets */,
+				6301B02F22EF36B60078844C /* Info.plist */,
+				630EEFF722F091D70030E302 /* key.plist */,
+			);
+			path = ETASTE;
+			sourceTree = "<group>";
+		};
+		6301B03722EF36B60078844C /* ETASTETests */ = {
+			isa = PBXGroup;
+			children = (
+				6301B03822EF36B60078844C /* ETASTETests.swift */,
+				6301B03A22EF36B60078844C /* Info.plist */,
+			);
+			path = ETASTETests;
+			sourceTree = "<group>";
+		};
+		6301B04222EF36B60078844C /* ETASTEUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6301B04322EF36B60078844C /* ETASTEUITests.swift */,
+				6301B04522EF36B60078844C /* Info.plist */,
+			);
+			path = ETASTEUITests;
+			sourceTree = "<group>";
+		};
+		6301B05122EF379E0078844C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				630EEFF522F08D820030E302 /* ShopModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6301B05222EF37A70078844C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6301B05422EF382B0078844C /* SplashViewController.storyboard */,
+				6301B05622EF38410078844C /* SplashViewController.swift */,
+				630EEFF122EF3DC50030E302 /* HomeViewController.storyboard */,
+				630EEFF322EF3DDD0030E302 /* HomeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A97AC5B20D2420B327D8CFD1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				785291696FA3228D4BE184BC /* Pods-ETASTE.debug.xcconfig */,
+				44D4B27AA0C7F00A6929DC16 /* Pods-ETASTE.release.xcconfig */,
+				000352EB52E2EF1FEB522FDA /* Pods-ETASTETests.debug.xcconfig */,
+				E086B855740E4679EBD13C88 /* Pods-ETASTETests.release.xcconfig */,
+				DB3A248EB3E412C20BE8EE9F /* Pods-ETASTEUITests.debug.xcconfig */,
+				A12D2E41460E47E723746E5E /* Pods-ETASTEUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EE57F7E2EE92F135E12F7EEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A94D815313D9931E83C197B /* Pods_ETASTE.framework */,
+				37F05A866A05821655B0026D /* Pods_ETASTETests.framework */,
+				77BE23D1B7392795678CE704 /* Pods_ETASTEUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6301B01F22EF36B30078844C /* ETASTE */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6301B04822EF36B60078844C /* Build configuration list for PBXNativeTarget "ETASTE" */;
+			buildPhases = (
+				8314D799E894B6420DCACE4D /* [CP] Check Pods Manifest.lock */,
+				6301B01C22EF36B30078844C /* Sources */,
+				6301B01D22EF36B30078844C /* Frameworks */,
+				6301B01E22EF36B30078844C /* Resources */,
+				9FCD550A0FA7392EF048A4E0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ETASTE;
+			productName = ETASTE;
+			productReference = 6301B02022EF36B30078844C /* ETASTE.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6301B03322EF36B60078844C /* ETASTETests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6301B04B22EF36B60078844C /* Build configuration list for PBXNativeTarget "ETASTETests" */;
+			buildPhases = (
+				B6EB133E7624ADB25C60C4E6 /* [CP] Check Pods Manifest.lock */,
+				6301B03022EF36B60078844C /* Sources */,
+				6301B03122EF36B60078844C /* Frameworks */,
+				6301B03222EF36B60078844C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6301B03622EF36B60078844C /* PBXTargetDependency */,
+			);
+			name = ETASTETests;
+			productName = ETASTETests;
+			productReference = 6301B03422EF36B60078844C /* ETASTETests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6301B03E22EF36B60078844C /* ETASTEUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6301B04E22EF36B60078844C /* Build configuration list for PBXNativeTarget "ETASTEUITests" */;
+			buildPhases = (
+				B0B37121C5C5C328C33D049F /* [CP] Check Pods Manifest.lock */,
+				6301B03B22EF36B60078844C /* Sources */,
+				6301B03C22EF36B60078844C /* Frameworks */,
+				6301B03D22EF36B60078844C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6301B04122EF36B60078844C /* PBXTargetDependency */,
+			);
+			name = ETASTEUITests;
+			productName = ETASTEUITests;
+			productReference = 6301B03F22EF36B60078844C /* ETASTEUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6301B01822EF36B30078844C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = ETASTE;
+				TargetAttributes = {
+					6301B01F22EF36B30078844C = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					6301B03322EF36B60078844C = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 6301B01F22EF36B30078844C;
+					};
+					6301B03E22EF36B60078844C = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 6301B01F22EF36B30078844C;
+					};
+				};
+			};
+			buildConfigurationList = 6301B01B22EF36B30078844C /* Build configuration list for PBXProject "ETASTE" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6301B01722EF36B30078844C;
+			productRefGroup = 6301B02122EF36B30078844C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6301B01F22EF36B30078844C /* ETASTE */,
+				6301B03322EF36B60078844C /* ETASTETests */,
+				6301B03E22EF36B60078844C /* ETASTEUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6301B01E22EF36B30078844C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				630EEFF822F091D70030E302 /* key.plist in Resources */,
+				6301B05522EF382B0078844C /* SplashViewController.storyboard in Resources */,
+				6301B02B22EF36B60078844C /* Assets.xcassets in Resources */,
+				630EEFF222EF3DC50030E302 /* HomeViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6301B03222EF36B60078844C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6301B03D22EF36B60078844C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8314D799E894B6420DCACE4D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ETASTE-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FCD550A0FA7392EF048A4E0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ETASTE/Pods-ETASTE-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ETASTE/Pods-ETASTE-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ETASTE/Pods-ETASTE-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0B37121C5C5C328C33D049F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ETASTEUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6EB133E7624ADB25C60C4E6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ETASTETests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6301B01C22EF36B30078844C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6301B02422EF36B30078844C /* AppDelegate.swift in Sources */,
+				630EEFF622F08D820030E302 /* ShopModel.swift in Sources */,
+				6301B05722EF38410078844C /* SplashViewController.swift in Sources */,
+				630EEFF422EF3DDD0030E302 /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6301B03022EF36B60078844C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6301B03922EF36B60078844C /* ETASTETests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6301B03B22EF36B60078844C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6301B04422EF36B60078844C /* ETASTEUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6301B03622EF36B60078844C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6301B01F22EF36B30078844C /* ETASTE */;
+			targetProxy = 6301B03522EF36B60078844C /* PBXContainerItemProxy */;
+		};
+		6301B04122EF36B60078844C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6301B01F22EF36B30078844C /* ETASTE */;
+			targetProxy = 6301B04022EF36B60078844C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6301B04622EF36B60078844C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6301B04722EF36B60078844C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6301B04922EF36B60078844C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 785291696FA3228D4BE184BC /* Pods-ETASTE.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 8H77536R8V;
+				INFOPLIST_FILE = ETASTE/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.ETASTE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = ETASTE_Development;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6301B04A22EF36B60078844C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44D4B27AA0C7F00A6929DC16 /* Pods-ETASTE.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 8H77536R8V;
+				INFOPLIST_FILE = ETASTE/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.ETASTE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = ETASTE_Development;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6301B04C22EF36B60078844C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 000352EB52E2EF1FEB522FDA /* Pods-ETASTETests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2TF7K92S67;
+				INFOPLIST_FILE = ETASTETests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.looker.ETASTETests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ETASTE.app/ETASTE";
+			};
+			name = Debug;
+		};
+		6301B04D22EF36B60078844C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E086B855740E4679EBD13C88 /* Pods-ETASTETests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2TF7K92S67;
+				INFOPLIST_FILE = ETASTETests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.looker.ETASTETests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ETASTE.app/ETASTE";
+			};
+			name = Release;
+		};
+		6301B04F22EF36B60078844C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB3A248EB3E412C20BE8EE9F /* Pods-ETASTEUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2TF7K92S67;
+				INFOPLIST_FILE = ETASTEUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.looker.ETASTEUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ETASTE;
+			};
+			name = Debug;
+		};
+		6301B05022EF36B60078844C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A12D2E41460E47E723746E5E /* Pods-ETASTEUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2TF7K92S67;
+				INFOPLIST_FILE = ETASTEUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.looker.ETASTEUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ETASTE;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6301B01B22EF36B30078844C /* Build configuration list for PBXProject "ETASTE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6301B04622EF36B60078844C /* Debug */,
+				6301B04722EF36B60078844C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6301B04822EF36B60078844C /* Build configuration list for PBXNativeTarget "ETASTE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6301B04922EF36B60078844C /* Debug */,
+				6301B04A22EF36B60078844C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6301B04B22EF36B60078844C /* Build configuration list for PBXNativeTarget "ETASTETests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6301B04C22EF36B60078844C /* Debug */,
+				6301B04D22EF36B60078844C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6301B04E22EF36B60078844C /* Build configuration list for PBXNativeTarget "ETASTEUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6301B04F22EF36B60078844C /* Debug */,
+				6301B05022EF36B60078844C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6301B01822EF36B30078844C /* Project object */;
+}
