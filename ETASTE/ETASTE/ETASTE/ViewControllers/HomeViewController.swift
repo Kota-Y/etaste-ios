@@ -10,20 +10,19 @@ import Foundation
 import UIKit
 import GoogleMaps
 
-
-
 class HomeViewController: UIViewController {
     
     @IBOutlet weak var googleMap: GMSMapView!
+    @IBOutlet weak var searchBar: UISearchBar!
     
     var shopModel: ShopModel = ShopModel()
     
-    
-    
-    
     override func viewDidLoad() {
-       
+        super.viewDidLoad()
+        
+        searchBar.delegate = self
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         let zoom: Float = 15
@@ -33,7 +32,6 @@ class HomeViewController: UIViewController {
         let marker: GMSMarker = GMSMarker()
         marker.position = CLLocationCoordinate2DMake(shopModel.latitude, shopModel.longitude)
         marker.map = googleMap
-
     }
     
     override func didReceiveMemoryWarning() {
@@ -41,5 +39,8 @@ class HomeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+}
+
+extension HomeViewController: UISearchBarDelegate {
     
 }
