@@ -12,4 +12,8 @@ extension UIColor {
     static var paleWhite: UIColor {
         return UIColor.hex(string: "FFFFFF", alpha: 1.0)
     }
+    
+    static var etasteYellow: UIColor {
+        return UIColor.hex(string: "FFDB73", alpha: 1.0)
+    }
 }

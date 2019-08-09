@@ -22,6 +22,13 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.title = "ホーム"
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "loginicon")?.withRenderingMode(.alwaysOriginal),
+                                                                 style: .plain,
+                                                                 target: self,
+                                                                 action: #selector(login))
+                
         searchBar.delegate = self
 
     }
@@ -48,6 +55,10 @@ class HomeViewController: UIViewController {
         }
 
 
+    }
+    
+    @objc func login() {
+        
     }
     
     override func didReceiveMemoryWarning() {
