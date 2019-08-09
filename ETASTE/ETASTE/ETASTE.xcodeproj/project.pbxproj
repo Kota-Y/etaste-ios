@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		05F896BC1F7BF329BFCB5A9C /* Pods_ETASTETests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F05A866A05821655B0026D /* Pods_ETASTETests.framework */; };
+		4FBDEDE222F0C24500DFF109 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBDEDE122F0C24500DFF109 /* Color.swift */; };
+		4FBDEDE622F0C99600DFF109 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBDEDE522F0C99600DFF109 /* SearchBar.swift */; };
+		4FBDEDE922F0CC3800DFF109 /* UIColor_Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBDEDE822F0CC3800DFF109 /* UIColor_Utility.swift */; };
+		4FBDEDED22F0CCA800DFF109 /* key.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4FBDEDEC22F0CCA800DFF109 /* key.plist */; };
 		5F00C28698EFA1596C043C9C /* Pods_ETASTE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A94D815313D9931E83C197B /* Pods_ETASTE.framework */; };
 		6301B02422EF36B30078844C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6301B02322EF36B30078844C /* AppDelegate.swift */; };
 		6301B02B22EF36B60078844C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6301B02A22EF36B60078844C /* Assets.xcassets */; };
@@ -18,7 +22,6 @@
 		630EEFF222EF3DC50030E302 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 630EEFF122EF3DC50030E302 /* HomeViewController.storyboard */; };
 		630EEFF422EF3DDD0030E302 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630EEFF322EF3DDD0030E302 /* HomeViewController.swift */; };
 		630EEFF622F08D820030E302 /* ShopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630EEFF522F08D820030E302 /* ShopModel.swift */; };
-		630EEFF822F091D70030E302 /* key.plist in Resources */ = {isa = PBXBuildFile; fileRef = 630EEFF722F091D70030E302 /* key.plist */; };
 		BBA0A12EC71EDA05B5EC4674 /* Pods_ETASTEUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77BE23D1B7392795678CE704 /* Pods_ETASTEUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +47,10 @@
 		37F05A866A05821655B0026D /* Pods_ETASTETests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ETASTETests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A94D815313D9931E83C197B /* Pods_ETASTE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ETASTE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		44D4B27AA0C7F00A6929DC16 /* Pods-ETASTE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETASTE.release.xcconfig"; path = "Target Support Files/Pods-ETASTE/Pods-ETASTE.release.xcconfig"; sourceTree = "<group>"; };
+		4FBDEDE122F0C24500DFF109 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		4FBDEDE522F0C99600DFF109 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		4FBDEDE822F0CC3800DFF109 /* UIColor_Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor_Utility.swift; sourceTree = "<group>"; };
+		4FBDEDEC22F0CCA800DFF109 /* key.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = key.plist; sourceTree = "<group>"; };
 		6301B02022EF36B30078844C /* ETASTE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ETASTE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6301B02322EF36B30078844C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6301B02A22EF36B60078844C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -59,7 +66,6 @@
 		630EEFF122EF3DC50030E302 /* HomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
 		630EEFF322EF3DDD0030E302 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		630EEFF522F08D820030E302 /* ShopModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopModel.swift; sourceTree = "<group>"; };
-		630EEFF722F091D70030E302 /* key.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = key.plist; sourceTree = "<group>"; };
 		77BE23D1B7392795678CE704 /* Pods_ETASTEUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ETASTEUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		785291696FA3228D4BE184BC /* Pods-ETASTE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETASTE.debug.xcconfig"; path = "Target Support Files/Pods-ETASTE/Pods-ETASTE.debug.xcconfig"; sourceTree = "<group>"; };
 		A12D2E41460E47E723746E5E /* Pods-ETASTEUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETASTEUITests.release.xcconfig"; path = "Target Support Files/Pods-ETASTEUITests/Pods-ETASTEUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -95,6 +101,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4FBDEDDF22F0C22700DFF109 /* UI Components */ = {
+			isa = PBXGroup;
+			children = (
+				4FBDEDE022F0C23300DFF109 /* UI Components Base */,
+			);
+			path = "UI Components";
+			sourceTree = "<group>";
+		};
+		4FBDEDE022F0C23300DFF109 /* UI Components Base */ = {
+			isa = PBXGroup;
+			children = (
+				4FBDEDE122F0C24500DFF109 /* Color.swift */,
+				4FBDEDE522F0C99600DFF109 /* SearchBar.swift */,
+			);
+			path = "UI Components Base";
+			sourceTree = "<group>";
+		};
+		4FBDEDE722F0CC1A00DFF109 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				4FBDEDE822F0CC3800DFF109 /* UIColor_Utility.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		6301B01722EF36B30078844C = {
 			isa = PBXGroup;
 			children = (
@@ -120,12 +151,14 @@
 		6301B02222EF36B30078844C /* ETASTE */ = {
 			isa = PBXGroup;
 			children = (
+				4FBDEDE722F0CC1A00DFF109 /* Utility */,
+				4FBDEDDF22F0C22700DFF109 /* UI Components */,
 				6301B05222EF37A70078844C /* ViewControllers */,
 				6301B05122EF379E0078844C /* Models */,
 				6301B02322EF36B30078844C /* AppDelegate.swift */,
 				6301B02A22EF36B60078844C /* Assets.xcassets */,
 				6301B02F22EF36B60078844C /* Info.plist */,
-				630EEFF722F091D70030E302 /* key.plist */,
+				4FBDEDEC22F0CCA800DFF109 /* key.plist */,
 			);
 			path = ETASTE;
 			sourceTree = "<group>";
@@ -298,7 +331,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				630EEFF822F091D70030E302 /* key.plist in Resources */,
+				4FBDEDED22F0CCA800DFF109 /* key.plist in Resources */,
 				6301B05522EF382B0078844C /* SplashViewController.storyboard in Resources */,
 				6301B02B22EF36B60078844C /* Assets.xcassets in Resources */,
 				630EEFF222EF3DC50030E302 /* HomeViewController.storyboard in Resources */,
@@ -412,9 +445,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FBDEDE922F0CC3800DFF109 /* UIColor_Utility.swift in Sources */,
+				4FBDEDE622F0C99600DFF109 /* SearchBar.swift in Sources */,
 				6301B02422EF36B30078844C /* AppDelegate.swift in Sources */,
 				630EEFF622F08D820030E302 /* ShopModel.swift in Sources */,
 				6301B05722EF38410078844C /* SplashViewController.swift in Sources */,
+				4FBDEDE222F0C24500DFF109 /* Color.swift in Sources */,
 				630EEFF422EF3DDD0030E302 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,22 +10,22 @@ import Foundation
 import UIKit
 import GoogleMaps
 
-
-
 class HomeViewController: UIViewController {
     
     @IBOutlet weak var googleMap: GMSMapView!
+    @IBOutlet weak var searchBar: UISearchBar!
     
+
     var shopModel:[ShopModel] = []
     var marker: [GMSMarker] = []
     var lalo:[[Double]] = [[32.815183,130.727428],[32.814949,130.727842],[32.814419,130.726572]]
     
-    
     override func viewDidLoad() {
-       
-        
-        
+        super.viewDidLoad()
+        searchBar.delegate = self
+
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         
         super.viewWillAppear(animated)
@@ -38,6 +38,7 @@ class HomeViewController: UIViewController {
         let zoom: Float = 15
         let camera: GMSCameraPosition = GMSCameraPosition.camera(withLatitude: shopModel[0].latitude!,longitude: shopModel[0].longitude!, zoom: zoom)
         googleMap.camera = camera
+
         //マーカー表示
         for i in 0..<lalo.count{
             let mark: GMSMarker = GMSMarker()
@@ -46,6 +47,7 @@ class HomeViewController: UIViewController {
             marker.append(mark)
         }
 
+
     }
     
     override func didReceiveMemoryWarning() {
@@ -53,6 +55,9 @@ class HomeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+}
+
+extension HomeViewController: UISearchBarDelegate {
     
     
    
