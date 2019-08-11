@@ -607,7 +607,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 785291696FA3228D4BE184BC /* Pods-ETASTE.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 8H77536R8V;
 				INFOPLIST_FILE = ETASTE/Info.plist;
@@ -628,7 +627,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 44D4B27AA0C7F00A6929DC16 /* Pods-ETASTE.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 8H77536R8V;
 				INFOPLIST_FILE = ETASTE/Info.plist;

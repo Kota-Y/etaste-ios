@@ -16,9 +16,8 @@ class SplashViewController: UIViewController {
         
         let homeViewControllerStoryboard = UIStoryboard(name: "HomeViewController", bundle: nil)
         let homeViewController = homeViewControllerStoryboard.instantiateInitialViewController() as! HomeViewController
-        //homeViewController.value = 3
-        present(homeViewController, animated: true, completion: nil)
-    
+        let navigationController = UINavigationController(rootViewController: homeViewController)
+        present(navigationController, animated: false, completion: nil)
     }
     
 }
