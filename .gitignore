@@ -69,4 +69,4 @@ fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
 # APIkey
-key.plist
+#key.plist
