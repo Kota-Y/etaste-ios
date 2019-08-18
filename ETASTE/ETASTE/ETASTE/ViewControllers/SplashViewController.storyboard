@@ -18,15 +18,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="splash" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EoR-vQ-mHx">
-                                <rect key="frame" x="124" y="82" width="134" height="77"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppIcon" translatesAutoresizingMaskIntoConstraints="NO" id="mCs-Og-qj7">
+                                <rect key="frame" x="87.5" y="233.5" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="1ex-e3-LwK"/>
+                                    <constraint firstAttribute="width" secondItem="mCs-Og-qj7" secondAttribute="height" multiplier="1:1" id="U1N-5o-TqC"/>
+                                    <constraint firstAttribute="height" constant="200" id="kAf-E6-eA8"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mCs-Og-qj7" firstAttribute="centerY" secondItem="JFB-fv-sYL" secondAttribute="centerY" id="Cd3-sA-fgo"/>
+                            <constraint firstItem="mCs-Og-qj7" firstAttribute="centerX" secondItem="JFB-fv-sYL" secondAttribute="centerX" id="QUQ-d6-Gbm"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="xro-Zb-j1z"/>
                     </view>
                 </viewController>
@@ -35,4 +40,7 @@
             <point key="canvasLocation" x="224.80000000000001" y="48.125937031484263"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="AppIcon" width="100" height="100"/>
+    </resources>
 </document>

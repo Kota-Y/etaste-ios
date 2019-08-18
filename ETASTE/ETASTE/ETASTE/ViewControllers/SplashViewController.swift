@@ -14,10 +14,9 @@ class SplashViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        let homeViewControllerStoryboard = UIStoryboard(name: "HomeViewController", bundle: nil)
-        let homeViewController = homeViewControllerStoryboard.instantiateInitialViewController() as! HomeViewController
-        let navigationController = UINavigationController(rootViewController: homeViewController)
-        present(navigationController, animated: false, completion: nil)
+        let mainTabBarControllerStoryboard = UIStoryboard(name: "MainTabBarController", bundle: nil)
+        let mainTabBarController = mainTabBarControllerStoryboard.instantiateInitialViewController() as! MainTabBarController
+        present(mainTabBarController, animated: false, completion: nil)
     }
     
 }

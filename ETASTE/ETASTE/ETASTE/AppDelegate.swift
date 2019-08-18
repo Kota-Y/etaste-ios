@@ -25,8 +25,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
         
-        let statusBar: UIView = UIApplication.shared.value(forKey: "statusBar") as! UIView
-        statusBar.backgroundColor = UIColor.etasteYellow
         UINavigationBar.appearance().barTintColor = UIColor.etasteYellow
         
         return true

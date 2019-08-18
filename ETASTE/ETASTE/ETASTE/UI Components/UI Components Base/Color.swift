@@ -9,11 +9,20 @@
 import UIKit
 
 extension UIColor {
+    static var etasteYellow: UIColor {
+        return UIColor.hex(string: "FFDB73", alpha: 1.0)
+    }
+    
+    static var etasteDarkerYellow: UIColor {
+        return UIColor.hex(string: "FDB730", alpha: 1.0)
+    }
+    
     static var paleWhite: UIColor {
         return UIColor.hex(string: "FFFFFF", alpha: 1.0)
     }
     
-    static var etasteYellow: UIColor {
-        return UIColor.hex(string: "FFDB73", alpha: 1.0)
+    static var gray: UIColor {
+        return UIColor.hex(string: "C5C5C5", alpha: 1.0)
     }
+    
 }
