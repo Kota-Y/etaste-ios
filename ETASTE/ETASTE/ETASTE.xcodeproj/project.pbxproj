@@ -639,6 +639,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 785291696FA3228D4BE184BC /* Pods-ETASTE.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 8H77536R8V;
 				INFOPLIST_FILE = ETASTE/Info.plist;
@@ -649,7 +650,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.ETASTE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = ETASTE_Development;
+				PROVISIONING_PROFILE_SPECIFIER = ETASTE_AdHoc;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -659,6 +660,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 44D4B27AA0C7F00A6929DC16 /* Pods-ETASTE.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 8H77536R8V;
 				INFOPLIST_FILE = ETASTE/Info.plist;
@@ -669,7 +671,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.ETASTE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = ETASTE_Development;
+				PROVISIONING_PROFILE_SPECIFIER = ETASTE_AdHoc;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
