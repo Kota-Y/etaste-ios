@@ -22,6 +22,7 @@ xcuserdata/
 *.xccheckout
 *.xcscmblueprint
 .DS_Store
+*.xcscheme
 
 ## Obj-C/Swift specific
 *.hmap
@@ -68,4 +69,4 @@ fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
 # APIkey
-key.plist
+#key.plist

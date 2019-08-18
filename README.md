@@ -1,2 +1,2 @@
-# looker-ios
-Looker-iOS
+# ETASTE-ios
+ETASTE-iOS

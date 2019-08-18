@@ -10,7 +10,14 @@ import Foundation
 import GoogleMaps
 
 class ShopModel {
-    let latitude: CLLocationDegrees = 36.5780574
-    let longitude: CLLocationDegrees = 136.6486596
+    var latitude: CLLocationDegrees?// = 36.579909//36.559007
+    var longitude: CLLocationDegrees?// = 136.643436 //= 136.652444//
+    var shopnumber: Int?
+    
+    init(latitude:Double ,longitude:Double){
+        self.latitude = CLLocationDegrees(latitude)
+        self.longitude = CLLocationDegrees(longitude)
+       
+    }
     
 }

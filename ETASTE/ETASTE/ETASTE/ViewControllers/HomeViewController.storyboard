@@ -27,22 +27,60 @@
                                     <constraint firstAttribute="height" constant="270" id="xJQ-Fr-4yC"/>
                                 </constraints>
                             </view>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder=" Search" translatesAutoresizingMaskIntoConstraints="NO" id="r6f-9B-bE3" customClass="SearchBar" customModule="ETASTE" customModuleProvider="target">
+                                <rect key="frame" x="27" y="32" width="321" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="wi2-m2-agA"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textFieldColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="textFieldCornerDadius">
+                                        <real key="value" value="9"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="textFieldHeight">
+                                        <real key="value" value="43"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="r6f-9B-bE3" firstAttribute="top" secondItem="jAo-aN-s6Z" secondAttribute="top" constant="12" id="9uK-Ph-HTJ"/>
                             <constraint firstItem="jAo-aN-s6Z" firstAttribute="top" secondItem="o4g-2y-XzG" secondAttribute="top" id="Ai0-xF-M1O"/>
+                            <constraint firstItem="r6f-9B-bE3" firstAttribute="leading" secondItem="o4g-2y-XzG" secondAttribute="leading" constant="27" id="Ttb-am-aE5"/>
+                            <constraint firstItem="r6f-9B-bE3" firstAttribute="trailing" secondItem="o4g-2y-XzG" secondAttribute="trailing" constant="-27" id="Z7T-OR-rZw"/>
                             <constraint firstItem="jAo-aN-s6Z" firstAttribute="leading" secondItem="o4g-2y-XzG" secondAttribute="leading" id="bgM-6D-AMH"/>
                             <constraint firstItem="jAo-aN-s6Z" firstAttribute="trailing" secondItem="o4g-2y-XzG" secondAttribute="trailing" id="nMq-zg-nmX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="o4g-2y-XzG"/>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="googleMap" destination="jAo-aN-s6Z" id="ruf-dW-N0Y"/>
+                        <outlet property="searchBar" destination="r6f-9B-bE3" id="jeu-Ff-TXP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L5u-kg-500" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="141.59999999999999" y="26.53673163418291"/>
+            <point key="canvasLocation" x="1080.8" y="26.53673163418291"/>
         </scene>
     </scenes>
 </document>
