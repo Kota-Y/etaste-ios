@@ -20,6 +20,9 @@
 		4FBDEDE622F0C99600DFF109 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBDEDE522F0C99600DFF109 /* SearchBar.swift */; };
 		4FBDEDE922F0CC3800DFF109 /* UIColor_Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBDEDE822F0CC3800DFF109 /* UIColor_Utility.swift */; };
 		4FBDEDED22F0CCA800DFF109 /* key.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4FBDEDEC22F0CCA800DFF109 /* key.plist */; };
+		4FCEFF542311022A0050D668 /* StoreDetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FCEFF532311022A0050D668 /* StoreDetailsViewController.storyboard */; };
+		4FCEFF562311023B0050D668 /* StoreDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFF552311023B0050D668 /* StoreDetailsViewController.swift */; };
+		4FCEFF582311213E0050D668 /* StoreDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFF572311213E0050D668 /* StoreDetailModel.swift */; };
 		5F00C28698EFA1596C043C9C /* Pods_ETASTE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A94D815313D9931E83C197B /* Pods_ETASTE.framework */; };
 		6301B02422EF36B30078844C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6301B02322EF36B30078844C /* AppDelegate.swift */; };
 		6301B02B22EF36B60078844C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6301B02A22EF36B60078844C /* Assets.xcassets */; };
@@ -67,6 +70,9 @@
 		4FBDEDE522F0C99600DFF109 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		4FBDEDE822F0CC3800DFF109 /* UIColor_Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor_Utility.swift; sourceTree = "<group>"; };
 		4FBDEDEC22F0CCA800DFF109 /* key.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = key.plist; sourceTree = "<group>"; };
+		4FCEFF532311022A0050D668 /* StoreDetailsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StoreDetailsViewController.storyboard; sourceTree = "<group>"; };
+		4FCEFF552311023B0050D668 /* StoreDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StoreDetailsViewController.swift; path = "/Users/haruya.i/Desktop/etaste-ios/ETASTE/ETASTE/ETASTE/ViewControllers/StoreDetailsViewController.swift"; sourceTree = "<absolute>"; };
+		4FCEFF572311213E0050D668 /* StoreDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreDetailModel.swift; sourceTree = "<group>"; };
 		6301B02022EF36B30078844C /* ETASTE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ETASTE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6301B02322EF36B30078844C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6301B02A22EF36B60078844C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -201,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				630EEFF522F08D820030E302 /* ShopModel.swift */,
+				4FCEFF572311213E0050D668 /* StoreDetailModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -220,6 +227,8 @@
 				4F0F7EE222FE045200AEB6E9 /* SettingViewController.swift */,
 				4F0F7ED222FDEE6C00AEB6E9 /* MainTabBarController.storyboard */,
 				4F0F7ED622FDFE6300AEB6E9 /* MainTabBarController.swift */,
+				4FCEFF532311022A0050D668 /* StoreDetailsViewController.storyboard */,
+				4FCEFF552311023B0050D668 /* StoreDetailsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -360,6 +369,7 @@
 				4FBDEDED22F0CCA800DFF109 /* key.plist in Resources */,
 				4F0F7ED922FE038E00AEB6E9 /* FavoriteViewController.storyboard in Resources */,
 				6301B05522EF382B0078844C /* SplashViewController.storyboard in Resources */,
+				4FCEFF542311022A0050D668 /* StoreDetailsViewController.storyboard in Resources */,
 				4F0F7ED322FDEE6C00AEB6E9 /* MainTabBarController.storyboard in Resources */,
 				6301B02B22EF36B60078844C /* Assets.xcassets in Resources */,
 				630EEFF222EF3DC50030E302 /* HomeViewController.storyboard in Resources */,
@@ -473,10 +483,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FCEFF582311213E0050D668 /* StoreDetailModel.swift in Sources */,
 				4FBDEDE922F0CC3800DFF109 /* UIColor_Utility.swift in Sources */,
 				4F0F7EE322FE045200AEB6E9 /* SettingViewController.swift in Sources */,
 				4F0F7ED722FDFE6300AEB6E9 /* MainTabBarController.swift in Sources */,
 				4FBDEDE622F0C99600DFF109 /* SearchBar.swift in Sources */,
+				4FCEFF562311023B0050D668 /* StoreDetailsViewController.swift in Sources */,
 				6301B02422EF36B30078844C /* AppDelegate.swift in Sources */,
 				4F0F7EDB22FE039C00AEB6E9 /* FavoriteViewController.swift in Sources */,
 				630EEFF622F08D820030E302 /* ShopModel.swift in Sources */,
