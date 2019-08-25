@@ -30,6 +30,14 @@
 		630EEFF222EF3DC50030E302 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 630EEFF122EF3DC50030E302 /* HomeViewController.storyboard */; };
 		630EEFF422EF3DDD0030E302 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630EEFF322EF3DDD0030E302 /* HomeViewController.swift */; };
 		630EEFF622F08D820030E302 /* ShopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630EEFF522F08D820030E302 /* ShopModel.swift */; };
+		630FDF5E230940CD00A1403F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630FDF5D230940CD00A1403F /* Item.swift */; };
+		63141C1B231110510042A11C /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63141C1A231110510042A11C /* StoreViewController.swift */; };
+		63141C1D2311107C0042A11C /* StoreViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63141C1C2311107C0042A11C /* StoreViewController.storyboard */; };
+		63141C1F231130D80042A11C /* ShadowAttributeSettableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63141C1E231130D80042A11C /* ShadowAttributeSettableLabel.swift */; };
+		63141C2123126D520042A11C /* GetUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63141C2023126D520042A11C /* GetUrl.swift */; };
+		6368181723099A68001CAC7F /* ShopItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6368181523099A68001CAC7F /* ShopItemCell.swift */; };
+		6368181823099A68001CAC7F /* ShopItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6368181623099A68001CAC7F /* ShopItemCell.xib */; };
+		6368181C2309AF65001CAC7F /* ItemCellLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6368181B2309AF65001CAC7F /* ItemCellLayout.swift */; };
 		BBA0A12EC71EDA05B5EC4674 /* Pods_ETASTEUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77BE23D1B7392795678CE704 /* Pods_ETASTEUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +90,14 @@
 		630EEFF122EF3DC50030E302 /* HomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
 		630EEFF322EF3DDD0030E302 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		630EEFF522F08D820030E302 /* ShopModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopModel.swift; sourceTree = "<group>"; };
+		630FDF5D230940CD00A1403F /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		63141C1A231110510042A11C /* StoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
+		63141C1C2311107C0042A11C /* StoreViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StoreViewController.storyboard; sourceTree = "<group>"; };
+		63141C1E231130D80042A11C /* ShadowAttributeSettableLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowAttributeSettableLabel.swift; sourceTree = "<group>"; };
+		63141C2023126D520042A11C /* GetUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUrl.swift; sourceTree = "<group>"; };
+		6368181523099A68001CAC7F /* ShopItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopItemCell.swift; sourceTree = "<group>"; };
+		6368181623099A68001CAC7F /* ShopItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopItemCell.xib; sourceTree = "<group>"; };
+		6368181B2309AF65001CAC7F /* ItemCellLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCellLayout.swift; sourceTree = "<group>"; };
 		77BE23D1B7392795678CE704 /* Pods_ETASTEUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ETASTEUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		785291696FA3228D4BE184BC /* Pods-ETASTE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETASTE.debug.xcconfig"; path = "Target Support Files/Pods-ETASTE/Pods-ETASTE.debug.xcconfig"; sourceTree = "<group>"; };
 		A12D2E41460E47E723746E5E /* Pods-ETASTEUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETASTEUITests.release.xcconfig"; path = "Target Support Files/Pods-ETASTEUITests/Pods-ETASTEUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -130,6 +146,8 @@
 			children = (
 				4FBDEDE122F0C24500DFF109 /* Color.swift */,
 				4FBDEDE522F0C99600DFF109 /* SearchBar.swift */,
+				63141C1E231130D80042A11C /* ShadowAttributeSettableLabel.swift */,
+				63141C2023126D520042A11C /* GetUrl.swift */,
 			);
 			path = "UI Components Base";
 			sourceTree = "<group>";
@@ -208,6 +226,7 @@
 		6301B05222EF37A70078844C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				630FDF5223092D3200A1403F /* ShopItemcell */,
 				6301B05422EF382B0078844C /* SplashViewController.storyboard */,
 				6301B05622EF38410078844C /* SplashViewController.swift */,
 				630EEFF122EF3DC50030E302 /* HomeViewController.storyboard */,
@@ -220,8 +239,21 @@
 				4F0F7EE222FE045200AEB6E9 /* SettingViewController.swift */,
 				4F0F7ED222FDEE6C00AEB6E9 /* MainTabBarController.storyboard */,
 				4F0F7ED622FDFE6300AEB6E9 /* MainTabBarController.swift */,
+				6368181B2309AF65001CAC7F /* ItemCellLayout.swift */,
+				63141C1A231110510042A11C /* StoreViewController.swift */,
+				63141C1C2311107C0042A11C /* StoreViewController.storyboard */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		630FDF5223092D3200A1403F /* ShopItemcell */ = {
+			isa = PBXGroup;
+			children = (
+				630FDF5D230940CD00A1403F /* Item.swift */,
+				6368181523099A68001CAC7F /* ShopItemCell.swift */,
+				6368181623099A68001CAC7F /* ShopItemCell.xib */,
+			);
+			path = ShopItemcell;
 			sourceTree = "<group>";
 		};
 		A97AC5B20D2420B327D8CFD1 /* Pods */ = {
@@ -356,7 +388,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F0F7EE122FE043E00AEB6E9 /* SettingViewController.storyboard in Resources */,
+				63141C1D2311107C0042A11C /* StoreViewController.storyboard in Resources */,
 				4F0F7EDD22FE03F700AEB6E9 /* DealViewController.storyboard in Resources */,
+				6368181823099A68001CAC7F /* ShopItemCell.xib in Resources */,
 				4FBDEDED22F0CCA800DFF109 /* key.plist in Resources */,
 				4F0F7ED922FE038E00AEB6E9 /* FavoriteViewController.storyboard in Resources */,
 				6301B05522EF382B0078844C /* SplashViewController.storyboard in Resources */,
@@ -473,15 +507,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63141C1B231110510042A11C /* StoreViewController.swift in Sources */,
+				6368181C2309AF65001CAC7F /* ItemCellLayout.swift in Sources */,
 				4FBDEDE922F0CC3800DFF109 /* UIColor_Utility.swift in Sources */,
 				4F0F7EE322FE045200AEB6E9 /* SettingViewController.swift in Sources */,
 				4F0F7ED722FDFE6300AEB6E9 /* MainTabBarController.swift in Sources */,
 				4FBDEDE622F0C99600DFF109 /* SearchBar.swift in Sources */,
 				6301B02422EF36B30078844C /* AppDelegate.swift in Sources */,
+				63141C1F231130D80042A11C /* ShadowAttributeSettableLabel.swift in Sources */,
 				4F0F7EDB22FE039C00AEB6E9 /* FavoriteViewController.swift in Sources */,
 				630EEFF622F08D820030E302 /* ShopModel.swift in Sources */,
+				630FDF5E230940CD00A1403F /* Item.swift in Sources */,
 				6301B05722EF38410078844C /* SplashViewController.swift in Sources */,
 				4FBDEDE222F0C24500DFF109 /* Color.swift in Sources */,
+				6368181723099A68001CAC7F /* ShopItemCell.swift in Sources */,
+				63141C2123126D520042A11C /* GetUrl.swift in Sources */,
 				4F0F7EDF22FE040A00AEB6E9 /* DealViewController.swift in Sources */,
 				630EEFF422EF3DDD0030E302 /* HomeViewController.swift in Sources */,
 			);
