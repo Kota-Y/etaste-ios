@@ -14,6 +14,9 @@ enum ViewControllerOnTab: CaseIterable {
     case favorite
     case deal
     case setting
+   
+    
+    
     
     var viewController: UIViewController {
         switch self{
@@ -25,19 +28,24 @@ enum ViewControllerOnTab: CaseIterable {
             return DealViewController()
         case .setting:
             return SettingViewController()
+       
+        
         }
     }
     
     var viewControllerName: String {
         switch self{
         case .home:
-            return "HomeViewController"
+            
+        return "HomeViewController"
         case .favorite:
             return "FavoriteViewController"
         case .deal:
             return "DealViewController"
         case .setting:
             return "SettingViewController"
+            
+      
         }
     }
     
@@ -51,6 +59,7 @@ enum ViewControllerOnTab: CaseIterable {
             return "DealIcon"
         case .setting:
             return "SettingIcon"
+       
         }
     }
 }

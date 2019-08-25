@@ -14,6 +14,7 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var googleMap: GMSMapView!
     @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var shopitemtable: UICollectionView!
     
 
     var shopModel:[ShopModel] = []
@@ -28,8 +29,9 @@ class HomeViewController: UIViewController {
                                                                  style: .plain,
                                                                  target: self,
                                                                  action: #selector(login))
-                
+     
         searchBar.delegate = self
+        
 
     }
     
@@ -66,11 +68,34 @@ class HomeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    //viewcell//
+//    var ShopItem:[Item] = [Item]()
+//    func setupItem(){
+//        ShopItem = [Item(name: "サンドイッチ", price: 100, startTime: "18:00", finishTime: "19:00",image: "sand"),Item(name: "サンドイッチ", price: 100, startTime: "18:00", finishTime: "19:00", image: "sand"),Item(name: "サンドイッチ", price: 100, startTime: "18:00", finishTime: "19:00",image: "sand")]
+//
+//    }
 }
 
 extension HomeViewController: UISearchBarDelegate {
-    
-    
-   
+ 
 }
 
+
+//extension HomeViewController: UICollectionViewDataSource {
+//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+//        return ShopItem.count
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+//        let cell = shopitemtable.dequeueReusableCell(withReuseIdentifier: "ShopItemCell", for: indexPath)
+//        if let cell = cell as? ShopItemCell {
+//            cell.setupCell(item: ShopItem[indexPath.row])
+//        }
+//        return cell
+//    }
+//}
+//extension HomeViewController: CustomDelegate {
+//    func collectionView(_ collectionView: UICollectionView, heightForItemAt indexPath: IndexPath) -> CGFloat {
+//        return CGFloat(240)
+//    }
+//}

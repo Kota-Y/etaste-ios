@@ -144,10 +144,10 @@
 		4FBDEDE022F0C23300DFF109 /* UI Components Base */ = {
 			isa = PBXGroup;
 			children = (
-				4FBDEDE122F0C24500DFF109 /* Color.swift */,
-				4FBDEDE522F0C99600DFF109 /* SearchBar.swift */,
 				63141C1E231130D80042A11C /* ShadowAttributeSettableLabel.swift */,
+				4FBDEDE122F0C24500DFF109 /* Color.swift */,
 				63141C2023126D520042A11C /* GetUrl.swift */,
+				4FBDEDE522F0C99600DFF109 /* SearchBar.swift */,
 			);
 			path = "UI Components Base";
 			sourceTree = "<group>";

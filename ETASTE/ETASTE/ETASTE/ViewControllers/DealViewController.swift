@@ -12,7 +12,9 @@ import UIKit
 class DealViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.navigationItem.title = "受取履歴"
     }
+    
+    
+    
 }

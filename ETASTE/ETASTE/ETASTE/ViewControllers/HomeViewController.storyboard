@@ -27,7 +27,7 @@
                                     <constraint firstAttribute="height" constant="270" id="xJQ-Fr-4yC"/>
                                 </constraints>
                             </view>
-                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder=" Search" translatesAutoresizingMaskIntoConstraints="NO" id="r6f-9B-bE3" customClass="SearchBar" customModule="ETASTE" customModuleProvider="target">
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" text="" placeholder=" Search" translatesAutoresizingMaskIntoConstraints="NO" id="r6f-9B-bE3" customClass="SearchBar" customModule="ETASTE" customModuleProvider="target">
                                 <rect key="frame" x="27" y="32" width="321" height="43"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="43" id="wi2-m2-agA"/>
@@ -59,15 +59,26 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </searchBar>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="tdj-qo-abB">
+                                <rect key="frame" x="0.0" y="290" width="375" height="333"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewLayout key="collectionViewLayout" id="bH7-DO-6Y2" customClass="ItemCellLayout" customModule="ETASTE" customModuleProvider="target"/>
+                                <cells/>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="r6f-9B-bE3" firstAttribute="top" secondItem="jAo-aN-s6Z" secondAttribute="top" constant="12" id="9uK-Ph-HTJ"/>
+                            <constraint firstItem="tdj-qo-abB" firstAttribute="leading" secondItem="o4g-2y-XzG" secondAttribute="leading" id="AbT-sJ-30B"/>
                             <constraint firstItem="jAo-aN-s6Z" firstAttribute="top" secondItem="o4g-2y-XzG" secondAttribute="top" id="Ai0-xF-M1O"/>
+                            <constraint firstItem="tdj-qo-abB" firstAttribute="top" secondItem="jAo-aN-s6Z" secondAttribute="bottom" id="HlE-hK-E2i"/>
+                            <constraint firstItem="tdj-qo-abB" firstAttribute="trailing" secondItem="o4g-2y-XzG" secondAttribute="trailing" id="QLj-Nx-ZsO"/>
                             <constraint firstItem="r6f-9B-bE3" firstAttribute="leading" secondItem="o4g-2y-XzG" secondAttribute="leading" constant="27" id="Ttb-am-aE5"/>
                             <constraint firstItem="r6f-9B-bE3" firstAttribute="trailing" secondItem="o4g-2y-XzG" secondAttribute="trailing" constant="-27" id="Z7T-OR-rZw"/>
                             <constraint firstItem="jAo-aN-s6Z" firstAttribute="leading" secondItem="o4g-2y-XzG" secondAttribute="leading" id="bgM-6D-AMH"/>
                             <constraint firstItem="jAo-aN-s6Z" firstAttribute="trailing" secondItem="o4g-2y-XzG" secondAttribute="trailing" id="nMq-zg-nmX"/>
+                            <constraint firstItem="o4g-2y-XzG" firstAttribute="bottom" secondItem="tdj-qo-abB" secondAttribute="bottom" id="xVc-ee-gg5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="o4g-2y-XzG"/>
                     </view>
@@ -76,6 +87,7 @@
                     <connections>
                         <outlet property="googleMap" destination="jAo-aN-s6Z" id="ruf-dW-N0Y"/>
                         <outlet property="searchBar" destination="r6f-9B-bE3" id="jeu-Ff-TXP"/>
+                        <outlet property="shopitemtable" destination="tdj-qo-abB" id="3rx-76-FRM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L5u-kg-500" userLabel="First Responder" sceneMemberID="firstResponder"/>
