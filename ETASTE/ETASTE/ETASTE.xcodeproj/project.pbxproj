@@ -30,6 +30,11 @@
 		630EEFF222EF3DC50030E302 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 630EEFF122EF3DC50030E302 /* HomeViewController.storyboard */; };
 		630EEFF422EF3DDD0030E302 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630EEFF322EF3DDD0030E302 /* HomeViewController.swift */; };
 		630EEFF622F08D820030E302 /* ShopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630EEFF522F08D820030E302 /* ShopModel.swift */; };
+		63141CB12314F39A0042A11C /* Deallabel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63141CB02314F39A0042A11C /* Deallabel.xib */; };
+		63141CB32314F3AC0042A11C /* Deallabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63141CB22314F3AC0042A11C /* Deallabel.swift */; };
+		63EA50382316580300DF5C78 /* DealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EA50362316580300DF5C78 /* DealTableViewCell.swift */; };
+		63EA50392316580300DF5C78 /* DealTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63EA50372316580300DF5C78 /* DealTableViewCell.xib */; };
+		63EA503B2316582D00DF5C78 /* DealTableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EA503A2316582D00DF5C78 /* DealTableItem.swift */; };
 		BBA0A12EC71EDA05B5EC4674 /* Pods_ETASTEUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77BE23D1B7392795678CE704 /* Pods_ETASTEUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +87,11 @@
 		630EEFF122EF3DC50030E302 /* HomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
 		630EEFF322EF3DDD0030E302 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		630EEFF522F08D820030E302 /* ShopModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopModel.swift; sourceTree = "<group>"; };
+		63141CB02314F39A0042A11C /* Deallabel.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Deallabel.xib; sourceTree = "<group>"; };
+		63141CB22314F3AC0042A11C /* Deallabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deallabel.swift; sourceTree = "<group>"; };
+		63EA50362316580300DF5C78 /* DealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealTableViewCell.swift; sourceTree = "<group>"; };
+		63EA50372316580300DF5C78 /* DealTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DealTableViewCell.xib; sourceTree = "<group>"; };
+		63EA503A2316582D00DF5C78 /* DealTableItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealTableItem.swift; sourceTree = "<group>"; };
 		77BE23D1B7392795678CE704 /* Pods_ETASTEUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ETASTEUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		785291696FA3228D4BE184BC /* Pods-ETASTE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETASTE.debug.xcconfig"; path = "Target Support Files/Pods-ETASTE/Pods-ETASTE.debug.xcconfig"; sourceTree = "<group>"; };
 		A12D2E41460E47E723746E5E /* Pods-ETASTEUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETASTEUITests.release.xcconfig"; path = "Target Support Files/Pods-ETASTEUITests/Pods-ETASTEUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -208,6 +218,8 @@
 		6301B05222EF37A70078844C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				63EA50352316574000DF5C78 /* DealTableCell */,
+				63141CAF2314F31B0042A11C /* DealButtonLayout */,
 				6301B05422EF382B0078844C /* SplashViewController.storyboard */,
 				6301B05622EF38410078844C /* SplashViewController.swift */,
 				630EEFF122EF3DC50030E302 /* HomeViewController.storyboard */,
@@ -222,6 +234,25 @@
 				4F0F7ED622FDFE6300AEB6E9 /* MainTabBarController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		63141CAF2314F31B0042A11C /* DealButtonLayout */ = {
+			isa = PBXGroup;
+			children = (
+				63141CB02314F39A0042A11C /* Deallabel.xib */,
+				63141CB22314F3AC0042A11C /* Deallabel.swift */,
+			);
+			path = DealButtonLayout;
+			sourceTree = "<group>";
+		};
+		63EA50352316574000DF5C78 /* DealTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				63EA50362316580300DF5C78 /* DealTableViewCell.swift */,
+				63EA50372316580300DF5C78 /* DealTableViewCell.xib */,
+				63EA503A2316582D00DF5C78 /* DealTableItem.swift */,
+			);
+			path = DealTableCell;
 			sourceTree = "<group>";
 		};
 		A97AC5B20D2420B327D8CFD1 /* Pods */ = {
@@ -356,10 +387,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F0F7EE122FE043E00AEB6E9 /* SettingViewController.storyboard in Resources */,
+				63EA50392316580300DF5C78 /* DealTableViewCell.xib in Resources */,
 				4F0F7EDD22FE03F700AEB6E9 /* DealViewController.storyboard in Resources */,
 				4FBDEDED22F0CCA800DFF109 /* key.plist in Resources */,
 				4F0F7ED922FE038E00AEB6E9 /* FavoriteViewController.storyboard in Resources */,
 				6301B05522EF382B0078844C /* SplashViewController.storyboard in Resources */,
+				63141CB12314F39A0042A11C /* Deallabel.xib in Resources */,
 				4F0F7ED322FDEE6C00AEB6E9 /* MainTabBarController.storyboard in Resources */,
 				6301B02B22EF36B60078844C /* Assets.xcassets in Resources */,
 				630EEFF222EF3DC50030E302 /* HomeViewController.storyboard in Resources */,
@@ -474,14 +507,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FBDEDE922F0CC3800DFF109 /* UIColor_Utility.swift in Sources */,
+				63141CB32314F3AC0042A11C /* Deallabel.swift in Sources */,
 				4F0F7EE322FE045200AEB6E9 /* SettingViewController.swift in Sources */,
 				4F0F7ED722FDFE6300AEB6E9 /* MainTabBarController.swift in Sources */,
 				4FBDEDE622F0C99600DFF109 /* SearchBar.swift in Sources */,
+				63EA503B2316582D00DF5C78 /* DealTableItem.swift in Sources */,
 				6301B02422EF36B30078844C /* AppDelegate.swift in Sources */,
 				4F0F7EDB22FE039C00AEB6E9 /* FavoriteViewController.swift in Sources */,
 				630EEFF622F08D820030E302 /* ShopModel.swift in Sources */,
 				6301B05722EF38410078844C /* SplashViewController.swift in Sources */,
 				4FBDEDE222F0C24500DFF109 /* Color.swift in Sources */,
+				63EA50382316580300DF5C78 /* DealTableViewCell.swift in Sources */,
 				4F0F7EDF22FE040A00AEB6E9 /* DealViewController.swift in Sources */,
 				630EEFF422EF3DDD0030E302 /* HomeViewController.swift in Sources */,
 			);
