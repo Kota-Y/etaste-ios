@@ -35,106 +35,120 @@
                                             <constraint firstAttribute="height" constant="211" id="MOd-bC-42e"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wVv-qn-1Ce" userLabel="Store Name">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="店舗名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wVv-qn-1Ce" userLabel="Store Name" customClass="TextTitlePaleBlackLabel" customModule="ETASTE" customModuleProvider="target">
                                         <rect key="frame" x="84.5" y="232" width="206" height="19"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="wVv-qn-1Ce" secondAttribute="height" multiplier="206:19" id="68s-b1-eG8"/>
                                             <constraint firstAttribute="width" constant="206" id="Vs4-y9-maj"/>
                                             <constraint firstAttribute="height" constant="19" id="leJ-pM-rlN"/>
                                         </constraints>
-                                        <attributedString key="attributedText">
-                                            <fragment content="店舗名">
-                                                <attributes>
-                                                    <font key="NSFont" size="20" name="HiraginoSans-W9"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="20"/>
+                                        <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXX-nF-lMO" userLabel="Time">
-                                        <rect key="frame" x="84.5" y="272" width="206" height="12"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="営業時間" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXX-nF-lMO" userLabel="Time" customClass="TextNormalPaleBlackLabel" customModule="ETASTE" customModuleProvider="target">
+                                        <rect key="frame" x="84.5" y="261" width="206" height="12"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="12" id="9cn-g1-0FU"/>
                                             <constraint firstAttribute="width" secondItem="oXX-nF-lMO" secondAttribute="height" multiplier="103:6" id="kMy-W3-LME"/>
                                             <constraint firstAttribute="width" constant="206" id="zft-m5-cGv"/>
                                         </constraints>
-                                        <attributedString key="attributedText">
-                                            <fragment content="営業時間">
-                                                <attributes>
-                                                    <font key="NSFont" size="12" name="HiraginoSans-W6"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="12"/>
+                                        <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Isu-8L-c0m" userLabel="Holiday">
-                                        <rect key="frame" x="84.5" y="305" width="206" height="12"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="休日" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Isu-8L-c0m" userLabel="Holiday" customClass="TextNormalPaleBlackLabel" customModule="ETASTE" customModuleProvider="target">
+                                        <rect key="frame" x="84.5" y="283" width="206" height="12"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="12" id="6wx-Vv-3V2"/>
                                             <constraint firstAttribute="width" secondItem="Isu-8L-c0m" secondAttribute="height" multiplier="103:6" id="cSZ-Ui-joB"/>
                                             <constraint firstAttribute="width" constant="206" id="fca-fS-C98"/>
                                         </constraints>
-                                        <attributedString key="attributedText">
-                                            <fragment content="休日">
-                                                <attributes>
-                                                    <font key="NSFont" size="12" name="HiraginoSans-W6"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="12"/>
+                                        <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rxn-rP-ci5" userLabel="Address">
-                                        <rect key="frame" x="84.5" y="338" width="206" height="36"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rxn-rP-ci5" userLabel="Address" customClass="TextNormalPaleBlackLabel" customModule="ETASTE" customModuleProvider="target">
+                                        <rect key="frame" x="84.5" y="305" width="206" height="41.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="206" id="94o-YE-HF7"/>
-                                            <constraint firstAttribute="height" constant="36" id="eVl-0f-QEv"/>
-                                            <constraint firstAttribute="width" secondItem="Rxn-rP-ci5" secondAttribute="height" multiplier="103:18" id="iBP-lZ-enE"/>
+                                            <constraint firstAttribute="height" constant="41.5" id="DHP-jN-2Xx"/>
                                         </constraints>
-                                        <attributedString key="attributedText">
-                                            <fragment>
-                                                <string key="content">〒000-0000
+                                        <string key="text">〒000-0000
 熊本県熊本市00区00町0-00  
 KUMADAIビル1F</string>
-                                                <attributes>
-                                                    <font key="NSFont" size="12" name="HiraginoSans-W6"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TEL" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U6f-E8-I1m" userLabel="TEL" customClass="TextNormalPaleBlackLabel" customModule="ETASTE" customModuleProvider="target">
+                                        <rect key="frame" x="84.5" y="356.5" width="206" height="12"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="U6f-E8-I1m" secondAttribute="height" multiplier="103:6" id="Znk-uj-Hv6"/>
+                                            <constraint firstAttribute="height" constant="12" id="oSU-mC-Ndd"/>
+                                            <constraint firstAttribute="width" constant="206" id="s7g-l6-OzI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="パーキング" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Alb-gb-1MH" userLabel="Parking" customClass="TextNormalPaleBlackLabel" customModule="ETASTE" customModuleProvider="target">
+                                        <rect key="frame" x="84.5" y="378.5" width="206" height="12"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="12" id="NvV-yu-o0C"/>
+                                            <constraint firstAttribute="width" constant="206" id="gjO-gP-zqM"/>
+                                            <constraint firstAttribute="width" secondItem="Alb-gb-1MH" secondAttribute="height" multiplier="103:6" id="uPU-bp-tYp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="12"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="URL" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u3a-CN-JBG" userLabel="URL" customClass="TextNormalPaleBlackLabel" customModule="ETASTE" customModuleProvider="target">
+                                        <rect key="frame" x="84.5" y="400.5" width="206" height="12"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="u3a-CN-JBG" secondAttribute="height" multiplier="103:6" id="Xrl-vb-nTT"/>
+                                            <constraint firstAttribute="height" constant="12" id="cSi-6T-CDh"/>
+                                            <constraint firstAttribute="width" constant="206" id="dpb-7p-LRJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="12"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VmS-0f-TnJ" userLabel="Google Map" customClass="GMSMapView">
-                                        <rect key="frame" x="0.0" y="395" width="375" height="211"/>
+                                        <rect key="frame" x="0.0" y="441" width="375" height="211"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstAttribute="width" secondItem="VmS-0f-TnJ" secondAttribute="height" multiplier="375:211" id="4KQ-Jd-WG2"/>
                                             <constraint firstAttribute="height" constant="211" id="8A1-SJ-2WX"/>
-                                            <constraint firstAttribute="width" secondItem="VmS-0f-TnJ" secondAttribute="height" multiplier="375:211" id="kZ6-Zp-c5p"/>
+                                            <constraint firstAttribute="width" constant="375" id="NHn-6f-zL1"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="wVv-qn-1Ce" firstAttribute="top" secondItem="DYZ-kt-CLO" secondAttribute="bottom" constant="21" id="0Af-eF-SmA"/>
-                                    <constraint firstItem="Isu-8L-c0m" firstAttribute="top" secondItem="oXX-nF-lMO" secondAttribute="bottom" constant="21" id="1RJ-yz-Iit"/>
-                                    <constraint firstItem="VmS-0f-TnJ" firstAttribute="leading" secondItem="yo6-4H-6li" secondAttribute="leading" id="1V2-mt-05y"/>
+                                    <constraint firstItem="Isu-8L-c0m" firstAttribute="top" secondItem="oXX-nF-lMO" secondAttribute="bottom" constant="10" id="1RJ-yz-Iit"/>
+                                    <constraint firstItem="Alb-gb-1MH" firstAttribute="top" secondItem="U6f-E8-I1m" secondAttribute="bottom" constant="10" id="3uY-VI-dBN"/>
+                                    <constraint firstItem="u3a-CN-JBG" firstAttribute="centerX" secondItem="yo6-4H-6li" secondAttribute="centerX" id="76k-Tt-d9J"/>
                                     <constraint firstItem="DYZ-kt-CLO" firstAttribute="top" secondItem="yo6-4H-6li" secondAttribute="top" id="FLc-2t-pam"/>
                                     <constraint firstItem="Isu-8L-c0m" firstAttribute="centerX" secondItem="yo6-4H-6li" secondAttribute="centerX" id="IYW-I1-iDy"/>
+                                    <constraint firstItem="Alb-gb-1MH" firstAttribute="centerX" secondItem="yo6-4H-6li" secondAttribute="centerX" id="Jhq-cT-ZLH"/>
+                                    <constraint firstItem="U6f-E8-I1m" firstAttribute="centerX" secondItem="yo6-4H-6li" secondAttribute="centerX" id="L7v-lW-tzq"/>
+                                    <constraint firstAttribute="trailing" secondItem="VmS-0f-TnJ" secondAttribute="trailing" id="MIM-pb-nFv"/>
                                     <constraint firstAttribute="bottom" secondItem="pen-KG-bjM" secondAttribute="bottom" id="QhA-cG-6a9"/>
                                     <constraint firstItem="wVv-qn-1Ce" firstAttribute="centerX" secondItem="yo6-4H-6li" secondAttribute="centerX" id="VAp-6l-wwn"/>
                                     <constraint firstAttribute="trailing" secondItem="pen-KG-bjM" secondAttribute="trailing" id="XEN-Rq-fe1"/>
-                                    <constraint firstItem="VmS-0f-TnJ" firstAttribute="top" secondItem="Rxn-rP-ci5" secondAttribute="bottom" constant="21" id="ZGg-Vt-kwM"/>
+                                    <constraint firstItem="Rxn-rP-ci5" firstAttribute="top" secondItem="Isu-8L-c0m" secondAttribute="bottom" constant="10" id="aVH-1u-joL"/>
                                     <constraint firstAttribute="trailing" secondItem="DYZ-kt-CLO" secondAttribute="trailing" id="bGm-aI-PNz"/>
                                     <constraint firstItem="DYZ-kt-CLO" firstAttribute="leading" secondItem="yo6-4H-6li" secondAttribute="leading" id="cfN-wA-pkr"/>
+                                    <constraint firstItem="VmS-0f-TnJ" firstAttribute="leading" secondItem="yo6-4H-6li" secondAttribute="leading" id="g24-cC-CGZ"/>
                                     <constraint firstItem="Rxn-rP-ci5" firstAttribute="centerX" secondItem="yo6-4H-6li" secondAttribute="centerX" id="gBW-c3-e1R"/>
-                                    <constraint firstItem="VmS-0f-TnJ" firstAttribute="centerX" secondItem="yo6-4H-6li" secondAttribute="centerX" id="ggI-mS-T1x"/>
+                                    <constraint firstItem="VmS-0f-TnJ" firstAttribute="top" secondItem="u3a-CN-JBG" secondAttribute="bottom" constant="28.5" id="h9b-dH-Vui"/>
                                     <constraint firstItem="pen-KG-bjM" firstAttribute="leading" secondItem="yo6-4H-6li" secondAttribute="leading" id="l0I-6s-AXo"/>
-                                    <constraint firstAttribute="trailing" secondItem="VmS-0f-TnJ" secondAttribute="trailing" id="nke-yx-g8h"/>
+                                    <constraint firstItem="u3a-CN-JBG" firstAttribute="top" secondItem="Alb-gb-1MH" secondAttribute="bottom" constant="10" id="lxi-eH-ZxI"/>
                                     <constraint firstItem="pen-KG-bjM" firstAttribute="top" secondItem="yo6-4H-6li" secondAttribute="top" id="oT2-1G-9Kr"/>
                                     <constraint firstItem="oXX-nF-lMO" firstAttribute="centerX" secondItem="yo6-4H-6li" secondAttribute="centerX" id="r9X-KF-ayL"/>
-                                    <constraint firstItem="Rxn-rP-ci5" firstAttribute="top" secondItem="Isu-8L-c0m" secondAttribute="bottom" constant="21" id="tup-2A-Uzw"/>
-                                    <constraint firstItem="oXX-nF-lMO" firstAttribute="top" secondItem="wVv-qn-1Ce" secondAttribute="bottom" constant="21" id="vVT-Nb-M4d"/>
+                                    <constraint firstItem="oXX-nF-lMO" firstAttribute="top" secondItem="wVv-qn-1Ce" secondAttribute="bottom" constant="10" id="vVT-Nb-M4d"/>
+                                    <constraint firstItem="U6f-E8-I1m" firstAttribute="top" secondItem="Rxn-rP-ci5" secondAttribute="bottom" constant="10" id="zCH-xU-qQp"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -148,11 +162,14 @@ KUMADAIビル1F</string>
                         <viewLayoutGuide key="safeArea" id="Bkn-XU-aog"/>
                     </view>
                     <connections>
-                        <outlet property="address" destination="Rxn-rP-ci5" id="Q4q-Pi-7zU"/>
+                        <outlet property="addressLabel" destination="Rxn-rP-ci5" id="lcl-70-FSq"/>
                         <outlet property="googleMap" destination="VmS-0f-TnJ" id="nUV-ut-c83"/>
-                        <outlet property="holiday" destination="Isu-8L-c0m" id="pNI-eJ-Gu2"/>
-                        <outlet property="storeName" destination="wVv-qn-1Ce" id="ace-ot-LUm"/>
-                        <outlet property="time" destination="oXX-nF-lMO" id="jtb-Py-Rpp"/>
+                        <outlet property="holidayLabel" destination="Isu-8L-c0m" id="sFD-a9-bjO"/>
+                        <outlet property="parkingLabel" destination="Alb-gb-1MH" id="p3T-Yb-ALS"/>
+                        <outlet property="storeNameLabel" destination="wVv-qn-1Ce" id="5JY-nm-dVQ"/>
+                        <outlet property="telLabel" destination="U6f-E8-I1m" id="e4b-65-eOM"/>
+                        <outlet property="timeLabel" destination="oXX-nF-lMO" id="nhe-PJ-Qsv"/>
+                        <outlet property="urlLabel" destination="u3a-CN-JBG" id="XPy-Lq-NjP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n6D-Mg-q72" userLabel="First Responder" sceneMemberID="firstResponder"/>
