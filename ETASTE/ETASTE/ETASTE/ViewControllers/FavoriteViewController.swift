@@ -10,6 +10,11 @@ import Foundation
 import UIKit
 
 class FavoriteViewController: UIViewController {
+    
+    // 動作確認で何かしら表示する用
+    @IBOutlet weak var testLabel1: UILabel!
+    @IBOutlet weak var testLabel2: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -23,4 +28,14 @@ class FavoriteViewController: UIViewController {
     @objc func login() {
         
     }
+    
+    @IBAction func tapButton1(_ sender: UIButton) {
+        let shopModel = ShopModel(latitude: 0, longitude: 0)
+        shopModel.getStore(label: testLabel1)
+    }
+    @IBAction func tapButton2(_ sender: UIButton) {
+        let favoriteModel = FavoriteModel()
+        favoriteModel.createFavorite(label: testLabel2)
+    }
+    
 }

@@ -17,12 +17,49 @@
                     <view key="view" contentMode="scaleToFill" id="OzE-zw-GLn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="出でるかな店舗名" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbw-QH-PcC" userLabel="出でるかな店舗名">
+                                <rect key="frame" x="106" y="125" width="163" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HyF-bm-Bhs" userLabel="出でよ店舗名（GET Store by ID）">
+                                <rect key="frame" x="74" y="191" width="227" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="出でよ店舗名（Get Store by ID）"/>
+                                <connections>
+                                    <action selector="tapButton1:" destination="uTI-1L-JFI" eventType="touchUpInside" id="w6P-88-PH2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="お気に入れるかな" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMI-RT-vO1" userLabel="お気に入れるかな">
+                                <rect key="frame" x="122" y="380" width="131" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sfw-Y2-KN3" userLabel="お気に入れ（Create favorite by POST）">
+                                <rect key="frame" x="51" y="433" width="272" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="お気に入れ（Create favorite by POST）"/>
+                                <connections>
+                                    <action selector="tapButton2:" destination="uTI-1L-JFI" eventType="touchUpInside" id="Jh7-5G-i4k"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="dad-rj-LXC"/>
                     </view>
+                    <connections>
+                        <outlet property="testLabel1" destination="fbw-QH-PcC" id="MPH-xX-bjO"/>
+                        <outlet property="testLabel2" destination="fMI-RT-vO1" id="lsM-EP-ift"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TRs-28-HhJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="122.78860569715144"/>
         </scene>
     </scenes>
 </document>

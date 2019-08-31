@@ -10,6 +10,7 @@ target 'ETASTE' do
 
   # Pods for ETASTE
    pod 'GoogleMaps'
+   pod 'Alamofire'
 
 
   target 'ETASTETests' do

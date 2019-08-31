@@ -45,7 +45,7 @@ class StoreDetailsViewController: UIViewController {
         telLabel.text = storeDetailModel.tel
         parkingLabel.text = storeDetailModel.parking
         let urlText = storeDetailModel.url.absoluteString
-        var attributeURLText = NSMutableAttributedString(string: urlText)
+        let attributeURLText = NSMutableAttributedString(string: urlText)
         attributeURLText.addAttribute(NSAttributedString.Key.underlineStyle, value: NSUnderlineStyle.single.rawValue, range: NSMakeRange(0, urlText.count))
         urlLabel.attributedText = attributeURLText
         
