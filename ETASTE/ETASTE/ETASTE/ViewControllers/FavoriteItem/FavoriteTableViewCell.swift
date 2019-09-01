@@ -9,6 +9,7 @@
 import UIKit
 
 class FavoriteTableViewCell: UITableViewCell {
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,12 +23,18 @@ class FavoriteTableViewCell: UITableViewCell {
     }
     
     @IBOutlet weak var favoritecellimage: UIImageView!
-    
+    var id: String?
+   
     
     func setCell(item:FavoriteItemCell){
        self.favoritecellimage.image = fgetImageByUrl(url: item.favoriteimage)
+        self.id = item.id
         
-        
+    }
+    
+    
+    @IBAction func detailbutton(_ sender: Any) {
+    
     }
     
 

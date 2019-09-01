@@ -9,7 +9,9 @@
 import Foundation
 class FavoriteItemCell: NSObject{
     var favoriteimage: String
-    init (favoriteimage: String){
+    var id: String
+    init (favoriteimage: String,id:String){
         self.favoriteimage = favoriteimage as String
+        self.id = id as String
     }
 }
