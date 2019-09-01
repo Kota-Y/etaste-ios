@@ -17,9 +17,26 @@
                     <view key="view" contentMode="scaleToFill" id="OzE-zw-GLn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" separatorInsetReference="fromAutomaticInsets" allowsSelection="NO" rowHeight="300" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uzK-0z-ezA">
+                                <rect key="frame" x="0.0" y="70" width="375" height="597"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <viewLayoutGuide key="safeArea" id="WuT-EH-Y6r"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uzK-0z-ezA" firstAttribute="top" secondItem="dad-rj-LXC" secondAttribute="top" constant="50" id="7kO-lz-AZr"/>
+                            <constraint firstItem="dad-rj-LXC" firstAttribute="trailing" secondItem="uzK-0z-ezA" secondAttribute="trailing" id="WsC-Z7-zd8"/>
+                            <constraint firstItem="dad-rj-LXC" firstAttribute="bottom" secondItem="uzK-0z-ezA" secondAttribute="bottom" id="XqZ-Qn-UV8"/>
+                            <constraint firstItem="uzK-0z-ezA" firstAttribute="leading" secondItem="dad-rj-LXC" secondAttribute="leading" id="oie-aX-AzN"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="dad-rj-LXC"/>
                     </view>
+                    <connections>
+                        <outlet property="favoritetable" destination="uzK-0z-ezA" id="QAZ-5j-0Lp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TRs-28-HhJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
