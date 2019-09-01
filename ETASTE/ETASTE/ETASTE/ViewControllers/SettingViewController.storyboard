@@ -63,7 +63,7 @@
                         <viewLayoutGuide key="safeArea" id="Nti-es-whs"/>
                     </view>
                     <connections>
-                        <outlet property="SettingTable" destination="IzW-8V-Lu6" id="DkC-38-frD"/>
+                        <outlet property="SettingTable" destination="IzW-8V-Lu6" id="3U7-Rj-BEd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qKu-Ok-2Lg" userLabel="First Responder" sceneMemberID="firstResponder"/>
