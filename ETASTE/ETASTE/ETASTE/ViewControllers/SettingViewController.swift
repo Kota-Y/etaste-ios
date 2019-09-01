@@ -22,6 +22,7 @@ class SettingViewController: UIViewController ,UITableViewDataSource, UITableVie
     @IBOutlet weak var SettingTable: UITableView!
     
     let settingContent = ["プロフィール編集", "Q＆A","お問い合わせ","オープンソース","利用規約","特定商品取引法","プライバシーポリシー","バージョン情報","ログアウト","退会について"]
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -36,5 +37,6 @@ class SettingViewController: UIViewController ,UITableViewDataSource, UITableVie
         cell.accessoryType = UITableViewCell.AccessoryType.disclosureIndicator
         return cell
     }
+    
    
 }
