@@ -10,8 +10,7 @@ import Foundation
 import UIKit
 
 class FavoriteViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
-   
-    
+  
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,11 +25,9 @@ class FavoriteViewController: UIViewController,UITableViewDataSource,UITableView
         favoritetable.tableFooterView = UIView(frame: .zero)
         favoritetable.register(UINib(nibName: "FavoriteTableViewCell", bundle: nil), forCellReuseIdentifier: "FavoriteTableViewCell")
         self.setupFavoriteTable()
-        
         let frame = CGRect(x: 0, y: 0, width: favoritetable.frame.width, height: 1/*お好きな高さに*/)
         favoritetable.tableHeaderView = UIView(frame: frame)
         favoritetable.tableHeaderView!.backgroundColor = UIColor.gray
-        
         
     }
     
@@ -38,17 +35,17 @@ class FavoriteViewController: UIViewController,UITableViewDataSource,UITableView
         
     }
     
-   
     @IBOutlet weak var favoritetable: UITableView!
     var favoritecell:[FavoriteItemCell] = [FavoriteItemCell]()
 
     func setupFavoriteTable(){
         favoritecell = [FavoriteItemCell(favoriteimage: "https://dl.dropboxusercontent.com/s/7vyyl6u3h66enwv/takigawa-pan.jpg",id:"1"),FavoriteItemCell(favoriteimage: "https://dl.dropboxusercontent.com/s/7vyyl6u3h66enwv/takigawa-pan.jpg",id: "2")]
     }
-    
-    
+}
+
+extension FavoriteViewController{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       return  favoritecell.count
+        return  favoritecell.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
