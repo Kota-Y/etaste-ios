@@ -28,22 +28,6 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="53B-dA-1OA" id="0mj-0n-x0U">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dX1-g5-MRh">
-                                                    <rect key="frame" x="20" y="10" width="200" height="25"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="25" id="7TH-kS-mWN"/>
-                                                        <constraint firstAttribute="width" constant="200" id="Gyc-L7-PkV"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="dX1-g5-MRh" firstAttribute="top" secondItem="0mj-0n-x0U" secondAttribute="top" constant="10" id="TEB-1R-NtF"/>
-                                                <constraint firstItem="dX1-g5-MRh" firstAttribute="leading" secondItem="0mj-0n-x0U" secondAttribute="leading" constant="20" id="igf-xa-2F3"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
