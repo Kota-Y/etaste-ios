@@ -206,6 +206,7 @@
 		6301B05122EF379E0078844C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				6348453C231BA59E0015D3D8 /* FavoriteItemCell.swift */,
 				630EEFF522F08D820030E302 /* ShopModel.swift */,
 			);
 			path = Models;
@@ -236,7 +237,6 @@
 			children = (
 				63484538231BA5100015D3D8 /* FavoriteTableViewCell.swift */,
 				63484539231BA5100015D3D8 /* FavoriteTableViewCell.xib */,
-				6348453C231BA59E0015D3D8 /* FavoriteItemCell.swift */,
 			);
 			path = FavoriteItem;
 			sourceTree = "<group>";
