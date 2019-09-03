@@ -27,6 +27,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         UINavigationBar.appearance().barTintColor = UIColor.etasteYellow
         
+        //login
+        let isLogin = UserDefaults.standard.bool(forKey: "UserLogin")
+        var next: UIViewController!
+        
+        if isLogin {
+            //let storyboard = UIStoryboard(name: "HomeViewController", bundle: nil)
+            //next = storyboard.instantiateInitialViewController() as! HomeViewController
+            //self.window?.rootViewController = next
+            //self.window?.backgroundColor = UIColor.whiteColor()
+            //self.window?.makeKeyAndVisible()
+            //storyboard.navigationController?.pushViewController(next, animated: true)
+        } else {
+//            let storyboard = UIStoryboard(name: "Signup1ViewController", bundle: nil)
+//            next = storyboard.instantiateInitialViewController() as! Signup1ViewController
+//            var myNavigationController: UINavigationController = UINavigationController(rootViewController: next)
+//            myNavigationController = UINavigationController(rootViewController: next)
+//            self.window?.rootViewController = myNavigationController
+//            self.window?.makeKeyAndVisible()
+        }
+       
+
+        
         return true
     }
 

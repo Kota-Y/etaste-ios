@@ -55,9 +55,16 @@ class HomeViewController: UIViewController {
 
 
     }
-    
+     var window: UIWindow?
     @objc func login() {
         
+                    var next: UIViewController!
+                    let storyboard = UIStoryboard(name: "Signup1ViewController", bundle: nil)
+                    next = storyboard.instantiateInitialViewController() as! Signup1ViewController
+                    var myNavigationController: UINavigationController = UINavigationController(rootViewController: next)
+                    myNavigationController = UINavigationController(rootViewController: next)
+                    self.window?.rootViewController = myNavigationController
+                    self.window?.makeKeyAndVisible()
     }
     
     // 画面遷移のテスト用
