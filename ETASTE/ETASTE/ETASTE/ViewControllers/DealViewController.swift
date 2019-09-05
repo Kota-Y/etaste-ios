@@ -17,7 +17,7 @@ class DealViewController: UIViewController, UITableViewDelegate,UITableViewDataS
         self.setupbuttonlayout()
         self.tableview.dataSource = self
         self.tableview.delegate = self
-        self.tableview.register(UINib(nibName: "DealTableViewCell", bundle: nil), forCellReuseIdentifier: "DealTableViewCell")
+        self.tableview.register(UINib(nibName: "DealWillTableViewCell", bundle: nil), forCellReuseIdentifier: "DealWillTableViewCell")
         self.setuptableitem()
     }
     
@@ -89,53 +89,51 @@ class DealViewController: UIViewController, UITableViewDelegate,UITableViewDataS
         dpastbutton.layer.borderColor = UIColor.etasteYellow.cgColor
         dealwilllabel.labelstate(state: false)
         dealpastlabel.labelstate(state: true)
+        
        
         dpastunder.backgroundColor = UIColor.white
         dwillunder.backgroundColor = UIColor.etasteYellow
     }
     
-    
-    
-   
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+ 
     func setuptableitem(){
-        itemwill = [DealTableItem(name: "あんぱん", itemNum: 3, sum: 150, time: "2018/12/12/18:00", storeName: "滝川パン", image: "https://dl.dropboxusercontent.com/s/fxss9wae0iq143q/an-pan.jpg")]
-         itempast = [DealTableItem(name: "あんぱん2", itemNum: 5, sum: 150, time: "2018/12/12/18:00", storeName: "滝川", image: "https://dl.dropboxusercontent.com/s/fxss9wae0iq143q/an-pan.jpg")]
+        itemwill = [DealTableItem(id: "1", name: "あんぱん", itemNum: 3, sum: 150, time: "2018/12/12/18:00", storeName: "滝川パン", image: "https://dl.dropboxusercontent.com/s/fxss9wae0iq143q/an-pan.jpg")]
+        itempast = [DealTableItem(id:"2",name: "あんぱん2", itemNum: 5, sum: 150, time: "2018/12/12/18:00", storeName: "滝川", image: "https://dl.dropboxusercontent.com/s/fxss9wae0iq143q/an-pan.jpg")]
     }
+    
+
+    
+}
+
+extension DealViewController{
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
+    
+}
+extension DealViewController{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if screen == true{
-        return itemwill.count
+            return itemwill.count
         } else {
             return itempast.count
         }
     }
-    
+}
+extension DealViewController{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "DealTableViewCell", for: indexPath ) as!
-        DealTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "DealWillTableViewCell", for: indexPath ) as!
+        DealWillTableViewCell
         if screen == true {
-        cell.setupCell(cell: itemwill[indexPath.row])
+            cell.hidenbutton(hidden: false)
+            cell.setupCell(cell: itemwill[indexPath.row])
         } else{
+            cell.hidenbutton(hidden: true)
             cell.setupCell(cell: itempast[indexPath.row])
+            
         }
         
         return cell
     }
-    
-    
 }
 

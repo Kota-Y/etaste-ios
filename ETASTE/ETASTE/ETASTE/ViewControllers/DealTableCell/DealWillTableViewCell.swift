@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class DealTableViewCell: UITableViewCell {
+class DealWillTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -26,8 +26,15 @@ class DealTableViewCell: UITableViewCell {
     @IBOutlet weak var sum: UILabel!
     @IBOutlet weak var time: UILabel!
     @IBOutlet weak var storeName: UILabel!
-   
     @IBOutlet weak var foodimage: UIImageView!
+    @IBOutlet weak var dealcompletebutton: UIButton!
+    
+    
+    @IBAction func Dealcompletebutton(_ sender: Any) {
+        dealcompletebutton.backgroundColor = UIColor.red
+        dealcompletebutton.setTitle("aアイウエオ", for: .normal)
+    }
+    
     
     
     func setupCell(cell:DealTableItem){
@@ -39,7 +46,17 @@ class DealTableViewCell: UITableViewCell {
         time.text = ": " + cell.time
         storeName.text = ": " + cell.storeName
         foodimage.image = UIImage(url:cell.image)
+       
     }
+    func hidenbutton(hidden: Bool){
+        if hidden == false{
+            dealcompletebutton.isHidden = false
+            dealcompletebutton.isEnabled = true
+        } else{
+             dealcompletebutton.isHidden = true
+            dealcompletebutton.isEnabled = false
+        }
+            }
     
    
     

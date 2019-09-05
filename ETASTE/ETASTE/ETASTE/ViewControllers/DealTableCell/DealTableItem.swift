@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 class DealTableItem: NSObject{
+    var id:String
     var name: String
     var itemNum: Int
     var sum: Int
@@ -17,7 +18,8 @@ class DealTableItem: NSObject{
     var image: String
 
     
-    init(name: String, itemNum: Int, sum: Int,time: String,storeName:String,image: String){
+    init(id:String, name: String, itemNum: Int, sum: Int,time: String,storeName:String,image: String){
+        self.id = id as String
         self.name = name as String
         self.itemNum = itemNum as Int
         self.sum = sum as Int
