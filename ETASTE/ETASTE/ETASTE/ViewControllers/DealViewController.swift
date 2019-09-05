@@ -35,7 +35,6 @@ class DealViewController: UIViewController, UITableViewDelegate,UITableViewDataS
     @IBOutlet weak var tableviewout: UIView!
     @IBOutlet weak var tableview: UITableView!
     @IBOutlet weak var dwillunder: UILabel!
-    
     @IBOutlet weak var dpastunder: UILabel!
     
     
@@ -95,14 +94,10 @@ class DealViewController: UIViewController, UITableViewDelegate,UITableViewDataS
         dwillunder.backgroundColor = UIColor.etasteYellow
     }
     
- 
     func setuptableitem(){
         itemwill = [DealTableItem(id: "1", name: "あんぱん", itemNum: 3, sum: 150, time: "2018/12/12/18:00", storeName: "滝川パン", image: "https://dl.dropboxusercontent.com/s/fxss9wae0iq143q/an-pan.jpg")]
         itempast = [DealTableItem(id:"2",name: "あんぱん2", itemNum: 5, sum: 150, time: "2018/12/12/18:00", storeName: "滝川", image: "https://dl.dropboxusercontent.com/s/fxss9wae0iq143q/an-pan.jpg")]
     }
-    
-
-    
 }
 
 extension DealViewController{
@@ -134,6 +129,16 @@ extension DealViewController{
         }
         
         return cell
+    }
+}
+extension DealViewController {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if screen == true {
+            return 220
+        } else{
+            return 200
+            
+        }
     }
 }
 

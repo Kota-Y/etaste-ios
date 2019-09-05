@@ -210,6 +210,7 @@
 		6301B05122EF379E0078844C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				63EA50352316574000DF5C78 /* DealTableCell */,
 				630EEFF522F08D820030E302 /* ShopModel.swift */,
 			);
 			path = Models;
@@ -218,7 +219,6 @@
 		6301B05222EF37A70078844C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				63EA50352316574000DF5C78 /* DealTableCell */,
 				63141CAF2314F31B0042A11C /* DealButtonLayout */,
 				6301B05422EF382B0078844C /* SplashViewController.storyboard */,
 				6301B05622EF38410078844C /* SplashViewController.swift */,

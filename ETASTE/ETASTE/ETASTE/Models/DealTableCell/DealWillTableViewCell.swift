@@ -31,8 +31,7 @@ class DealWillTableViewCell: UITableViewCell {
     
     
     @IBAction func Dealcompletebutton(_ sender: Any) {
-        dealcompletebutton.backgroundColor = UIColor.red
-        dealcompletebutton.setTitle("aアイウエオ", for: .normal)
+       
     }
     
     
@@ -52,6 +51,7 @@ class DealWillTableViewCell: UITableViewCell {
         if hidden == false{
             dealcompletebutton.isHidden = false
             dealcompletebutton.isEnabled = true
+            
         } else{
              dealcompletebutton.isHidden = true
             dealcompletebutton.isEnabled = false

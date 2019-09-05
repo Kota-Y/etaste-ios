@@ -38,11 +38,11 @@
                     </userDefinedRuntimeAttributes>
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="タイトル" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ByO-IW-7wP">
-                    <rect key="frame" x="5" y="5" width="130" height="30"/>
+                    <rect key="frame" x="2.5" y="2.5" width="135" height="35"/>
                     <color key="backgroundColor" red="0.13164141679999999" green="1" blue="0.18365860889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="30" id="frf-dn-xcC"/>
-                        <constraint firstAttribute="width" constant="130" id="nFg-iD-hMk"/>
+                        <constraint firstAttribute="height" constant="35" id="frf-dn-xcC"/>
+                        <constraint firstAttribute="width" constant="135" id="nFg-iD-hMk"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
