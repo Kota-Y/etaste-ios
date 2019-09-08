@@ -83,6 +83,10 @@ class Signup1ViewController: UIViewController,UITextFieldDelegate {
     }
     */
     
+   
+
+}
+extension Signup1ViewController{
     func configureObserver() {
         
         let notification = NotificationCenter.default
@@ -97,30 +101,28 @@ class Signup1ViewController: UIViewController,UITextFieldDelegate {
     /// キーボードが表示時に画面をずらす。
     @objc func keyboardWillShow(_ notification: Notification?) {
         if(t == true){
-        guard let rect = (notification?.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue,
-            let duration = notification?.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as? TimeInterval else { return }
-        UIView.animate(withDuration: duration) {
-            let transform = CGAffineTransform(translationX: 0, y: -(rect.size.height))
-            self.view.transform = transform
-        }
-        print("keyboardWillShowを実行")
+            guard let rect = (notification?.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue,
+                let duration = notification?.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as? TimeInterval else { return }
+            UIView.animate(withDuration: duration) {
+                let transform = CGAffineTransform(translationX: 0, y: -(rect.size.height))
+                self.view.transform = transform
+            }
+            print("keyboardWillShowを実行")
         }
     }
     
     /// キーボードが降りたら画面を戻す
     @objc func keyboardWillHide(_ notification: Notification?) {
         if(t == true){
-        guard let duration = notification?.userInfo?[UIResponder.keyboardAnimationCurveUserInfoKey] as? TimeInterval else { return }
-        UIView.animate(withDuration: duration) {
-            self.view.transform = CGAffineTransform.identity
+            guard let duration = notification?.userInfo?[UIResponder.keyboardAnimationCurveUserInfoKey] as? TimeInterval else { return }
+            UIView.animate(withDuration: duration) {
+                self.view.transform = CGAffineTransform.identity
+            }
+            print("keyboardWillHideを実行")
+            t = false
         }
-        print("keyboardWillHideを実行")
-      t = false
     }
-    }
-
 }
-
 extension Signup1ViewController{
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         self.view.endEditing(true)

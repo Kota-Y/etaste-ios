@@ -8,15 +8,52 @@
 
 import UIKit
 
-class SigninViewController: UIViewController {
+class SigninViewController: UIViewController,UITextFieldDelegate {
 
     override func viewDidLoad() {
-        super.viewDidLoad()
+        self.navigationItem.title = "サインイン"
+        addresstextfield.delegate = self
+        passwordtextfield.delegate = self
+        configureObserver()
+    
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBOutlet weak var addresstextfield: UITextField!
+    @IBOutlet weak var passwordtextfield: UITextField!
+    @IBOutlet weak var errorlabel: UILabel!
+    var email:String? = ""
+    var passwor:String? = ""
+    
+    
+  
+    @IBAction func SignUpbutton(_ sender: Any) {
+        let viewControllerStoryboard = UIStoryboard(name: "Signup1ViewController", bundle: nil)
+        let viewController = viewControllerStoryboard.instantiateInitialViewController() as! Signup1ViewController
+        viewController.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    
+    @IBAction func Login(_ sender: Any) {
+        let text1:String? = addresstextfield.text
+        let text2:String? = passwordtextfield.text
+        if (text1 == "" || text2 == "") {
+            errorlabel.text = "全ての項目を記入してください"
+        }else if(text1?.isEmailmerif() == false){
+            errorlabel.text = "メールアドレスが有効では\nありません"
+        }else if(text2?.isAlphanumeric() == false){
+            errorlabel.text = "英数字8文字以上のパスワードを\n入力してください"
+        }else{
+            errorlabel.text = "ログイン成功"
+        }
+        
+    }
+    
+    
+    
+    
     /*
     // MARK: - Navigation
 
@@ -26,5 +63,53 @@ class SigninViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+  
 
 }
+extension SigninViewController{
+    //キーボードスクロール
+    
+    func configureObserver() {
+        
+        let notification = NotificationCenter.default
+        notification.addObserver(self, selector: #selector(keyboardWillShow(_:)),
+                                 name: UIResponder.keyboardWillShowNotification, object: nil)
+        notification.addObserver(self, selector: #selector(keyboardWillHide(_:)),
+                                 name: UIResponder.keyboardWillHideNotification, object: nil)
+        print("Notificationを発行")
+        
+    }
+    
+    /// キーボードが表示時に画面をずらす。
+    @objc func keyboardWillShow(_ notification: Notification?) {
+        
+            guard let rect = (notification?.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue,
+                let duration = notification?.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as? TimeInterval else { return }
+            UIView.animate(withDuration: duration) {
+                let transform = CGAffineTransform(translationX: 0, y: -(rect.size.height))
+                self.view.transform = transform
+            }
+            print("keyboardWillShowを実行")
+        
+    }
+    
+    /// キーボードが降りたら画面を戻す
+    @objc func keyboardWillHide(_ notification: Notification?) {
+        
+            guard let duration = notification?.userInfo?[UIResponder.keyboardAnimationCurveUserInfoKey] as? TimeInterval else { return }
+            UIView.animate(withDuration: duration) {
+                self.view.transform = CGAffineTransform.identity
+            }
+            print("keyboardWillHideを実行")
+        
+        }
+    
+}
+extension SigninViewController{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return true
+    }
+}
+
