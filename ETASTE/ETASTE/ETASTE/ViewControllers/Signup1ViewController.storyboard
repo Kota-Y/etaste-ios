@@ -47,6 +47,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="wantscroll:" destination="LB0-s0-vJb" eventType="touchDown" id="cej-ge-ORP"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="INS-J7-uSu">
                                 <rect key="frame" x="62.5" y="533.5" width="250" height="50"/>
