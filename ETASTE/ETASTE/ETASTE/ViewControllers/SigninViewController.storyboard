@@ -111,6 +111,13 @@
                                 <color key="textColor" red="1" green="0.21181671260000001" blue="0.22209781079999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppIcon" translatesAutoresizingMaskIntoConstraints="NO" id="PZC-Wb-4JN">
+                                <rect key="frame" x="67.5" y="109.5" width="240" height="188"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="15z-mY-pOw"/>
+                                    <constraint firstAttribute="height" constant="188" id="e0Q-Jg-D4D"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -127,6 +134,8 @@
                             <constraint firstItem="ft3-8d-3SB" firstAttribute="centerY" secondItem="dXN-DJ-ena" secondAttribute="centerY" constant="80" id="hhv-c9-HhQ"/>
                             <constraint firstItem="nLc-VS-0cy" firstAttribute="centerY" secondItem="dXN-DJ-ena" secondAttribute="centerY" constant="140" id="iHd-i3-y7q"/>
                             <constraint firstItem="ft3-8d-3SB" firstAttribute="centerX" secondItem="dXN-DJ-ena" secondAttribute="centerX" id="iRU-Ra-mAI"/>
+                            <constraint firstItem="PZC-Wb-4JN" firstAttribute="centerX" secondItem="dXN-DJ-ena" secondAttribute="centerX" id="mCK-fH-9g0"/>
+                            <constraint firstItem="PZC-Wb-4JN" firstAttribute="centerY" secondItem="dXN-DJ-ena" secondAttribute="centerY" constant="-130" id="nmJ-8M-Par"/>
                             <constraint firstItem="3a8-on-cz7" firstAttribute="centerX" secondItem="dXN-DJ-ena" secondAttribute="centerX" id="yRi-eh-fjI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wNf-rI-0c3"/>
@@ -143,6 +152,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="AppIcon" width="100" height="100"/>
         <image name="login" width="268" height="49"/>
     </resources>
 </document>
