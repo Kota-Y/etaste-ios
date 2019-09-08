@@ -1,26 +1,22 @@
 //
-//  Signup3ViewController.swift
+//  SigninViewController.swift
 //  ETASTE
 //
-//  Created by hakuchan on 2019/09/03.
+//  Created by hakuchan on 2019/09/08.
 //  Copyright © 2019 ETASTE. All rights reserved.
 //
 
 import UIKit
 
-class Signup3ViewController: UIViewController {
+class SigninViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "メール確認"
-      self.navigationItem.hidesBackButton = true
+
         // Do any additional setup after loading the view.
-       toplabel.numberOfLines = 0
     }
-   
-    @IBOutlet weak var toplabel: UILabel!
-   
-  
+    
+
     /*
     // MARK: - Navigation
 

@@ -119,12 +119,16 @@
 		630EEFF222EF3DC50030E302 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 630EEFF122EF3DC50030E302 /* HomeViewController.storyboard */; };
 		630EEFF422EF3DDD0030E302 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630EEFF322EF3DDD0030E302 /* HomeViewController.swift */; };
 		630EEFF622F08D820030E302 /* ShopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630EEFF522F08D820030E302 /* ShopModel.swift */; };
+		634BB9212324CCFB005E03A5 /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634BB9202324CCFB005E03A5 /* SignUpModel.swift */; };
 		634CA3B5231E4EEA00412333 /* Signup1ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 634CA3B4231E4EEA00412333 /* Signup1ViewController.storyboard */; };
 		634CA3B7231E4F1000412333 /* Signup1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634CA3B6231E4F1000412333 /* Signup1ViewController.swift */; };
 		634CA3B9231E5BF500412333 /* Signup3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634CA3B8231E5BF500412333 /* Signup3ViewController.swift */; };
 		634CA3BB231E5C0600412333 /* Signup3ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 634CA3BA231E5C0600412333 /* Signup3ViewController.storyboard */; };
 		634CA3BD231E5F7100412333 /* Signup2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634CA3BC231E5F7100412333 /* Signup2ViewController.swift */; };
 		634CA3BF231E5F8200412333 /* Signup2ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 634CA3BE231E5F8200412333 /* Signup2ViewController.storyboard */; };
+		634CA3C72322585700412333 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634CA3C62322585700412333 /* CustomTextField.swift */; };
+		634CA3CB232407DA00412333 /* SigninViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 634CA3CA232407DA00412333 /* SigninViewController.storyboard */; };
+		634CA3CD232407F100412333 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634CA3CC232407F100412333 /* SigninViewController.swift */; };
 		BBA0A12EC71EDA05B5EC4674 /* Pods_ETASTEUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77BE23D1B7392795678CE704 /* Pods_ETASTEUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -210,12 +214,16 @@
 		630EEFF122EF3DC50030E302 /* HomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
 		630EEFF322EF3DDD0030E302 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		630EEFF522F08D820030E302 /* ShopModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopModel.swift; sourceTree = "<group>"; };
+		634BB9202324CCFB005E03A5 /* SignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
 		634CA3B4231E4EEA00412333 /* Signup1ViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup1ViewController.storyboard; sourceTree = "<group>"; };
 		634CA3B6231E4F1000412333 /* Signup1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup1ViewController.swift; sourceTree = "<group>"; };
 		634CA3B8231E5BF500412333 /* Signup3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup3ViewController.swift; sourceTree = "<group>"; };
 		634CA3BA231E5C0600412333 /* Signup3ViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup3ViewController.storyboard; sourceTree = "<group>"; };
 		634CA3BC231E5F7100412333 /* Signup2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup2ViewController.swift; sourceTree = "<group>"; };
 		634CA3BE231E5F8200412333 /* Signup2ViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup2ViewController.storyboard; sourceTree = "<group>"; };
+		634CA3C62322585700412333 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		634CA3CA232407DA00412333 /* SigninViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SigninViewController.storyboard; sourceTree = "<group>"; };
+		634CA3CC232407F100412333 /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
 		77BE23D1B7392795678CE704 /* Pods_ETASTEUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ETASTEUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		785291696FA3228D4BE184BC /* Pods-ETASTE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETASTE.debug.xcconfig"; path = "Target Support Files/Pods-ETASTE/Pods-ETASTE.debug.xcconfig"; sourceTree = "<group>"; };
 		A12D2E41460E47E723746E5E /* Pods-ETASTEUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETASTEUITests.release.xcconfig"; path = "Target Support Files/Pods-ETASTEUITests/Pods-ETASTEUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -266,6 +274,7 @@
 				4FBDEDE522F0C99600DFF109 /* SearchBar.swift */,
 				4F68F6E5231A4346002CE931 /* Font.swift */,
 				4F68F6E1231A4268002CE931 /* Label.swift */,
+				634CA3C62322585700412333 /* CustomTextField.swift */,
 			);
 			path = "UI Components Base";
 			sourceTree = "<group>";
@@ -414,6 +423,7 @@
 				4FCEFEDD2310DD100050D668 /* OpenAPIClient */,
 				630EEFF522F08D820030E302 /* ShopModel.swift */,
 				4FCEFF4F2310F22B0050D668 /* FavoriteMocel.swift */,
+				634BB9202324CCFB005E03A5 /* SignUpModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -441,6 +451,8 @@
 				634CA3BA231E5C0600412333 /* Signup3ViewController.storyboard */,
 				634CA3BC231E5F7100412333 /* Signup2ViewController.swift */,
 				634CA3BE231E5F8200412333 /* Signup2ViewController.storyboard */,
+				634CA3CA232407DA00412333 /* SigninViewController.storyboard */,
+				634CA3CC232407F100412333 /* SigninViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -582,6 +594,7 @@
 				634CA3B5231E4EEA00412333 /* Signup1ViewController.storyboard in Resources */,
 				4F0F7EE122FE043E00AEB6E9 /* SettingViewController.storyboard in Resources */,
 				4F0F7EDD22FE03F700AEB6E9 /* DealViewController.storyboard in Resources */,
+				634CA3CB232407DA00412333 /* SigninViewController.storyboard in Resources */,
 				4FBDEDED22F0CCA800DFF109 /* key.plist in Resources */,
 				4F0F7ED922FE038E00AEB6E9 /* FavoriteViewController.storyboard in Resources */,
 				6301B05522EF382B0078844C /* SplashViewController.storyboard in Resources */,
@@ -731,6 +744,7 @@
 				634CA3B9231E5BF500412333 /* Signup3ViewController.swift in Sources */,
 				4FBDEDE622F0C99600DFF109 /* SearchBar.swift in Sources */,
 				4FCEFF382310DD100050D668 /* Favorite.swift in Sources */,
+				634BB9212324CCFB005E03A5 /* SignUpModel.swift in Sources */,
 				4F68F6E4231A428E002CE931 /* StoreDetailModel.swift in Sources */,
 				6301B02422EF36B30078844C /* AppDelegate.swift in Sources */,
 				4FCEFF502310F22B0050D668 /* FavoriteMocel.swift in Sources */,
@@ -749,6 +763,7 @@
 				4F0F7EDF22FE040A00AEB6E9 /* DealViewController.swift in Sources */,
 				4FCEFF4C2310EC660050D668 /* APIConfiguration.swift in Sources */,
 				4FCEFF1A2310DD100050D668 /* FavoriteStore.swift in Sources */,
+				634CA3C72322585700412333 /* CustomTextField.swift in Sources */,
 				4F68F6E2231A4268002CE931 /* Label.swift in Sources */,
 				4FCEFF232310DD100050D668 /* FoodItem.swift in Sources */,
 				4FCEFF262310DD100050D668 /* UserLogin.swift in Sources */,
@@ -759,6 +774,7 @@
 				4FCEFF0E2310DD100050D668 /* CodableHelper.swift in Sources */,
 				4FCEFF292310DD100050D668 /* FoodCreate.swift in Sources */,
 				4FCEFF142310DD100050D668 /* APIs.swift in Sources */,
+				634CA3CD232407F100412333 /* SigninViewController.swift in Sources */,
 				4FCEFF3E2310DD100050D668 /* Extensions.swift in Sources */,
 				4FCEFF2F2310DD100050D668 /* Store.swift in Sources */,
 				4FCEFF022310DD100050D668 /* UserAPI.swift in Sources */,

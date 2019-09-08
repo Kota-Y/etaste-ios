@@ -8,26 +8,74 @@
 
 import UIKit
 
-class Signup2ViewController: UIViewController {
+class Signup2ViewController: UIViewController ,UITextFieldDelegate{
 
     override func viewDidLoad() {
         super.viewDidLoad()
-         self.navigationItem.title = "サインアップ"
+        self.navigationItem.title = "サインアップ"
+        emailaddress.delegate = self
+        password.delegate = self
+        passwordconfirm.delegate = self
 
         // Do any additional setup after loading the view.
     }
-    
-    @IBAction func nextbutton(_ sender: Any) {
-        //let viewControllerStoryboard = UIStoryboard(name: "Signup3ViewController", bundle: nil)
-        //let viewController = viewControllerStoryboard.instantiateInitialViewController() as! Signup3ViewController
-        let storyboard: UIStoryboard = UIStoryboard(name: "Signup3ViewController", bundle: nil)
-        let nextVC = storyboard.instantiateInitialViewController()as! Signup3ViewController
-        self.present(nextVC, animated: false, completion: nil)
-        
-        
-        //self.navigationController?.pushViewController(viewController, animated: true)
+    override func viewWillAppear(_ animated: Bool) {
+        self.flag2 = false
+       Errorlabel.text = ""
         
     }
+    @IBOutlet weak var emailaddress: CustomTextField!
+    @IBOutlet weak var password: CustomTextField!
+    @IBOutlet weak var passwordconfirm: CustomTextField!
+    @IBOutlet weak var Errorlabel: UILabel!
+    
+    var flag2 = false
+    var FirstNameKanzi:String!
+    var LastNameKanzi:String!
+    var FirstNameKatakana:String!
+    var LastNameKatakana:String!
+    var EmailAddress:String!
+    var Password:String!
+    
+    
+    @IBAction func nextbutton(_ sender: Any) {
+        let text5:String? = emailaddress.text
+        let text6:String? = password.text
+        let text7:String? = passwordconfirm.text
+        if self.flag2 == false{
+
+            if(text5 == "" || text6 == "" || text7 == ""){
+                self.Errorlabel.text = "全ての項目を記入してください"
+            } else if(text6 != text7) {
+                self.Errorlabel.text = "パスワードが一致しません"
+            }else{
+                self.flag2 = true
+            }
+            
+        }
+
+        if self.flag2 == true{
+            EmailAddress = text5
+            Password = text6
+            self.signup()
+            
+        let viewControllerStoryboard = UIStoryboard(name: "Signup3ViewController", bundle: nil)
+        let viewController = viewControllerStoryboard.instantiateInitialViewController() as! Signup3ViewController
+        viewController.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(viewController, animated: true)
+        }
+      
+    }
+    func signup(){
+        
+        
+        
+    }
+   
+    
+    
+    
+  
     
     /*
     // MARK: - Navigation
@@ -39,4 +87,10 @@ class Signup2ViewController: UIViewController {
     }
     */
 
+}
+extension Signup2ViewController{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return true
+    }
 }

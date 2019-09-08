@@ -14,7 +14,6 @@ class FavoriteViewController: UIViewController {
     // 動作確認で何かしら表示する用
     @IBOutlet weak var testLabel1: UILabel!
     @IBOutlet weak var testLabel2: UILabel!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         

@@ -32,5 +32,8 @@ extension UIColor {
     static var paleBlack: UIColor {
         return UIColor.hex(string: "5F5F5F", alpha: 1.0)
     }
+    static var darkgray: UIColor {
+        return UIColor.hex(string: "#D8D8D8", alpha: 1.0)
+    }
     
 }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="D2g-gd-Eb4">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,24 +15,33 @@
             <objects>
                 <viewController id="D2g-gd-Eb4" customClass="Signup3ViewController" customModule="ETASTE" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dJa-uk-2SD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="ご登録されたメールを確認してください。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="opm-Bp-fa9">
-                                <rect key="frame" x="74" y="137" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ご登録されたメールアドレスに　　認証メールが届いているか　　　　　確認してください" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qlt-6g-oYo">
+                                <rect key="frame" x="55" y="173.5" width="265" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="265" id="8PH-1j-z8u"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qlt-6g-oYo" firstAttribute="centerX" secondItem="dJa-uk-2SD" secondAttribute="centerX" id="Fc4-3r-kCJ"/>
+                            <constraint firstItem="qlt-6g-oYo" firstAttribute="centerY" secondItem="dJa-uk-2SD" secondAttribute="centerY" constant="-150" id="lVn-tI-1PH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ko4-Kd-Bv6"/>
                     </view>
+                    <connections>
+                        <outlet property="toplabel" destination="qlt-6g-oYo" id="3Mz-nV-OoU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dL9-MF-01A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="126" y="78"/>
+            <point key="canvasLocation" x="124" y="76.911544227886068"/>
         </scene>
     </scenes>
 </document>
