@@ -120,6 +120,7 @@
 		630EEFF422EF3DDD0030E302 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630EEFF322EF3DDD0030E302 /* HomeViewController.swift */; };
 		630EEFF622F08D820030E302 /* ShopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630EEFF522F08D820030E302 /* ShopModel.swift */; };
 		634BB9212324CCFB005E03A5 /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634BB9202324CCFB005E03A5 /* SignUpModel.swift */; };
+		634BB92323250A2A005E03A5 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634BB92223250A2A005E03A5 /* String.swift */; };
 		634CA3B5231E4EEA00412333 /* Signup1ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 634CA3B4231E4EEA00412333 /* Signup1ViewController.storyboard */; };
 		634CA3B7231E4F1000412333 /* Signup1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634CA3B6231E4F1000412333 /* Signup1ViewController.swift */; };
 		634CA3B9231E5BF500412333 /* Signup3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634CA3B8231E5BF500412333 /* Signup3ViewController.swift */; };
@@ -215,6 +216,7 @@
 		630EEFF322EF3DDD0030E302 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		630EEFF522F08D820030E302 /* ShopModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopModel.swift; sourceTree = "<group>"; };
 		634BB9202324CCFB005E03A5 /* SignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
+		634BB92223250A2A005E03A5 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		634CA3B4231E4EEA00412333 /* Signup1ViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup1ViewController.storyboard; sourceTree = "<group>"; };
 		634CA3B6231E4F1000412333 /* Signup1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup1ViewController.swift; sourceTree = "<group>"; };
 		634CA3B8231E5BF500412333 /* Signup3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup3ViewController.swift; sourceTree = "<group>"; };
@@ -275,6 +277,7 @@
 				4F68F6E5231A4346002CE931 /* Font.swift */,
 				4F68F6E1231A4268002CE931 /* Label.swift */,
 				634CA3C62322585700412333 /* CustomTextField.swift */,
+				634BB92223250A2A005E03A5 /* String.swift */,
 			);
 			path = "UI Components Base";
 			sourceTree = "<group>";
@@ -771,6 +774,7 @@
 				4FCEFF3B2310DD100050D668 /* FavoriteCreate.swift in Sources */,
 				4F68F6E6231A4346002CE931 /* Font.swift in Sources */,
 				4FCEFF202310DD100050D668 /* User.swift in Sources */,
+				634BB92323250A2A005E03A5 /* String.swift in Sources */,
 				4FCEFF0E2310DD100050D668 /* CodableHelper.swift in Sources */,
 				4FCEFF292310DD100050D668 /* FoodCreate.swift in Sources */,
 				4FCEFF142310DD100050D668 /* APIs.swift in Sources */,

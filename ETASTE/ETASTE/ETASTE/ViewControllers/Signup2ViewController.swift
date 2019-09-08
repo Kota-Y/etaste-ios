@@ -16,6 +16,7 @@ class Signup2ViewController: UIViewController ,UITextFieldDelegate{
         emailaddress.delegate = self
         password.delegate = self
         passwordconfirm.delegate = self
+        Errorlabel.numberOfLines = 0
 
         // Do any additional setup after loading the view.
     }
@@ -46,7 +47,11 @@ class Signup2ViewController: UIViewController ,UITextFieldDelegate{
 
             if(text5 == "" || text6 == "" || text7 == ""){
                 self.Errorlabel.text = "全ての項目を記入してください"
-            } else if(text6 != text7) {
+            } else if(text5?.isEmailmerif() == false){
+                self.Errorlabel.text = "有効なメールアドレスではありません"
+            }else if(text6?.isAlphanumeric() == false){
+                self.Errorlabel.text = "パスワードを半角英数字8文字以上で\n記入してください"
+        }else if(text6 != text7) {
                 self.Errorlabel.text = "パスワードが一致しません"
             }else{
                 self.flag2 = true
