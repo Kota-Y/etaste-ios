@@ -23,8 +23,8 @@ class SigninViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var addresstextfield: UITextField!
     @IBOutlet weak var passwordtextfield: UITextField!
     @IBOutlet weak var errorlabel: UILabel!
-    var email:String? = ""
-    var passwor:String? = ""
+    var email:String!
+    var password:String!
     
     
   
@@ -46,7 +46,13 @@ class SigninViewController: UIViewController,UITextFieldDelegate {
         }else if(text2?.isAlphanumeric() == false){
             errorlabel.text = "英数字8文字以上のパスワードを\n入力してください"
         }else{
+            email = text1
+            password = text2
             errorlabel.text = "ログイン成功"
+            let signinmodel = SignInModel()
+            let loginuser = UserLogin(mail: email, password: password)
+            signinmodel.startSignIn(loginuser: loginuser, label: errorlabel)
+    
         }
         
     }

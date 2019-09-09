@@ -21,6 +21,7 @@ class ShopModel {
     }
     
     func getStore(label: UILabel) {
+       
         StoreAPI.getStore(storeId: 1) { data, error in
             if let _ = error {
                 print(error)

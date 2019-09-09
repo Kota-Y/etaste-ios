@@ -58,8 +58,12 @@ class HomeViewController: UIViewController {
      var window: UIWindow?
     @objc func login() {
         
-        let viewControllerStoryboard = UIStoryboard(name: "SigninViewController", bundle: nil)
-        let viewController = viewControllerStoryboard.instantiateInitialViewController() as! SigninViewController
+//        let viewControllerStoryboard = UIStoryboard(name: "SigninViewController", bundle: nil)
+//        let viewController = viewControllerStoryboard.instantiateInitialViewController() as! SigninViewController
+//        viewController.hidesBottomBarWhenPushed = true
+//        self.navigationController?.pushViewController(viewController, animated: true)
+        let viewControllerStoryboard = UIStoryboard(name: "Signup3ViewController", bundle: nil)
+        let viewController = viewControllerStoryboard.instantiateInitialViewController() as! Signup3ViewController
         viewController.hidesBottomBarWhenPushed = true
         self.navigationController?.pushViewController(viewController, animated: true)
         

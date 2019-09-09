@@ -29,6 +29,7 @@ class FavoriteViewController: UIViewController {
     }
     
     @IBAction func tapButton1(_ sender: UIButton) {
+       
         let shopModel = ShopModel(latitude: 0, longitude: 0)
         shopModel.getStore(label: testLabel1)
     }

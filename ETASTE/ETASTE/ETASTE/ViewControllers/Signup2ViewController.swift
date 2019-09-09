@@ -50,7 +50,7 @@ class Signup2ViewController: UIViewController ,UITextFieldDelegate{
             } else if(text5?.isEmailmerif() == false){
                 self.Errorlabel.text = "有効なメールアドレスではありません"
             }else if(text6?.isAlphanumeric() == false){
-                self.Errorlabel.text = "パスワードを半角英数字8文字以上で\n記入してください"
+                self.Errorlabel.text = "パスワードを半角英数字8文字以上で記入してください"
         }else if(text6 != text7) {
                 self.Errorlabel.text = "パスワードが一致しません"
             }else{
@@ -64,15 +64,19 @@ class Signup2ViewController: UIViewController ,UITextFieldDelegate{
             Password = text6
             self.signup()
             
-        let viewControllerStoryboard = UIStoryboard(name: "Signup3ViewController", bundle: nil)
-        let viewController = viewControllerStoryboard.instantiateInitialViewController() as! Signup3ViewController
-        viewController.hidesBottomBarWhenPushed = true
-            self.navigationController?.pushViewController(viewController, animated: true)
+            
+//        let viewControllerStoryboard = UIStoryboard(name: "Signup3ViewController", bundle: nil)
+//        let viewController = viewControllerStoryboard.instantiateInitialViewController() as! Signup3ViewController
+//        viewController.hidesBottomBarWhenPushed = true
+//            self.navigationController?.pushViewController(viewController, animated: true)
+            
         }
       
     }
     func signup(){
-        
+        let user = User(firstName: FirstNameKanzi, lastName: LastNameKanzi, firstNameKana: FirstNameKatakana, lastNameKana:LastNameKatakana, mail: EmailAddress, password: Password)
+        let startsignup = SignUpModel()
+        startsignup.startSignUp(user: user,label:Errorlabel)
         
         
     }

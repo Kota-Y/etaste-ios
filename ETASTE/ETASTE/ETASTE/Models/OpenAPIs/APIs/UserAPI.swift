@@ -18,7 +18,6 @@ open class UserAPI {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func createUser(user: User? = nil, completion: @escaping ((_ data: Void?,_ error: Error?) -> Void)) {
-        print("startsignupok")
         createUserWithRequestBuilder(user: user).execute { (response, error) -> Void in
             if error == nil {
                 completion((), error)

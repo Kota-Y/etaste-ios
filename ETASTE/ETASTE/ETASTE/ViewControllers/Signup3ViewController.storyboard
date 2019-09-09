@@ -19,18 +19,58 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ご登録されたメールアドレスに　　認証メールが届いているか　　　　　確認してください" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qlt-6g-oYo">
-                                <rect key="frame" x="55" y="173.5" width="265" height="20.5"/>
+                                <rect key="frame" x="55" y="173.5" width="265" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="265" id="8PH-1j-z8u"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hjN-KX-ERt">
+                                <rect key="frame" x="55" y="283.5" width="265" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="SMR-v2-DJe"/>
+                                    <constraint firstAttribute="width" constant="265" id="y0q-27-tGB"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="届いていない方は">
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="17" name="HiraginoSans-W6"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="charWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                <integer key="NSUnderline" value="1"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="17" name="Helvetica-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="charWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                <integer key="NSUnderline" value="1"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="再度サインアップしてください">
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="17" name="HiraginoSans-W6"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="charWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                <integer key="NSUnderline" value="1"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="qlt-6g-oYo" firstAttribute="centerX" secondItem="dJa-uk-2SD" secondAttribute="centerX" id="Fc4-3r-kCJ"/>
+                            <constraint firstItem="hjN-KX-ERt" firstAttribute="centerX" secondItem="dJa-uk-2SD" secondAttribute="centerX" id="TiD-ff-NgP"/>
+                            <constraint firstItem="hjN-KX-ERt" firstAttribute="centerY" secondItem="dJa-uk-2SD" secondAttribute="centerY" id="eqS-2P-SU8"/>
                             <constraint firstItem="qlt-6g-oYo" firstAttribute="centerY" secondItem="dJa-uk-2SD" secondAttribute="centerY" constant="-150" id="lVn-tI-1PH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ko4-Kd-Bv6"/>
