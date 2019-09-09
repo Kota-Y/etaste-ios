@@ -30,6 +30,7 @@ class Signup2ViewController: UIViewController ,UITextFieldDelegate{
     @IBOutlet weak var passwordconfirm: CustomTextField!
     @IBOutlet weak var Errorlabel: UILabel!
     
+    
     var flag2 = false
     var FirstNameKanzi:String!
     var LastNameKanzi:String!
@@ -40,6 +41,7 @@ class Signup2ViewController: UIViewController ,UITextFieldDelegate{
     
     
     @IBAction func nextbutton(_ sender: Any) {
+     
         let text5:String? = emailaddress.text
         let text6:String? = password.text
         let text7:String? = passwordconfirm.text
@@ -60,6 +62,7 @@ class Signup2ViewController: UIViewController ,UITextFieldDelegate{
         }
 
         if self.flag2 == true{
+               self.view.endEditing(true)
             EmailAddress = text5
             Password = text6
             self.signup()

@@ -43,7 +43,10 @@ class Signup1ViewController: UIViewController,UITextFieldDelegate {
     @IBAction func wantscroll(_ sender: Any) {
         t = true
     }
+    
     @IBAction func nextbutton(_ sender: Any) {
+       
+        
         let text1:String? = lastnamekanzi.text
         let text2:String? = firstnamekanzi.text
         let text3:String? = lastnamekatakana.text
@@ -57,6 +60,7 @@ class Signup1ViewController: UIViewController,UITextFieldDelegate {
         }
         
         if self.flag1 == true{
+             self.view.endEditing(true)
         let viewControllerStoryboard = UIStoryboard(name: "Signup2ViewController", bundle: nil)
         let viewController = viewControllerStoryboard.instantiateInitialViewController() as! Signup2ViewController
         viewController.hidesBottomBarWhenPushed = true

@@ -25,10 +25,12 @@ class SigninViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var errorlabel: UILabel!
     var email:String!
     var password:String!
+  
     
     
   
     @IBAction func SignUpbutton(_ sender: Any) {
+        self.view.endEditing(true)
         let viewControllerStoryboard = UIStoryboard(name: "Signup1ViewController", bundle: nil)
         let viewController = viewControllerStoryboard.instantiateInitialViewController() as! Signup1ViewController
         viewController.hidesBottomBarWhenPushed = true
@@ -37,6 +39,7 @@ class SigninViewController: UIViewController,UITextFieldDelegate {
     
     
     @IBAction func Login(_ sender: Any) {
+        self.view.endEditing(true)
         let text1:String? = addresstextfield.text
         let text2:String? = passwordtextfield.text
         if (text1 == "" || text2 == "") {
@@ -48,15 +51,17 @@ class SigninViewController: UIViewController,UITextFieldDelegate {
         }else{
             email = text1
             password = text2
-            errorlabel.text = "ログイン成功"
+            //errorlabel.text = "ログイン成功"
             let signinmodel = SignInModel()
             let loginuser = UserLogin(mail: email, password: password)
             signinmodel.startSignIn(loginuser: loginuser, label: errorlabel)
-    
         }
         
     }
-    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        self.view.endEditing(true)
+    }
     
     
     
@@ -75,7 +80,7 @@ class SigninViewController: UIViewController,UITextFieldDelegate {
 }
 extension SigninViewController{
     //キーボードスクロール
-    
+  
     func configureObserver() {
         
         let notification = NotificationCenter.default
@@ -84,12 +89,13 @@ extension SigninViewController{
         notification.addObserver(self, selector: #selector(keyboardWillHide(_:)),
                                  name: UIResponder.keyboardWillHideNotification, object: nil)
         print("Notificationを発行")
-        
     }
+        
+    
     
     /// キーボードが表示時に画面をずらす。
     @objc func keyboardWillShow(_ notification: Notification?) {
-        
+       
             guard let rect = (notification?.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue,
                 let duration = notification?.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as? TimeInterval else { return }
             UIView.animate(withDuration: duration) {
@@ -98,18 +104,23 @@ extension SigninViewController{
             }
             print("keyboardWillShowを実行")
         
+        
     }
+    
     
     /// キーボードが降りたら画面を戻す
     @objc func keyboardWillHide(_ notification: Notification?) {
-        
+       
             guard let duration = notification?.userInfo?[UIResponder.keyboardAnimationCurveUserInfoKey] as? TimeInterval else { return }
             UIView.animate(withDuration: duration) {
                 self.view.transform = CGAffineTransform.identity
             }
             print("keyboardWillHideを実行")
         
+        
         }
+   
+    
     
 }
 extension SigninViewController{

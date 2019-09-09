@@ -12,6 +12,7 @@ class SignInModel{
    
     
     func startSignIn(loginuser:UserLogin,label:UILabel){
+       // label.text = "start"
         UserAPI.loginUser{ loginuser, error in
             if let _ = error {
                 print(error)
