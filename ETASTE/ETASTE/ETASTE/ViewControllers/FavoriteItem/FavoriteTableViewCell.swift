@@ -23,13 +23,24 @@ class FavoriteTableViewCell: UITableViewCell {
     }
     
     @IBOutlet weak var favoritecellimage: UIImageView!
+  
+    @IBOutlet weak var content: UIView!
     var id: String?
    
     
     func setCell(item:FavoriteItemCell){
        self.favoritecellimage.image = fgetImageByUrl(url: item.favoriteimage)
         self.id = item.id
+        cellshadow()
         
+    }
+    
+    func cellshadow(){
+       content.layer.shadowColor = UIColor.black.cgColor
+        content.layer.shadowOffset = CGSize(width: 0, height: 2.0)
+       content.layer.shadowRadius = 2.0
+        content.layer.shadowOpacity = 0.9
+        content.layer.masksToBounds = false
     }
     
     
