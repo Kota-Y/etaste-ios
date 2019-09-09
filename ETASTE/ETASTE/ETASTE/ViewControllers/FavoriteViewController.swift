@@ -25,9 +25,9 @@ class FavoriteViewController: UIViewController,UITableViewDataSource,UITableView
         favoritetable.tableFooterView = UIView(frame: .zero)
         favoritetable.register(UINib(nibName: "FavoriteTableViewCell", bundle: nil), forCellReuseIdentifier: "FavoriteTableViewCell")
         self.setupFavoriteTable()
-        let frame = CGRect(x: 0, y: 0, width: favoritetable.frame.width, height: 1/*お好きな高さに*/)
-        favoritetable.tableHeaderView = UIView(frame: frame)
-        favoritetable.tableHeaderView!.backgroundColor = UIColor.gray
+//        let frame = CGRect(x: 0, y: 0, width: favoritetable.frame.width, height: 1/*お好きな高さに*/)
+//        favoritetable.tableHeaderView = UIView(frame: frame)
+//        favoritetable.tableHeaderView!.backgroundColor = UIColor.gray
         
     }
     
