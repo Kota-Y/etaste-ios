@@ -68,11 +68,11 @@ class Signup2ViewController: UIViewController ,UITextFieldDelegate{
             self.signup()
             
             
-        let viewControllerStoryboard = UIStoryboard(name: "Signup3ViewController", bundle: nil)
-        let viewController = viewControllerStoryboard.instantiateInitialViewController() as! Signup3ViewController
-        viewController.hidesBottomBarWhenPushed = true
-            self.navigationController?.pushViewController(viewController, animated: true)
-            
+//        let viewControllerStoryboard = UIStoryboard(name: "Signup3ViewController", bundle: nil)
+//        let viewController = viewControllerStoryboard.instantiateInitialViewController() as! Signup3ViewController
+//        viewController.hidesBottomBarWhenPushed = true
+//            self.navigationController?.pushViewController(viewController, animated: true)
+//
         }
       
     }
