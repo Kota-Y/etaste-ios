@@ -64,6 +64,9 @@ Cg
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <action selector="signupagainbutton:" destination="D2g-gd-Eb4" eventType="touchUpInside" id="7fi-gt-VIn"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -20,7 +20,21 @@ class Signup3ViewController: UIViewController {
    
     @IBOutlet weak var toplabel: UILabel!
    
-  
+    @IBAction func signupagainbutton(_ sender: Any) {
+//        let viewControllerStoryboard = UIStoryboard(name: "Signup1ViewController", bundle: nil)
+//                let viewController = viewControllerStoryboard.instantiateInitialViewController() as! Signup1ViewController
+//                viewController.hidesBottomBarWhenPushed = true
+//                    self.navigationController?.pushViewController(viewController, animated: true)
+//
+//
+//        let viewControllerStoryboard = UIStoryboard(name: "Signup1ViewController", bundle: nil)
+//        let viewController = viewControllerStoryboard.instantiateInitialViewController() as! Signup1ViewController
+//
+//        self.present(viewController, animated: true)
+        let layere_number = navigationController!.viewControllers.count
+    self.navigationController?.popToViewController(navigationController!.viewControllers[layere_number-4], animated: true)
+    }
+    
     /*
     // MARK: - Navigation
 
