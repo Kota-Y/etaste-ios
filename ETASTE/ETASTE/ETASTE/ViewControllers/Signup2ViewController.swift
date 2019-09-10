@@ -8,6 +8,12 @@
 
 import UIKit
 
+
+var FirstNameKanzi:String!
+var LastNameKanzi:String!
+var FirstNameKatakana:String!
+var LastNameKatakana:String!
+
 class Signup2ViewController: UIViewController ,UITextFieldDelegate{
 
     override func viewDidLoad() {
@@ -32,10 +38,7 @@ class Signup2ViewController: UIViewController ,UITextFieldDelegate{
     
     
     var flag2 = false
-    var FirstNameKanzi:String!
-    var LastNameKanzi:String!
-    var FirstNameKatakana:String!
-    var LastNameKatakana:String!
+    
     var EmailAddress:String!
     var Password:String!
     
@@ -68,11 +71,11 @@ class Signup2ViewController: UIViewController ,UITextFieldDelegate{
             self.signup()
             
             
-//        let viewControllerStoryboard = UIStoryboard(name: "Signup3ViewController", bundle: nil)
-//        let viewController = viewControllerStoryboard.instantiateInitialViewController() as! Signup3ViewController
-//        viewController.hidesBottomBarWhenPushed = true
-//            self.navigationController?.pushViewController(viewController, animated: true)
-//
+        let viewControllerStoryboard = UIStoryboard(name: "Signup3ViewController", bundle: nil)
+        let viewController = viewControllerStoryboard.instantiateInitialViewController() as! Signup3ViewController
+        viewController.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(viewController, animated: true)
+
         }
       
     }

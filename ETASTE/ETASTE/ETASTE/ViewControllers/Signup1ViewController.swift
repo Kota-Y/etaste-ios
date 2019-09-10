@@ -22,6 +22,10 @@ class Signup1ViewController: UIViewController,UITextFieldDelegate {
         firstnamekatakana.delegate = self
         // Do any additional setup after loading the view.
          configureObserver()
+        lastnamekanzi.text = LastNameKanzi
+        firstnamekanzi.text = FirstNameKanzi
+        lastnamekatakana.text = LastNameKatakana
+        firstnamekatakana.text = FirstNameKatakana
        
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -64,10 +68,10 @@ class Signup1ViewController: UIViewController,UITextFieldDelegate {
         let viewControllerStoryboard = UIStoryboard(name: "Signup2ViewController", bundle: nil)
         let viewController = viewControllerStoryboard.instantiateInitialViewController() as! Signup2ViewController
         viewController.hidesBottomBarWhenPushed = true
-        viewController.LastNameKanzi = text1
-        viewController.FirstNameKanzi = text2
-        viewController.LastNameKatakana = text3
-        viewController.FirstNameKatakana = text4
+        LastNameKanzi = text1
+        FirstNameKanzi = text2
+        LastNameKatakana = text3
+        FirstNameKatakana = text4
         
         self.navigationController?.pushViewController(viewController, animated: true)
         } else{
