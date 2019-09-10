@@ -8,11 +8,10 @@
 
 import UIKit
 
-class FavoriteTableViewCell: UITableViewCell {
+class FavoriteTableViewCell: UITableViewCell{
     @IBOutlet weak var favoritecellimage: UIImageView!
     @IBOutlet weak var contentview: UIView!
     @IBOutlet weak var celloutlineview: UIView!
-    
     @IBOutlet weak var storenamelabel: UILabel!
     @IBOutlet weak var storelocationlabel: UILabel!
     var id: String?
@@ -38,8 +37,22 @@ class FavoriteTableViewCell: UITableViewCell {
         self.storelocationlabel.text = item.favoritestorelocation
         self.id = item.id
         cellshadow()
+        //contenviewtap
+        let singleTapGesture = UITapGestureRecognizer(target: self, action: #selector(singleTap(_:)))
+        singleTapGesture.numberOfTapsRequired = 1
+        contentview.addGestureRecognizer(singleTapGesture)
+        
+        
+        
         
     }
+
+    @objc func singleTap(_ gesture: UITapGestureRecognizer) {
+        // シングルタップされた時の処理を記述してください。
+        print("taptap")
+    }
+   
+    
     
     func cellshadow(){
        celloutlineview.layer.shadowColor = UIColor.black.cgColor
