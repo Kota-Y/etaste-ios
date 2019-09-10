@@ -9,21 +9,10 @@
 import UIKit
 
 class DealAlert: UIView {
-//    override init(frame: CGRect) {
-//        super.init(frame: frame)
-//        configure()
-//    }
-//    
-//    required init?(coder aDecoder: NSCoder) {
-//        super.init(coder: aDecoder)
-//        configure()
-//    }
-//    
-//    private func configure() {
-//        let nib = UINib(nibName: "DealAlert", bundle: nil)
-//        guard let view = nib.instantiate(withOwner: self, options: nil).first as? UIView else { return }
-//        addSubview(view)
-//    }
+    
+    @IBOutlet weak var yesbutton: UIButton!
+    @IBOutlet weak var nobutton: UIButton!
+    
     
 
     /*

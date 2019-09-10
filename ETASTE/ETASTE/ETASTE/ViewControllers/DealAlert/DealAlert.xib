@@ -71,6 +71,11 @@
                 <constraint firstItem="Dbq-vY-AaE" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="dpF-wn-jAA"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="nobutton" destination="zFR-tZ-IcR" id="kCU-Xs-RDU"/>
+                <outlet property="yesbutton" destination="YuQ-Jr-8K3" id="cEE-1G-8wm"/>
+            </connections>
+            <point key="canvasLocation" x="47.826086956521742" y="115.84821428571428"/>
         </view>
     </objects>
     <resources>

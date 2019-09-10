@@ -27,7 +27,6 @@ class DealViewController: UIViewController, UITableViewDelegate,UITableViewDataS
     var itemwill:[DealTableItem] = [DealTableItem]()
     var itempast:[DealTableItem] = [DealTableItem]()
     var screen:Bool = true
-    //dealalertxib
     
     
     
@@ -50,9 +49,10 @@ class DealViewController: UIViewController, UITableViewDelegate,UITableViewDataS
     
     
     func alert(){
-       //let dealalert = DealAlert()
         
         let popupView:DealAlert = UINib(nibName: "DealAlert", bundle: nil).instantiate(withOwner: self,options: nil)[0] as! DealAlert
+       popupView.yesbutton.addTarget(self, action: #selector(yesButton(_:)), for: .touchUpInside)
+        popupView.nobutton.addTarget(self, action: #selector(noButton(_:)), for: .touchUpInside)
         
         // ポップアップビュー背景色（グレーの部分）
         let viewColor = UIColor.black
@@ -60,29 +60,40 @@ class DealViewController: UIViewController, UITableViewDelegate,UITableViewDataS
         popupView.backgroundColor = viewColor.withAlphaComponent(0.5)
         // ポップアップビューを画面サイズに合わせる
         popupView.frame = self.view.frame
-        
+        popupView.tag = 100
         // ダイアログ背景色（白の部分）
         let baseViewColor = UIColor.white
         // ちょっとだけ透明にする
         popupView.mask?.backgroundColor = baseViewColor.withAlphaComponent(0.7)
-        
         // 角丸にする
         popupView.mask?.layer.cornerRadius = 8.0
         
         // 貼り付ける
         self.view.addSubview(popupView)
-       
-//        let title = "アラートテスト"
-//        let message = "タップしてくれてサンクス."
-//        let okText = "ok"
-//
-//        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
-//        let okayButton = UIAlertAction(title: okText, style: UIAlertAction.Style.cancel, handler: nil)
-//        alert.addAction(okayButton)
-//
-//        self.present(alert, animated: true, completion: nil)
-        
     }
+    
+    
+    @objc func yesButton(_ sender: UIButton) {
+        if let viewWithTag = self.view.viewWithTag(100) {
+            print("Tag 100")
+            viewWithTag.removeFromSuperview()
+        }
+        else {
+            print("tag not found")
+        }
+    }
+    
+    
+    @objc func noButton(_ sender: UIButton) {
+        if let viewWithTag = self.view.viewWithTag(100) {
+            print("Tag 100")
+            viewWithTag.removeFromSuperview()
+        }
+        else {
+            print("tag not found")
+        }
+    }
+    
     
     @IBAction func dealwillbutton(_ sender: Any) {
        self.dealwillon()
@@ -149,18 +160,7 @@ class DealViewController: UIViewController, UITableViewDelegate,UITableViewDataS
         print("タップされたよ")
         print(sender.tag)
         alert()
-//        let sb = UIStoryboard(name: "DealAlertViewController", bundle: nil)
-//        let vc = sb.instantiateInitialViewController() as! DealAlertViewController
-//
-//        // 背景が真っ黒にならなくなる
-//        vc.modalPresentationStyle = .overCurrentContext
-//
-//        present(vc, animated: false)
     }
-    
-    
-    
-    
 }
 
 extension DealViewController{
@@ -185,6 +185,8 @@ extension DealViewController{
         if screen == true {
             cell.hidenbutton(hidden: false)
             cell.setupCell(cell: itemwill[indexPath.row])
+            //xibのbutton
+            
             cell.dealcompletebutton.addTarget(self, action: #selector(tapCellButton(_:)), for: .touchUpInside)
             cell.dealcompletebutton.tag = Int(itemwill[indexPath.row].id)!
             

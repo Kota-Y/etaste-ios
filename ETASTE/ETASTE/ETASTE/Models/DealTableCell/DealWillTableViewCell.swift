@@ -49,6 +49,8 @@ class DealWillTableViewCell: UITableViewCell {
         foodimage.image = UIImage(url:cell.image)
        
     }
+    
+    
     func hidenbutton(hidden: Bool){
         if hidden == false{
             dealcompletebutton.isHidden = false
@@ -63,6 +65,7 @@ class DealWillTableViewCell: UITableViewCell {
    
     
 }
+
 extension UIImage {
     public convenience init(url: String) {
         let url = URL(string: url)
