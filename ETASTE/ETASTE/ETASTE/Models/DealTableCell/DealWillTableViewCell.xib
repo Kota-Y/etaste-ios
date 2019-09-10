@@ -150,13 +150,13 @@
                         <viewLayoutGuide key="safeArea" id="9Eg-Ug-J3V"/>
                     </stackView>
                     <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2dF-ZO-jH7">
-                        <rect key="frame" x="62.5" y="157.5" width="250" height="55"/>
+                        <rect key="frame" x="62.5" y="164.5" width="250" height="40"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="250" id="QI5-DJ-YJW"/>
-                            <constraint firstAttribute="height" constant="55" id="yus-4V-5wd"/>
+                            <constraint firstAttribute="height" constant="40" id="yus-4V-5wd"/>
                         </constraints>
                         <size key="titleShadowOffset" width="-1" height="0.0"/>
-                        <state key="normal" title="取引完了" image="dealcomplete"/>
+                        <state key="normal" backgroundImage="dealcomplete"/>
                         <connections>
                             <action selector="Dealcompletebutton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="08A-Zg-Tj4"/>
                         </connections>
@@ -175,7 +175,7 @@
                     <constraint firstItem="1fL-mv-T1H" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="-100" id="34w-Xh-26t"/>
                     <constraint firstItem="Wcf-5L-8sZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="110" id="36W-Fz-ztE"/>
                     <constraint firstItem="2dF-ZO-jH7" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="EF9-8i-G1L"/>
-                    <constraint firstAttribute="bottom" secondItem="2dF-ZO-jH7" secondAttribute="bottom" constant="7" id="PEL-3y-IGc"/>
+                    <constraint firstAttribute="bottom" secondItem="2dF-ZO-jH7" secondAttribute="bottom" constant="15" id="PEL-3y-IGc"/>
                     <constraint firstItem="Wcf-5L-8sZ" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="-55" id="XKb-nm-gVd"/>
                     <constraint firstItem="1fL-mv-T1H" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="Zya-O3-iXL"/>
                     <constraint firstItem="kjW-Zt-5zE" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="80" id="u1k-eh-7ID"/>
