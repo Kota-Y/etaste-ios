@@ -9,12 +9,20 @@
 import UIKit
 
 class FavoriteTableViewCell: UITableViewCell {
+    @IBOutlet weak var favoritecellimage: UIImageView!
+    @IBOutlet weak var contentview: UIView!
+    @IBOutlet weak var celloutlineview: UIView!
+    
+    @IBOutlet weak var storenamelabel: UILabel!
+    @IBOutlet weak var storelocationlabel: UILabel!
+    var id: String?
     
 
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
+    
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
@@ -22,25 +30,23 @@ class FavoriteTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    @IBOutlet weak var favoritecellimage: UIImageView!
-  
-    @IBOutlet weak var content: UIView!
-    var id: String?
-   
+    
     
     func setCell(item:FavoriteItemCell){
-       self.favoritecellimage.image = fgetImageByUrl(url: item.favoriteimage)
+        self.favoritecellimage.image = fgetImageByUrl(url: item.favoriteimagestring)
+        self.storenamelabel.text = item.favoritestorename
+        self.storelocationlabel.text = item.favoritestorelocation
         self.id = item.id
         cellshadow()
         
     }
     
     func cellshadow(){
-       content.layer.shadowColor = UIColor.black.cgColor
-        content.layer.shadowOffset = CGSize(width: 0, height: 2.0)
-       content.layer.shadowRadius = 2.0
-        content.layer.shadowOpacity = 0.9
-        content.layer.masksToBounds = false
+       celloutlineview.layer.shadowColor = UIColor.black.cgColor
+       celloutlineview.layer.shadowOffset = CGSize(width: 0, height: 2.0)
+       celloutlineview.layer.shadowRadius = 2.0
+        celloutlineview.layer.shadowOpacity = 0.9
+       celloutlineview.layer.masksToBounds = false
     }
     
     

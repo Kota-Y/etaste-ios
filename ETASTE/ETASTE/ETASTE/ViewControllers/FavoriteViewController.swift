@@ -39,7 +39,7 @@ class FavoriteViewController: UIViewController,UITableViewDataSource,UITableView
     var favoritecell:[FavoriteItemCell] = [FavoriteItemCell]()
 
     func setupFavoriteTable(){
-        favoritecell = [FavoriteItemCell(favoriteimage: "https://dl.dropboxusercontent.com/s/7vyyl6u3h66enwv/takigawa-pan.jpg",id:"1"),FavoriteItemCell(favoriteimage: "https://dl.dropboxusercontent.com/s/7vyyl6u3h66enwv/takigawa-pan.jpg",id: "2")]
+        favoritecell = [FavoriteItemCell(favoriteimagestring: "https://dl.dropboxusercontent.com/s/7vyyl6u3h66enwv/takigawa-pan.jpg", favoritestorename: "Eパン", favoritestorelocation: "熊本", id: "1"),FavoriteItemCell(favoriteimagestring: "https://dl.dropboxusercontent.com/s/7vyyl6u3h66enwv/takigawa-pan.jpg", favoritestorename: "滝川パン", favoritestorelocation: "熊本中央区", id: "1"),FavoriteItemCell(favoriteimagestring: "https://dl.dropboxusercontent.com/s/7vyyl6u3h66enwv/takigawa-pan.jpg", favoritestorename: "Eパン", favoritestorelocation: "熊本", id: "1")]
     }
 }
 

@@ -8,10 +8,14 @@
 
 import Foundation
 class FavoriteItemCell: NSObject{
-    var favoriteimage: String
+    var favoriteimagestring: String
+    var favoritestorename: String
+    var favoritestorelocation:String
     var id: String
-    init (favoriteimage: String,id:String){
-        self.favoriteimage = favoriteimage as String
+    init (favoriteimagestring: String,favoritestorename:String,favoritestorelocation:String,id:String){
+        self.favoriteimagestring = favoriteimagestring as String
+        self.favoritestorename = favoritestorename as String
+        self.favoritestorelocation = favoritestorelocation as String
         self.id = id as String
     }
 }

@@ -95,8 +95,11 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="content" destination="hDV-oW-5Y8" id="Gla-SI-5ZU"/>
+                <outlet property="celloutlineview" destination="hDV-oW-5Y8" id="2Yl-n6-2KB"/>
+                <outlet property="contentview" destination="7iP-8i-RmD" id="tPc-Lo-gp5"/>
                 <outlet property="favoritecellimage" destination="d70-ay-O5E" id="oD1-ii-rWq"/>
+                <outlet property="storelocationlabel" destination="F9w-5I-cOM" id="rZ3-kL-oId"/>
+                <outlet property="storenamelabel" destination="q4J-YJ-tBf" id="uAE-Nm-hSh"/>
             </connections>
             <point key="canvasLocation" x="86" y="162"/>
         </tableViewCell>
