@@ -9,10 +9,12 @@
 import Foundation
 import UIKit
 
+
 class FavoriteViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
     @IBOutlet weak var favoritetable: UITableView!
     var favoritecell:[FavoriteItemCell] = [FavoriteItemCell]()
   
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "お気に入り"
@@ -34,6 +36,7 @@ class FavoriteViewController: UIViewController,UITableViewDataSource,UITableView
     }
     
 
+
     func setupFavoriteTable(){
         favoritecell = [FavoriteItemCell(favoriteimagestring: "https://dl.dropboxusercontent.com/s/7vyyl6u3h66enwv/takigawa-pan.jpg", favoritestorename: "Eパン", favoritestorelocation: "熊本", id: "1"),FavoriteItemCell(favoriteimagestring: "https://dl.dropboxusercontent.com/s/7vyyl6u3h66enwv/takigawa-pan.jpg", favoritestorename: "滝川パン", favoritestorelocation: "熊本中央区", id: "1"),FavoriteItemCell(favoriteimagestring: "https://dl.dropboxusercontent.com/s/7vyyl6u3h66enwv/takigawa-pan.jpg", favoritestorename: "Eパン", favoritestorelocation: "熊本", id: "1")]
     }
@@ -51,5 +54,6 @@ extension FavoriteViewController{
         
         return cell
     }
+
 }
 

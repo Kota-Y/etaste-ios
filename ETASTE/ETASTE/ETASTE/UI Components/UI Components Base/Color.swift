@@ -25,4 +25,12 @@ extension UIColor {
         return UIColor.hex(string: "C5C5C5", alpha: 1.0)
     }
     
+    static var black: UIColor {
+        return UIColor.hex(string: "000000", alpha: 1.0)
+    }
+    
+    static var paleBlack: UIColor {
+        return UIColor.hex(string: "5F5F5F", alpha: 1.0)
+    }
+    
 }
