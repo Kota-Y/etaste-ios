@@ -29,7 +29,6 @@ class DealViewController: UIViewController, UITableViewDelegate,UITableViewDataS
     var screen:Bool = true
     
     
-    
     override func viewDidLoad() {
         self.navigationItem.title = "受取履歴"
         super.viewDidLoad()
@@ -48,49 +47,19 @@ class DealViewController: UIViewController, UITableViewDelegate,UITableViewDataS
     }
     
     
-    func alert(){
-        
-        let popupView:DealAlert = UINib(nibName: "DealAlert", bundle: nil).instantiate(withOwner: self,options: nil)[0] as! DealAlert
-       popupView.yesbutton.addTarget(self, action: #selector(yesButton(_:)), for: .touchUpInside)
-        popupView.nobutton.addTarget(self, action: #selector(noButton(_:)), for: .touchUpInside)
-        
-        // ポップアップビュー背景色（グレーの部分）
-        let viewColor = UIColor.black
-        // 半透明にして親ビューが見えるように。透過度はお好みで。
-        popupView.backgroundColor = viewColor.withAlphaComponent(0.5)
-        // ポップアップビューを画面サイズに合わせる
-        popupView.frame = self.view.frame
-        popupView.tag = 100
-        // ダイアログ背景色（白の部分）
-        let baseViewColor = UIColor.white
-        // ちょっとだけ透明にする
-        popupView.mask?.backgroundColor = baseViewColor.withAlphaComponent(0.7)
-        // 角丸にする
-        popupView.mask?.layer.cornerRadius = 8.0
-        
-        // 貼り付ける
-        self.view.addSubview(popupView)
-    }
-    
     
     @objc func yesButton(_ sender: UIButton) {
         if let viewWithTag = self.view.viewWithTag(100) {
-            print("Tag 100")
+            //tag見つかる
             viewWithTag.removeFromSuperview()
-        }
-        else {
-            print("tag not found")
         }
     }
     
     
     @objc func noButton(_ sender: UIButton) {
         if let viewWithTag = self.view.viewWithTag(100) {
-            print("Tag 100")
+            //tag見つかる
             viewWithTag.removeFromSuperview()
-        }
-        else {
-            print("tag not found")
         }
     }
     
@@ -99,36 +68,23 @@ class DealViewController: UIViewController, UITableViewDelegate,UITableViewDataS
        self.dealwillon()
         screen = true
         self.tableview.reloadData()
-        
- 
     }
     
     @IBAction func dealpastbutton(_ sender: Any) {
         self.dealpaston()
         screen = false
         self.tableview.reloadData()
-        
     }
     
-    
-    func setupbuttonlayout(){
-        dealwilllabel.setuplabel(state: true ,title: "受取予定")
-        dealpastlabel.setuplabel(state: false ,title: "受取済み")
-        tableviewout.backgroundColor = UIColor.etasteYellow
-        dwillbutton.layer.cornerRadius = 15
-        dwillbutton.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
-        dwillbutton.layer.borderWidth = 2.0
-        dwillbutton.layer.borderColor = UIColor.etasteYellow.cgColor
-        dpastbutton.layer.cornerRadius = 15
-        dpastbutton.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
-        dpastbutton.layer.borderWidth = 2.0
-        dpastbutton.layer.borderColor = UIColor.etasteYellow.cgColor
-        dwillunder.backgroundColor = UIColor.white
-        dpastunder.backgroundColor = UIColor.etasteYellow
-    
-        dealwillon()
-        
+    @objc func tapCellButton(_ sender: UIButton) {
+        print("タップされたよ")
+        print(sender.tag)
+        alert()
     }
+
+    
+    //function
+    
     func dealwillon(){
         dpastbutton.layer.borderColor = UIColor.gray.cgColor
         dwillbutton.layer.borderColor = UIColor.etasteYellow.cgColor
@@ -144,9 +100,43 @@ class DealViewController: UIViewController, UITableViewDelegate,UITableViewDataS
         dealwilllabel.labelstate(state: false)
         dealpastlabel.labelstate(state: true)
         
-       
+        
         dpastunder.backgroundColor = UIColor.white
         dwillunder.backgroundColor = UIColor.etasteYellow
+    }
+    
+    
+    func alert(){
+        
+        let popupView:DealAlert = UINib(nibName: "DealAlert", bundle: nil).instantiate(withOwner: self,options: nil)[0] as! DealAlert
+        popupView.yesbutton.addTarget(self, action: #selector(yesButton(_:)), for: .touchUpInside)
+        popupView.nobutton.addTarget(self, action: #selector(noButton(_:)), for: .touchUpInside)
+        
+        let viewColor = UIColor.black
+        popupView.backgroundColor = viewColor.withAlphaComponent(0.5)
+        popupView.frame = self.view.frame
+        popupView.tag = 100
+        // 貼り付ける
+        self.view.addSubview(popupView)
+    }
+    
+    //setup//
+    func setupbuttonlayout(){
+        dealwilllabel.setuplabel(state: true ,title: "受取予定")
+        dealpastlabel.setuplabel(state: false ,title: "受取済み")
+        tableviewout.backgroundColor = UIColor.etasteYellow
+        dwillbutton.layer.cornerRadius = 15
+        dwillbutton.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        dwillbutton.layer.borderWidth = 2.0
+        dwillbutton.layer.borderColor = UIColor.etasteYellow.cgColor
+        dpastbutton.layer.cornerRadius = 15
+        dpastbutton.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        dpastbutton.layer.borderWidth = 2.0
+        dpastbutton.layer.borderColor = UIColor.etasteYellow.cgColor
+        dwillunder.backgroundColor = UIColor.white
+        dpastunder.backgroundColor = UIColor.etasteYellow
+        dealwillon()
+        
     }
     
     func setuptableitem(){
@@ -156,11 +146,7 @@ class DealViewController: UIViewController, UITableViewDelegate,UITableViewDataS
     
     
     
-    @objc func tapCellButton(_ sender: UIButton) {
-        print("タップされたよ")
-        print(sender.tag)
-        alert()
-    }
+   
 }
 
 extension DealViewController{

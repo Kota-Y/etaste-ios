@@ -17,7 +17,6 @@ class Deallabel: UIView{
     
     
     override init(frame: CGRect) {
-        
         super.init(frame: frame)
         loadFromNib()
         
@@ -44,28 +43,17 @@ class Deallabel: UIView{
        labelstate(state: state)
         labeltext.text = title
     }
-    func settinglabel(){
-//        labeloutline.layer.cornerRadius = 15
-//        labeloutline.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
-//        labeloutline.layer.borderWidth = 2.0
-        
-    }
     
     func labelstate(state:Bool){
-        settinglabel()
+      
         if state == true{
             labelout.backgroundColor = UIColor.etasteYellow
             labeltext.backgroundColor = UIColor.etasteDarkerYellow
-            //labelunder.backgroundColor = UIColor.white
-//            labeloutline.layer.borderColor = UIColor.etasteYellow.cgColor
-//            labeloutline.layer.borderWidth = 2.0
+           
         }else{
             labelout.backgroundColor = UIColor.gray
             labeltext.backgroundColor = UIColor.gray
-//            labelunder.backgroundColor = UIColor.etasteYellow
-//            labeloutline.layer.borderColor = UIColor.gray.cgColor
-//            labeloutline.layer.borderWidth = 2.0
-            
+
         }
     }
     
