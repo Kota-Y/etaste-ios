@@ -140,8 +140,8 @@ class DealViewController: UIViewController, UITableViewDelegate,UITableViewDataS
     }
     
     func setuptableitem(){
-        itemwill = [DealTableItem(id: "1", name: "あんぱん", itemNum: 3, sum: 150, time: "2018/12/12/18:00", storeName: "滝川パン", image: "https://dl.dropboxusercontent.com/s/fxss9wae0iq143q/an-pan.jpg")]
-        itempast = [DealTableItem(id:"2",name: "あんぱん2", itemNum: 5, sum: 150, time: "2018/12/12/18:00", storeName: "滝川", image: "https://dl.dropboxusercontent.com/s/fxss9wae0iq143q/an-pan.jpg")]
+        itemwill = [DealTableItem(id: "1", name: "あんぱん", itemNum: 3, sum: 150, time: "2018/12/12/18:00", storeName: "滝川パン", storeimagestring: "https://dl.dropboxusercontent.com/s/fxss9wae0iq143q/an-pan.jpg")]
+        itempast = [DealTableItem(id:"2",name: "あんぱん2", itemNum: 5, sum: 150, time: "2018/12/12/18:00", storeName: "滝川", storeimagestring: "https://dl.dropboxusercontent.com/s/fxss9wae0iq143q/an-pan.jpg")]
     }
     
     
@@ -172,7 +172,6 @@ extension DealViewController{
             cell.hidenbutton(hidden: false)
             cell.setupCell(cell: itemwill[indexPath.row])
             //xibのbutton
-            
             cell.dealcompletebutton.addTarget(self, action: #selector(tapCellButton(_:)), for: .touchUpInside)
             cell.dealcompletebutton.tag = Int(itemwill[indexPath.row].id)!
             

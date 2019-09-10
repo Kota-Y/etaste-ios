@@ -214,7 +214,7 @@
 		6301B05122EF379E0078844C /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				63EA50352316574000DF5C78 /* DealTableCell */,
+				63EA503A2316582D00DF5C78 /* DealTableItem.swift */,
 				630EEFF522F08D820030E302 /* ShopModel.swift */,
 			);
 			path = Models;
@@ -223,6 +223,7 @@
 		6301B05222EF37A70078844C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				63EA50352316574000DF5C78 /* DealTableCell */,
 				630826FD23278C9C00D115F5 /* DealAlert */,
 				63141CAF2314F31B0042A11C /* DealButtonLayout */,
 				6301B05422EF382B0078844C /* SplashViewController.storyboard */,
@@ -264,7 +265,6 @@
 			children = (
 				63EA50362316580300DF5C78 /* DealWillTableViewCell.swift */,
 				63EA50372316580300DF5C78 /* DealWillTableViewCell.xib */,
-				63EA503A2316582D00DF5C78 /* DealTableItem.swift */,
 			);
 			path = DealTableCell;
 			sourceTree = "<group>";

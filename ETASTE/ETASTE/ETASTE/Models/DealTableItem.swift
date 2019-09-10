@@ -15,17 +15,17 @@ class DealTableItem: NSObject{
     var sum: Int
     var time: String
     var storeName: String
-    var image: String
+    var storeimagestring: String
 
     
-    init(id:String, name: String, itemNum: Int, sum: Int,time: String,storeName:String,image: String){
+    init(id:String, name: String, itemNum: Int, sum: Int,time: String,storeName:String,storeimagestring: String){
         self.id = id as String
         self.name = name as String
         self.itemNum = itemNum as Int
         self.sum = sum as Int
         self.time = time as String
         self.storeName = storeName as String
-        self.image = image as String
+        self.storeimagestring = storeimagestring as String
     }
    
     

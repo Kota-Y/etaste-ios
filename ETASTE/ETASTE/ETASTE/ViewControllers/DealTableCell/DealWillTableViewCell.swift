@@ -46,8 +46,7 @@ class DealWillTableViewCell: UITableViewCell {
         sum.text = ": " + cell.sum.description + "円"
         time.text = ": " + cell.time
         storeName.text = ": " + cell.storeName
-        foodimage.image = UIImage(url:cell.image)
-       
+        foodimage.image = UIImage(url:cell.storeimagestring)
     }
     
     
