@@ -27,6 +27,8 @@
 		6301B04422EF36B60078844C /* ETASTEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6301B04322EF36B60078844C /* ETASTEUITests.swift */; };
 		6301B05522EF382B0078844C /* SplashViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6301B05422EF382B0078844C /* SplashViewController.storyboard */; };
 		6301B05722EF38410078844C /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6301B05622EF38410078844C /* SplashViewController.swift */; };
+		6308270323279A4900D115F5 /* DealAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6308270223279A4900D115F5 /* DealAlert.swift */; };
+		6308270523279A5600D115F5 /* DealAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6308270423279A5600D115F5 /* DealAlert.xib */; };
 		630EEFF222EF3DC50030E302 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 630EEFF122EF3DC50030E302 /* HomeViewController.storyboard */; };
 		630EEFF422EF3DDD0030E302 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630EEFF322EF3DDD0030E302 /* HomeViewController.swift */; };
 		630EEFF622F08D820030E302 /* ShopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630EEFF522F08D820030E302 /* ShopModel.swift */; };
@@ -84,6 +86,8 @@
 		6301B04522EF36B60078844C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6301B05422EF382B0078844C /* SplashViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashViewController.storyboard; sourceTree = "<group>"; };
 		6301B05622EF38410078844C /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		6308270223279A4900D115F5 /* DealAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealAlert.swift; sourceTree = "<group>"; };
+		6308270423279A5600D115F5 /* DealAlert.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DealAlert.xib; sourceTree = "<group>"; };
 		630EEFF122EF3DC50030E302 /* HomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
 		630EEFF322EF3DDD0030E302 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		630EEFF522F08D820030E302 /* ShopModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopModel.swift; sourceTree = "<group>"; };
@@ -219,6 +223,7 @@
 		6301B05222EF37A70078844C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				630826FD23278C9C00D115F5 /* DealAlert */,
 				63141CAF2314F31B0042A11C /* DealButtonLayout */,
 				6301B05422EF382B0078844C /* SplashViewController.storyboard */,
 				6301B05622EF38410078844C /* SplashViewController.swift */,
@@ -234,6 +239,15 @@
 				4F0F7ED622FDFE6300AEB6E9 /* MainTabBarController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		630826FD23278C9C00D115F5 /* DealAlert */ = {
+			isa = PBXGroup;
+			children = (
+				6308270223279A4900D115F5 /* DealAlert.swift */,
+				6308270423279A5600D115F5 /* DealAlert.xib */,
+			);
+			path = DealAlert;
 			sourceTree = "<group>";
 		};
 		63141CAF2314F31B0042A11C /* DealButtonLayout */ = {
@@ -386,6 +400,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6308270523279A5600D115F5 /* DealAlert.xib in Resources */,
 				4F0F7EE122FE043E00AEB6E9 /* SettingViewController.storyboard in Resources */,
 				63EA50392316580300DF5C78 /* DealWillTableViewCell.xib in Resources */,
 				4F0F7EDD22FE03F700AEB6E9 /* DealViewController.storyboard in Resources */,
@@ -513,6 +528,7 @@
 				4FBDEDE622F0C99600DFF109 /* SearchBar.swift in Sources */,
 				63EA503B2316582D00DF5C78 /* DealTableItem.swift in Sources */,
 				6301B02422EF36B30078844C /* AppDelegate.swift in Sources */,
+				6308270323279A4900D115F5 /* DealAlert.swift in Sources */,
 				4F0F7EDB22FE039C00AEB6E9 /* FavoriteViewController.swift in Sources */,
 				630EEFF622F08D820030E302 /* ShopModel.swift in Sources */,
 				6301B05722EF38410078844C /* SplashViewController.swift in Sources */,

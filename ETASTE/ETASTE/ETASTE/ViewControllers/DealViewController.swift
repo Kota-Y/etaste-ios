@@ -27,9 +27,12 @@ class DealViewController: UIViewController, UITableViewDelegate,UITableViewDataS
     var itemwill:[DealTableItem] = [DealTableItem]()
     var itempast:[DealTableItem] = [DealTableItem]()
     var screen:Bool = true
+    //dealalertxib
+    
     
     
     override func viewDidLoad() {
+        self.navigationItem.title = "受取履歴"
         super.viewDidLoad()
         self.tableview.tableFooterView = UIView(frame: .zero)
         self.setupbuttonlayout()
@@ -47,15 +50,37 @@ class DealViewController: UIViewController, UITableViewDelegate,UITableViewDataS
     
     
     func alert(){
-        let title = "アラートテスト"
-        let message = "タップしてくれてサンクス."
-        let okText = "ok"
+       //let dealalert = DealAlert()
         
-        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
-        let okayButton = UIAlertAction(title: okText, style: UIAlertAction.Style.cancel, handler: nil)
-        alert.addAction(okayButton)
+        let popupView:DealAlert = UINib(nibName: "DealAlert", bundle: nil).instantiate(withOwner: self,options: nil)[0] as! DealAlert
         
-        self.present(alert, animated: true, completion: nil)
+        // ポップアップビュー背景色（グレーの部分）
+        let viewColor = UIColor.black
+        // 半透明にして親ビューが見えるように。透過度はお好みで。
+        popupView.backgroundColor = viewColor.withAlphaComponent(0.5)
+        // ポップアップビューを画面サイズに合わせる
+        popupView.frame = self.view.frame
+        
+        // ダイアログ背景色（白の部分）
+        let baseViewColor = UIColor.white
+        // ちょっとだけ透明にする
+        popupView.mask?.backgroundColor = baseViewColor.withAlphaComponent(0.7)
+        
+        // 角丸にする
+        popupView.mask?.layer.cornerRadius = 8.0
+        
+        // 貼り付ける
+        self.view.addSubview(popupView)
+       
+//        let title = "アラートテスト"
+//        let message = "タップしてくれてサンクス."
+//        let okText = "ok"
+//
+//        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+//        let okayButton = UIAlertAction(title: okText, style: UIAlertAction.Style.cancel, handler: nil)
+//        alert.addAction(okayButton)
+//
+//        self.present(alert, animated: true, completion: nil)
         
     }
     
@@ -124,6 +149,13 @@ class DealViewController: UIViewController, UITableViewDelegate,UITableViewDataS
         print("タップされたよ")
         print(sender.tag)
         alert()
+//        let sb = UIStoryboard(name: "DealAlertViewController", bundle: nil)
+//        let vc = sb.instantiateInitialViewController() as! DealAlertViewController
+//
+//        // 背景が真っ黒にならなくなる
+//        vc.modalPresentationStyle = .overCurrentContext
+//
+//        present(vc, animated: false)
     }
     
     
