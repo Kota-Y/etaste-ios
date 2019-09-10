@@ -64,10 +64,10 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mJq-OQ-ywd">
-                                <rect key="frame" x="180" y="190" width="70" height="70"/>
+                                <rect key="frame" x="190" y="195" width="60" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="2a0-iF-blj"/>
-                                    <constraint firstAttribute="height" constant="70" id="Nl4-dD-Us1"/>
+                                    <constraint firstAttribute="width" constant="60" id="2a0-iF-blj"/>
+                                    <constraint firstAttribute="height" constant="60" id="Nl4-dD-Us1"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="storedetailicon"/>
                                 <connections>
@@ -83,7 +83,7 @@
                             <constraint firstItem="7iP-8i-RmD" firstAttribute="leading" secondItem="hDV-oW-5Y8" secondAttribute="leading" id="Mhy-TX-ZEn"/>
                             <constraint firstAttribute="bottom" secondItem="7iP-8i-RmD" secondAttribute="bottom" id="YNt-bx-l7D"/>
                             <constraint firstItem="7iP-8i-RmD" firstAttribute="top" secondItem="hDV-oW-5Y8" secondAttribute="top" id="dm3-DC-jtf"/>
-                            <constraint firstItem="mJq-OQ-ywd" firstAttribute="top" secondItem="hDV-oW-5Y8" secondAttribute="top" constant="190" id="jDf-Y2-Kpe"/>
+                            <constraint firstItem="mJq-OQ-ywd" firstAttribute="top" secondItem="hDV-oW-5Y8" secondAttribute="top" constant="195" id="jDf-Y2-Kpe"/>
                             <constraint firstAttribute="height" constant="260" id="tah-qB-qOk"/>
                         </constraints>
                     </view>
