@@ -11,21 +11,7 @@ import UIKit
 
 class DealViewController: UIViewController, UITableViewDelegate,UITableViewDataSource{
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.tableview.tableFooterView = UIView(frame: .zero)
-        self.setupbuttonlayout()
-        self.tableview.dataSource = self
-        self.tableview.delegate = self
-        self.tableview.register(UINib(nibName: "DealWillTableViewCell", bundle: nil), forCellReuseIdentifier: "DealWillTableViewCell")
-        self.setuptableitem()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        
-        
-    }
-    
+   
     @IBOutlet weak var dwillbutton: UIButton!
     @IBOutlet weak var dpastbutton: UIButton!
     @IBOutlet weak var dealwilllabel: Deallabel!
@@ -42,10 +28,43 @@ class DealViewController: UIViewController, UITableViewDelegate,UITableViewDataS
     var itempast:[DealTableItem] = [DealTableItem]()
     var screen:Bool = true
     
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.tableview.tableFooterView = UIView(frame: .zero)
+        self.setupbuttonlayout()
+        self.tableview.dataSource = self
+        self.tableview.delegate = self
+        self.tableview.register(UINib(nibName: "DealWillTableViewCell", bundle: nil), forCellReuseIdentifier: "DealWillTableViewCell")
+        self.setuptableitem()
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        
+    }
+    
+    
+    func alert(){
+        let title = "アラートテスト"
+        let message = "タップしてくれてサンクス."
+        let okText = "ok"
+        
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        let okayButton = UIAlertAction(title: okText, style: UIAlertAction.Style.cancel, handler: nil)
+        alert.addAction(okayButton)
+        
+        self.present(alert, animated: true, completion: nil)
+        
+    }
+    
     @IBAction func dealwillbutton(_ sender: Any) {
        self.dealwillon()
         screen = true
         self.tableview.reloadData()
+        
+ 
     }
     
     @IBAction func dealpastbutton(_ sender: Any) {
@@ -98,6 +117,18 @@ class DealViewController: UIViewController, UITableViewDelegate,UITableViewDataS
         itemwill = [DealTableItem(id: "1", name: "あんぱん", itemNum: 3, sum: 150, time: "2018/12/12/18:00", storeName: "滝川パン", image: "https://dl.dropboxusercontent.com/s/fxss9wae0iq143q/an-pan.jpg")]
         itempast = [DealTableItem(id:"2",name: "あんぱん2", itemNum: 5, sum: 150, time: "2018/12/12/18:00", storeName: "滝川", image: "https://dl.dropboxusercontent.com/s/fxss9wae0iq143q/an-pan.jpg")]
     }
+    
+    
+    
+    @objc func tapCellButton(_ sender: UIButton) {
+        print("タップされたよ")
+        print(sender.tag)
+        alert()
+    }
+    
+    
+    
+    
 }
 
 extension DealViewController{
@@ -122,12 +153,15 @@ extension DealViewController{
         if screen == true {
             cell.hidenbutton(hidden: false)
             cell.setupCell(cell: itemwill[indexPath.row])
+            cell.dealcompletebutton.addTarget(self, action: #selector(tapCellButton(_:)), for: .touchUpInside)
+            cell.dealcompletebutton.tag = Int(itemwill[indexPath.row].id)!
+            
         } else{
             cell.hidenbutton(hidden: true)
             cell.setupCell(cell: itempast[indexPath.row])
             
         }
-        
+       
         return cell
     }
 }

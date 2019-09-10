@@ -9,6 +9,14 @@ import Foundation
 import UIKit
 
 class DealWillTableViewCell: UITableViewCell {
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var itemNum: UILabel!
+    @IBOutlet weak var sum: UILabel!
+    @IBOutlet weak var time: UILabel!
+    @IBOutlet weak var storeName: UILabel!
+    @IBOutlet weak var foodimage: UIImageView!
+    @IBOutlet weak var dealcompletebutton: UIButton!
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -21,19 +29,13 @@ class DealWillTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    @IBOutlet weak var name: UILabel!
-    @IBOutlet weak var itemNum: UILabel!
-    @IBOutlet weak var sum: UILabel!
-    @IBOutlet weak var time: UILabel!
-    @IBOutlet weak var storeName: UILabel!
-    @IBOutlet weak var foodimage: UIImageView!
-    @IBOutlet weak var dealcompletebutton: UIButton!
-    
+   
     
     @IBAction func Dealcompletebutton(_ sender: Any) {
-       
+     
+     
     }
-    
+  
     
     
     func setupCell(cell:DealTableItem){
