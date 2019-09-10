@@ -21,6 +21,10 @@ class DealViewController: UIViewController {
                                                                  action: #selector(login))
     }
     @objc func login() {
+        let viewControllerStoryboard = UIStoryboard(name: "SigninViewController", bundle: nil)
+        let viewController = viewControllerStoryboard.instantiateInitialViewController() as! SigninViewController
+        viewController.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(viewController, animated: true)
         
     }
     
