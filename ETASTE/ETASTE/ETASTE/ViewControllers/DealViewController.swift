@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class DealViewController: UIViewController, UITableViewDelegate,UITableViewDataSource{
+class DealViewController: UIViewController{
     
    
     @IBOutlet weak var dwillbutton: UIButton!
@@ -77,8 +77,6 @@ class DealViewController: UIViewController, UITableViewDelegate,UITableViewDataS
     }
     
     @objc func tapCellButton(_ sender: UIButton) {
-        print("タップされたよ")
-        print(sender.tag)
         alert()
     }
 
@@ -143,17 +141,14 @@ class DealViewController: UIViewController, UITableViewDelegate,UITableViewDataS
         itemwill = [DealTableItem(id: "1", name: "あんぱん", itemNum: 3, sum: 150, time: "2018/12/12/18:00", storeName: "滝川パン", storeimagestring: "https://dl.dropboxusercontent.com/s/fxss9wae0iq143q/an-pan.jpg")]
         itempast = [DealTableItem(id:"2",name: "あんぱん2", itemNum: 5, sum: 150, time: "2018/12/12/18:00", storeName: "滝川", storeimagestring: "https://dl.dropboxusercontent.com/s/fxss9wae0iq143q/an-pan.jpg")]
     }
-    
-    
-    
+  
    
 }
 
-extension DealViewController{
+extension DealViewController:UITableViewDelegate,UITableViewDataSource{
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-    
 }
 extension DealViewController{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -164,6 +159,8 @@ extension DealViewController{
         }
     }
 }
+
+
 extension DealViewController{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DealWillTableViewCell", for: indexPath ) as!
@@ -184,6 +181,7 @@ extension DealViewController{
         return cell
     }
 }
+
 extension DealViewController {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if screen == true {
