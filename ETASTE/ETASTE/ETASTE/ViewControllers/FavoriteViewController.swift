@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class FavoriteViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
+class FavoriteViewController: UIViewController{
     @IBOutlet weak var favoritetable: UITableView!
     var favoritecell:[FavoriteItemCell] = [FavoriteItemCell]()
   
@@ -39,11 +39,15 @@ class FavoriteViewController: UIViewController,UITableViewDataSource,UITableView
     }
 }
 
-extension FavoriteViewController{
+extension FavoriteViewController:UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return  favoritecell.count
     }
     
+  
+}
+
+extension FavoriteViewController:UITableViewDelegate{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FavoriteTableViewCell", for: indexPath ) as! FavoriteTableViewCell
         
@@ -52,4 +56,3 @@ extension FavoriteViewController{
         return cell
     }
 }
-
