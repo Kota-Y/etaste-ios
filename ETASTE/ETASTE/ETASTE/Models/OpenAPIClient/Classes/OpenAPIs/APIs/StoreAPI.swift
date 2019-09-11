@@ -79,41 +79,7 @@ open class StoreAPI {
         let url = URLComponents(string: URLString)
 
         let requestBuilder: RequestBuilder<Store>.Type = OpenAPIClientAPI.requestBuilderFactory.getBuilder()
-
-        return requestBuilder.init(method: "GET", URLString: (url?.string ?? URLString), parameters: parameters, isBody: false)
-    }
-
-    /**
-     Get StoreDetail by ID.
-     
-     - parameter storeId: (path) Store Id. 
-     - parameter completion: completion handler to receive the data and the error objects
-     */
-    open class func getStoreDetail(storeId: Int64, completion: @escaping ((_ data: StoreDetail?,_ error: Error?) -> Void)) {
-        getStoreDetailWithRequestBuilder(storeId: storeId).execute { (response, error) -> Void in
-            completion(response?.body, error)
-        }
-    }
-
-
-    /**
-     Get StoreDetail by ID.
-     - GET /store/detail/{storeId}
-     - parameter storeId: (path) Store Id. 
-     - returns: RequestBuilder<StoreDetail> 
-     */
-    open class func getStoreDetailWithRequestBuilder(storeId: Int64) -> RequestBuilder<StoreDetail> {
-        var path = "/store/detail/{storeId}"
-        let storeIdPreEscape = "\(storeId)"
-        let storeIdPostEscape = storeIdPreEscape.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) ?? ""
-        path = path.replacingOccurrences(of: "{storeId}", with: storeIdPostEscape, options: .literal, range: nil)
-        let URLString = OpenAPIClientAPI.basePath + path
-        let parameters: [String:Any]? = nil
         
-        let url = URLComponents(string: URLString)
-
-        let requestBuilder: RequestBuilder<StoreDetail>.Type = OpenAPIClientAPI.requestBuilderFactory.getBuilder()
-
         return requestBuilder.init(method: "GET", URLString: (url?.string ?? URLString), parameters: parameters, isBody: false)
     }
 

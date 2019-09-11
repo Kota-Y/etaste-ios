@@ -17,18 +17,24 @@ public struct FoodItem: Codable {
     public var salePrice: Int
     public var startTime: String
     public var endTime: String
+    public var allergy: String
+    public var whySale: String
     public var image: String
-    public var storeMap: String
+    public var mapLatitude: String
+    public var mapLongitude: String
 
-    public init(_id: Int64, name: String, originalPrice: Int, salePrice: Int, startTime: String, endTime: String, image: String, storeMap: String) {
+    public init(_id: Int64, name: String, originalPrice: Int, salePrice: Int, startTime: String, endTime: String, allergy: String, whySale: String, image: String, mapLatitude: String, mapLongitude: String) {
         self._id = _id
         self.name = name
         self.originalPrice = originalPrice
         self.salePrice = salePrice
         self.startTime = startTime
         self.endTime = endTime
+        self.allergy = allergy
+        self.whySale = whySale
         self.image = image
-        self.storeMap = storeMap
+        self.mapLatitude = mapLatitude
+        self.mapLongitude = mapLongitude
     }
 
     public enum CodingKeys: String, CodingKey { 
@@ -38,8 +44,11 @@ public struct FoodItem: Codable {
         case salePrice
         case startTime
         case endTime
+        case allergy
+        case whySale
         case image
-        case storeMap
+        case mapLatitude
+        case mapLongitude
     }
 
 

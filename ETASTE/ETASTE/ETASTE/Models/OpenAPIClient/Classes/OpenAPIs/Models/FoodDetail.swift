@@ -12,23 +12,20 @@ import Foundation
 public struct FoodDetail: Codable {
 
     public var _id: Int64
-    public var whySale: String
-    public var allergy: String
-    public var foodInfo: [StoreItem]
-    public var storeInfo: [StoreDetail]
+    public var isSaling: String
+    public var foodInfo: [FoodItem]
+    public var storeInfo: [Store]
 
-    public init(_id: Int64, whySale: String, allergy: String, foodInfo: [StoreItem], storeInfo: [StoreDetail]) {
+    public init(_id: Int64, isSaling: String, foodInfo: [FoodItem], storeInfo: [Store]) {
         self._id = _id
-        self.whySale = whySale
-        self.allergy = allergy
+        self.isSaling = isSaling
         self.foodInfo = foodInfo
         self.storeInfo = storeInfo
     }
 
     public enum CodingKeys: String, CodingKey { 
         case _id = "id"
-        case whySale
-        case allergy
+        case isSaling
         case foodInfo
         case storeInfo
     }
