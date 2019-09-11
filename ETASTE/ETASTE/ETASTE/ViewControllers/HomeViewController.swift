@@ -19,6 +19,8 @@ class HomeViewController: UIViewController {
     var marker: [GMSMarker] = []
     var lalo:[[Double]] = [[32.815183,130.727428],[32.814949,130.727842],[32.814419,130.726572]]
     
+    let storeModel = StoreModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,7 +31,7 @@ class HomeViewController: UIViewController {
                                                                  action: #selector(login))
                 
         searchBar.delegate = self
-
+        storeModel.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -62,10 +64,7 @@ class HomeViewController: UIViewController {
     
     // 画面遷移のテスト用
     @IBAction func tapTestButton(_ sender: UIButton) {
-        let viewControllerStoryboard = UIStoryboard(name: "StoreDetailsViewController", bundle: nil)
-        let viewController = viewControllerStoryboard.instantiateInitialViewController() as! StoreDetailsViewController
-        
-        self.navigationController?.pushViewController(viewController, animated: true)
+        storeModel.getStore(storeId: 1) // 店舗のIDは決め打ち
     }
     
     override func didReceiveMemoryWarning() {
@@ -76,8 +75,18 @@ class HomeViewController: UIViewController {
 }
 
 extension HomeViewController: UISearchBarDelegate {
-    
-    
-   
 }
 
+extension HomeViewController: StoreModelDelegate {
+    func didRecieveStoreData(storeModel: StoreModel, store: Store) {
+        let storeViewControllerStoryboard = UIStoryboard(name: "StoreViewController", bundle: nil)
+        let storeViewController = storeViewControllerStoryboard.instantiateInitialViewController() as! StoreViewController
+        storeViewController.store = store
+        
+        self.navigationController?.pushViewController(storeViewController, animated: true)
+    }
+    
+    func didRecieveError(storeModel: StoreModel, error: Error) {
+        print("Error on getStore")
+    }
+}
