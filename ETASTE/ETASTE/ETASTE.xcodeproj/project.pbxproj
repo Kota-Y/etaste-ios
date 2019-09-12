@@ -206,7 +206,6 @@
 		6301B05122EF379E0078844C /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				6348453C231BA59E0015D3D8 /* FavoriteItemCell.swift */,
 				630EEFF522F08D820030E302 /* ShopModel.swift */,
 			);
 			path = Models;
@@ -215,6 +214,7 @@
 		6301B05222EF37A70078844C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				6348453C231BA59E0015D3D8 /* FavoriteItemCell.swift */,
 				63484537231BA4DD0015D3D8 /* FavoriteItem */,
 				6301B05422EF382B0078844C /* SplashViewController.storyboard */,
 				6301B05622EF38410078844C /* SplashViewController.swift */,
