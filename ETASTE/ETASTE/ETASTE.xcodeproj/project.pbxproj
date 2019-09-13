@@ -215,7 +215,7 @@
 		630FD221232BCEFC00DC5762 /* FoodDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FoodDetail.swift; path = OpenAPIClient/Classes/OpenAPIs/Models/FoodDetail.swift; sourceTree = "<group>"; };
 		630FD223232BD09000DC5762 /* StoreDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreDetailsViewController.swift; sourceTree = "<group>"; };
 		630FD225232BD15C00DC5762 /* StoreDetailsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StoreDetailsViewController.storyboard; sourceTree = "<group>"; };
-		630FD28A232BE87700DC5762 /* DealTableItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DealTableItem.swift; path = ../../../../../DealTableItem.swift; sourceTree = "<group>"; };
+		630FD28A232BE87700DC5762 /* DealTableItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealTableItem.swift; sourceTree = "<group>"; };
 		630FD28D232BE87E00DC5762 /* DealAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealAlert.swift; sourceTree = "<group>"; };
 		630FD28E232BE87E00DC5762 /* DealAlert.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DealAlert.xib; sourceTree = "<group>"; };
 		630FD292232BE88500DC5762 /* Deallabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deallabel.swift; sourceTree = "<group>"; };
@@ -462,7 +462,7 @@
 				630FD28E232BE87E00DC5762 /* DealAlert.xib */,
 			);
 			name = DealAlert;
-			path = ../../../../../DealAlert;
+			path = ../DealAlert;
 			sourceTree = "<group>";
 		};
 		630FD291232BE88500DC5762 /* DealButtonLayout */ = {
@@ -471,8 +471,7 @@
 				630FD292232BE88500DC5762 /* Deallabel.swift */,
 				630FD293232BE88500DC5762 /* Deallabel.xib */,
 			);
-			name = DealButtonLayout;
-			path = ../../../../../DealButtonLayout;
+			path = DealButtonLayout;
 			sourceTree = "<group>";
 		};
 		630FD296232BE88C00DC5762 /* DealTableCell */ = {
@@ -481,8 +480,7 @@
 				630FD297232BE88C00DC5762 /* DealWillTableViewCell.xib */,
 				630FD298232BE88C00DC5762 /* DealWillTableViewCell.swift */,
 			);
-			name = DealTableCell;
-			path = ../../../../../DealTableCell;
+			path = DealTableCell;
 			sourceTree = "<group>";
 		};
 		63484537231BA4DD0015D3D8 /* FavoriteItem */ = {
