@@ -119,6 +119,13 @@
 		630FD222232BCEFC00DC5762 /* FoodDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630FD221232BCEFC00DC5762 /* FoodDetail.swift */; };
 		630FD224232BD09000DC5762 /* StoreDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630FD223232BD09000DC5762 /* StoreDetailsViewController.swift */; };
 		630FD226232BD15C00DC5762 /* StoreDetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 630FD225232BD15C00DC5762 /* StoreDetailsViewController.storyboard */; };
+		630FD28B232BE87700DC5762 /* DealTableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630FD28A232BE87700DC5762 /* DealTableItem.swift */; };
+		630FD28F232BE87E00DC5762 /* DealAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630FD28D232BE87E00DC5762 /* DealAlert.swift */; };
+		630FD290232BE87E00DC5762 /* DealAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = 630FD28E232BE87E00DC5762 /* DealAlert.xib */; };
+		630FD294232BE88500DC5762 /* Deallabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630FD292232BE88500DC5762 /* Deallabel.swift */; };
+		630FD295232BE88500DC5762 /* Deallabel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 630FD293232BE88500DC5762 /* Deallabel.xib */; };
+		630FD299232BE88C00DC5762 /* DealWillTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 630FD297232BE88C00DC5762 /* DealWillTableViewCell.xib */; };
+		630FD29A232BE88C00DC5762 /* DealWillTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630FD298232BE88C00DC5762 /* DealWillTableViewCell.swift */; };
 		6348453A231BA5100015D3D8 /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63484538231BA5100015D3D8 /* FavoriteTableViewCell.swift */; };
 		6348453B231BA5100015D3D8 /* FavoriteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63484539231BA5100015D3D8 /* FavoriteTableViewCell.xib */; };
 		6348453D231BA59E0015D3D8 /* FavoriteItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6348453C231BA59E0015D3D8 /* FavoriteItemCell.swift */; };
@@ -208,6 +215,13 @@
 		630FD221232BCEFC00DC5762 /* FoodDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FoodDetail.swift; path = OpenAPIClient/Classes/OpenAPIs/Models/FoodDetail.swift; sourceTree = "<group>"; };
 		630FD223232BD09000DC5762 /* StoreDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreDetailsViewController.swift; sourceTree = "<group>"; };
 		630FD225232BD15C00DC5762 /* StoreDetailsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StoreDetailsViewController.storyboard; sourceTree = "<group>"; };
+		630FD28A232BE87700DC5762 /* DealTableItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealTableItem.swift; sourceTree = "<group>"; };
+		630FD28D232BE87E00DC5762 /* DealAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealAlert.swift; sourceTree = "<group>"; };
+		630FD28E232BE87E00DC5762 /* DealAlert.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DealAlert.xib; sourceTree = "<group>"; };
+		630FD292232BE88500DC5762 /* Deallabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deallabel.swift; sourceTree = "<group>"; };
+		630FD293232BE88500DC5762 /* Deallabel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Deallabel.xib; sourceTree = "<group>"; };
+		630FD297232BE88C00DC5762 /* DealWillTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DealWillTableViewCell.xib; sourceTree = "<group>"; };
+		630FD298232BE88C00DC5762 /* DealWillTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealWillTableViewCell.swift; sourceTree = "<group>"; };
 		63484538231BA5100015D3D8 /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
 		63484539231BA5100015D3D8 /* FavoriteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteTableViewCell.xib; sourceTree = "<group>"; };
 		6348453C231BA59E0015D3D8 /* FavoriteItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteItemCell.swift; sourceTree = "<group>"; };
@@ -406,6 +420,7 @@
 		6301B05122EF379E0078844C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				630FD28A232BE87700DC5762 /* DealTableItem.swift */,
 				630FD221232BCEFC00DC5762 /* FoodDetail.swift */,
 				4FCEFEDD2310DD100050D668 /* OpenAPIClient */,
 				630EEFF522F08D820030E302 /* ShopModel.swift */,
@@ -417,6 +432,9 @@
 		6301B05222EF37A70078844C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				630FD296232BE88C00DC5762 /* DealTableCell */,
+				630FD291232BE88500DC5762 /* DealButtonLayout */,
+				630FD28C232BE87E00DC5762 /* DealAlert */,
 				6348453C231BA59E0015D3D8 /* FavoriteItemCell.swift */,
 				63484537231BA4DD0015D3D8 /* FavoriteItem */,
 				6301B05422EF382B0078844C /* SplashViewController.storyboard */,
@@ -435,6 +453,34 @@
 				630FD225232BD15C00DC5762 /* StoreDetailsViewController.storyboard */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		630FD28C232BE87E00DC5762 /* DealAlert */ = {
+			isa = PBXGroup;
+			children = (
+				630FD28D232BE87E00DC5762 /* DealAlert.swift */,
+				630FD28E232BE87E00DC5762 /* DealAlert.xib */,
+			);
+			name = DealAlert;
+			path = ../DealAlert;
+			sourceTree = "<group>";
+		};
+		630FD291232BE88500DC5762 /* DealButtonLayout */ = {
+			isa = PBXGroup;
+			children = (
+				630FD292232BE88500DC5762 /* Deallabel.swift */,
+				630FD293232BE88500DC5762 /* Deallabel.xib */,
+			);
+			path = DealButtonLayout;
+			sourceTree = "<group>";
+		};
+		630FD296232BE88C00DC5762 /* DealTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				630FD297232BE88C00DC5762 /* DealWillTableViewCell.xib */,
+				630FD298232BE88C00DC5762 /* DealWillTableViewCell.swift */,
+			);
+			path = DealTableCell;
 			sourceTree = "<group>";
 		};
 		63484537231BA4DD0015D3D8 /* FavoriteItem */ = {
@@ -581,10 +627,13 @@
 				4F0F7EE122FE043E00AEB6E9 /* SettingViewController.storyboard in Resources */,
 				4F0F7EDD22FE03F700AEB6E9 /* DealViewController.storyboard in Resources */,
 				630FD226232BD15C00DC5762 /* StoreDetailsViewController.storyboard in Resources */,
+				630FD290232BE87E00DC5762 /* DealAlert.xib in Resources */,
+				630FD295232BE88500DC5762 /* Deallabel.xib in Resources */,
 				4FBDEDED22F0CCA800DFF109 /* key.plist in Resources */,
 				4F0F7ED922FE038E00AEB6E9 /* FavoriteViewController.storyboard in Resources */,
 				6301B05522EF382B0078844C /* SplashViewController.storyboard in Resources */,
 				6348453B231BA5100015D3D8 /* FavoriteTableViewCell.xib in Resources */,
+				630FD299232BE88C00DC5762 /* DealWillTableViewCell.xib in Resources */,
 				4F0F7ED322FDEE6C00AEB6E9 /* MainTabBarController.storyboard in Resources */,
 				6301B02B22EF36B60078844C /* Assets.xcassets in Resources */,
 				630EEFF222EF3DC50030E302 /* HomeViewController.storyboard in Resources */,
@@ -716,6 +765,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FCEFEFC2310DD100050D668 /* APIHelper.swift in Sources */,
+				630FD29A232BE88C00DC5762 /* DealWillTableViewCell.swift in Sources */,
 				4FBDEDE922F0CC3800DFF109 /* UIColor_Utility.swift in Sources */,
 				6348453D231BA59E0015D3D8 /* FavoriteItemCell.swift in Sources */,
 				6348453A231BA5100015D3D8 /* FavoriteTableViewCell.swift in Sources */,
@@ -728,8 +778,10 @@
 				4FBDEDE622F0C99600DFF109 /* SearchBar.swift in Sources */,
 				4FCEFF382310DD100050D668 /* Favorite.swift in Sources */,
 				4F68F6E4231A428E002CE931 /* StoreDetailModel.swift in Sources */,
+				630FD28F232BE87E00DC5762 /* DealAlert.swift in Sources */,
 				6301B02422EF36B30078844C /* AppDelegate.swift in Sources */,
 				4FCEFF502310F22B0050D668 /* FavoriteMocel.swift in Sources */,
+				630FD28B232BE87700DC5762 /* DealTableItem.swift in Sources */,
 				4FCEFF112310DD100050D668 /* JSONEncodableEncoding.swift in Sources */,
 				4FCEFEFF2310DD100050D668 /* AlamofireImplementations.swift in Sources */,
 				4FCEFF1D2310DD100050D668 /* StoreDetail.swift in Sources */,
@@ -745,6 +797,7 @@
 				630FD224232BD09000DC5762 /* StoreDetailsViewController.swift in Sources */,
 				4FCEFF052310DD100050D668 /* StoreAPI.swift in Sources */,
 				4F0F7EDF22FE040A00AEB6E9 /* DealViewController.swift in Sources */,
+				630FD294232BE88500DC5762 /* Deallabel.swift in Sources */,
 				4FCEFF4C2310EC660050D668 /* APIConfiguration.swift in Sources */,
 				4FCEFF1A2310DD100050D668 /* FavoriteStore.swift in Sources */,
 				4F68F6E2231A4268002CE931 /* Label.swift in Sources */,
