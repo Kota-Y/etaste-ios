@@ -14,7 +14,6 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var googleMap: GMSMapView!
     @IBOutlet weak var searchBar: UISearchBar!
-    
 
     var shopModel:[ShopModel] = []
     var marker: [GMSMarker] = []
@@ -59,6 +58,15 @@ class HomeViewController: UIViewController {
     
     @objc func login() {
         
+    }
+    
+    // 画面遷移のテスト用
+    @IBAction func tapTestButton(_ sender: UIButton) {
+        
+        let viewControllerStoryboard = UIStoryboard(name: "StoreDetailsViewController", bundle: nil)
+        let viewController = viewControllerStoryboard.instantiateInitialViewController() as! StoreDetailsViewController
+        
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
     
     override func didReceiveMemoryWarning() {
