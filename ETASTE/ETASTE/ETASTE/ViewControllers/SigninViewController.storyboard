@@ -38,13 +38,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES" textContentType="password"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2c-PH-Xf0">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2c-PH-Xf0">
                                 <rect key="frame" x="62.5" y="513.5" width="250" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="35u-S6-p2V"/>
                                     <constraint firstAttribute="width" constant="250" id="VQr-gv-4bj"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="login"/>
+                                <state key="normal" image="login"/>
                                 <connections>
                                     <action selector="Login:" destination="FO7-s1-EUU" eventType="touchUpInside" id="Lr1-6d-g2A"/>
                                 </connections>
