@@ -15,8 +15,6 @@ class SigninViewController: UIViewController,UITextFieldDelegate {
         addresstextfield.delegate = self
         passwordtextfield.delegate = self
         configureObserver()
-    
-
         // Do any additional setup after loading the view.
     }
     
