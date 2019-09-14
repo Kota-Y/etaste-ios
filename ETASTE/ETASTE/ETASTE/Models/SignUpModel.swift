@@ -14,12 +14,12 @@ class SignUpModel{
     func startSignUp(user:User,label:UILabel){
         UserAPI.loginUser{ user, error in
             if let _ = error {
-                print(error)
-                label.text = "error"
+                //print(error)
+                label.text = "エラー"
             } else {
                 //print(data)
-               print("ok")
-                label.text = "ok"
+               //print("ok")
+                //label.text = "ok"
             }
         }
     }

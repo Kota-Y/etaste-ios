@@ -9,18 +9,22 @@
 import Foundation
 import UIKit
 class SignInModel{
-   
     
-    func startSignIn(loginuser:UserLogin,label:UILabel){
+    var isloginable:Bool?
+    
+   func startSignIn(loginuser:UserLogin,label:UILabel) {
        // label.text = "start"
         UserAPI.loginUser{ loginuser, error in
             if let _ = error {
-                print(error)
-                label.text = "error"
+                //print(error)
+                label.text = "ログインできません"
+                self.isloginable = false
             } else {
                 //print(data)
-                print("ok")
-                label.text = "ok"
+                //print("ok")
+                //label.text = "ok"
+                self.isloginable = true
+              
             }
         }
     }

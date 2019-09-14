@@ -51,13 +51,21 @@ class SigninViewController: UIViewController,UITextFieldDelegate {
         }else{
             email = text1
             password = text2
-            //errorlabel.text = "ログイン成功"
             let signinmodel = SignInModel()
             let loginuser = UserLogin(mail: email, password: password)
             signinmodel.startSignIn(loginuser: loginuser, label: errorlabel)
+            print(signinmodel.isloginable)
+            if signinmodel.isloginable == false {
+                errorlabel.text = "ログインできません"
+            } else {
+                print("liginol")
+                let layere_number = navigationController!.viewControllers.count
+                self.navigationController?.popToViewController(navigationController!.viewControllers[layere_number-2], animated: true)
+            }
         }
-        
     }
+    
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
         self.view.endEditing(true)
