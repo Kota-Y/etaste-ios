@@ -23,15 +23,19 @@ extension SettingViewController {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return SettingContent.allCases.count
-    }
+}
+extension SettingViewController {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let setting = SettingContent(rawValue: indexPath.row)
         let cell = tableView.dequeueReusableCell(withIdentifier: "sCell", for: indexPath)
         cell.textLabel?.text = String(setting!.info.title)
         cell.accessoryType = UITableViewCell.AccessoryType.disclosureIndicator
         return cell
+    }
+}
+extension SettingViewController{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return SettingContent.allCases.count
     }
 }
 
