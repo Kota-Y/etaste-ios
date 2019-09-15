@@ -36,6 +36,7 @@ class StoreDetailsViewController: UIViewController {
         super.viewWillAppear(animated)
         
         // 要素は決め打ち
+        
         let storeDetailModel = StoreDetailModel(id: 1, name: "Eパン（熊本本店）", image: URL(string: "https://dl.dropboxusercontent.com/s/7vyyl6u3h66enwv/takigawa-pan.jpg")!, openTime: "08:00", closeTime: "21:00", zip: "〒000-0000", address: "熊本県熊本市00区00町0-00\nKUMADAIビル1F", tel: "000-0000-0000", holiday: "不定休（店休）", parking: "駐車場　徒歩5分にあり(有料)", access: "", map: CLLocationCoordinate2DMake(32.815183,130.727428), url: URL(string: "http://takigawapan.jp/")!)
         
         storeNameLabel.text = storeDetailModel.name
