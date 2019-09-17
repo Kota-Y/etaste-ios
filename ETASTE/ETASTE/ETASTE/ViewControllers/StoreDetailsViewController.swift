@@ -20,6 +20,11 @@ class StoreDetailsViewController: UIViewController {
     @IBOutlet weak var urlLabel: UILabel!
     
     @IBOutlet weak var googleMap: GMSMapView!
+
+    @IBOutlet weak var favbutton: UIButton!
+    
+    var isfavorite:Bool!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,7 +59,25 @@ class StoreDetailsViewController: UIViewController {
         let marker = GMSMarker()
         marker.position = storeDetailModel.map
         marker.map = googleMap
+        
+        isfavorite = false
     }
+    
+    
+    @IBAction func favoritebutton(_ sender: Any) {
+        isfavorite = !isfavorite
+        if isfavorite {
+            //self.setSearchFieldBackgroundImage(image, for: .normal)
+            //favoritebutton.setBackgroundImage(favoritebutton, for: <#T##UIControl.State#>)
+            //favbutton.backgroundImage(for: )
+        } else {
+            //favoritebutton.setBackgroundImage(fav2, for: .normal)
+        }
+        
+    }
+    
+    
+    
     
     @objc func login() {
         

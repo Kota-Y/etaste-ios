@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -150,18 +151,32 @@ KUMADAIビル1F</string>
                                     <constraint firstItem="U6f-E8-I1m" firstAttribute="top" secondItem="Rxn-rP-ci5" secondAttribute="bottom" constant="10" id="zCH-xU-qQp"/>
                                 </constraints>
                             </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IOY-my-pdh">
+                                <rect key="frame" x="275" y="567" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Bae-QO-PsV"/>
+                                    <constraint firstAttribute="height" constant="80" id="gRa-A3-Ua3"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="fav1"/>
+                                <connections>
+                                    <action selector="favoritebutton:" destination="8e9-Dk-6gn" eventType="touchUpInside" id="E4G-ju-b7Z"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="yo6-4H-6li" firstAttribute="bottom" secondItem="Bkn-XU-aog" secondAttribute="bottom" id="EEa-D3-d6Y"/>
+                            <constraint firstItem="Bkn-XU-aog" firstAttribute="trailing" secondItem="IOY-my-pdh" secondAttribute="trailing" constant="20" id="Iuw-4I-MEY"/>
                             <constraint firstItem="yo6-4H-6li" firstAttribute="top" secondItem="Bkn-XU-aog" secondAttribute="top" id="SYd-Ol-cVU"/>
                             <constraint firstItem="yo6-4H-6li" firstAttribute="leading" secondItem="Bkn-XU-aog" secondAttribute="leading" id="VaR-oW-Zss"/>
                             <constraint firstItem="yo6-4H-6li" firstAttribute="trailing" secondItem="Bkn-XU-aog" secondAttribute="trailing" id="Z7v-9m-Q59"/>
+                            <constraint firstItem="Bkn-XU-aog" firstAttribute="bottom" secondItem="IOY-my-pdh" secondAttribute="bottom" constant="20" id="c2z-i8-1LN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Bkn-XU-aog"/>
                     </view>
                     <connections>
                         <outlet property="addressLabel" destination="Rxn-rP-ci5" id="lcl-70-FSq"/>
+                        <outlet property="favbutton" destination="IOY-my-pdh" id="tTk-tn-JrK"/>
                         <outlet property="googleMap" destination="VmS-0f-TnJ" id="nUV-ut-c83"/>
                         <outlet property="holidayLabel" destination="Isu-8L-c0m" id="sFD-a9-bjO"/>
                         <outlet property="parkingLabel" destination="Alb-gb-1MH" id="p3T-Yb-ALS"/>
@@ -178,5 +193,6 @@ KUMADAIビル1F</string>
     </scenes>
     <resources>
         <image name="StoreImage" width="375" height="211"/>
+        <image name="fav1" width="56" height="56"/>
     </resources>
 </document>
