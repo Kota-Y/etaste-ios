@@ -34,6 +34,7 @@ class StoreDetailsViewController: UIViewController {
                                                                  style: .plain,
                                                                  target: self,
                                                                  action: #selector(login))
+         isfavorite = false
         
     }
     
@@ -60,18 +61,18 @@ class StoreDetailsViewController: UIViewController {
         marker.position = storeDetailModel.map
         marker.map = googleMap
         
-        isfavorite = false
+       
     }
     
     
     @IBAction func favoritebutton(_ sender: Any) {
         isfavorite = !isfavorite
         if isfavorite {
-            //self.setSearchFieldBackgroundImage(image, for: .normal)
-            //favoritebutton.setBackgroundImage(favoritebutton, for: <#T##UIControl.State#>)
-            //favbutton.backgroundImage(for: )
+            let image = UIImage(named: "fav2") // hogeImageという名前の画像
+            favbutton.setBackgroundImage(image, for: .normal) // 背景に画像をset
         } else {
-            //favoritebutton.setBackgroundImage(fav2, for: .normal)
+            let image = UIImage(named: "fav1") // hogeImageという名前の画像
+            favbutton.setBackgroundImage(image, for: .normal) // 背景に画像をset
         }
         
     }
