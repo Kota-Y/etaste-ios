@@ -8,6 +8,12 @@
 
 import UIKit
 
+extension Array where Element == UIView {
+    func appearViewPlaceHolders() {
+        self.forEach{ $0.backgroundColor = UIColor.placeHoldersGray }
+    }
+}
+
 extension Array where Element == UIImageView {
     func appearImagePlaceHolders() {
         self.forEach { $0.backgroundColor = UIColor.placeHoldersGray }

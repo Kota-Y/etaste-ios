@@ -39,13 +39,6 @@ class CustomLabel: UILabel, DesinableLabel {
             backgroundColor = UIColor.clear
         }
     }
-    /*
-    override var attributedText: NSAttributedString? {
-        didSet {
-            backgroundColor = UIColor.clear
-        }
-    }
- */
 }
 
 @IBDesignable class TextTitlePaleBlackLabel: CustomLabel {
