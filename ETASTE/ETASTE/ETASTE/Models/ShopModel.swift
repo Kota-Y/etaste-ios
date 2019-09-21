@@ -22,7 +22,7 @@ class ShopModel {
     
     func getStore(label: UILabel) {
         StoreAPI.getStore(storeId: 1) { data, error in
-            if let _ = error {
+            if let error = error {
                 print(error)
                 label.text = "error"
             } else {

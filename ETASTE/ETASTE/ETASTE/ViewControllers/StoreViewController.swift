@@ -21,7 +21,10 @@ class StoreViewController: UIViewController {
     @IBOutlet weak var urlLabel: UILabel!
     @IBOutlet weak var googleMap: GMSMapView!
     
-    var store: Store!
+    @IBOutlet var imagesNeedPlaceHolder: [UIImageView]!
+    @IBOutlet var labelsNeedPlaceHolder: [UILabel]!
+    
+    let storeModel = StoreModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,12 +34,26 @@ class StoreViewController: UIViewController {
                                                                  style: .plain,
                                                                  target: self,
                                                                  action: #selector(login))
+        imagesNeedPlaceHolder.appearImagePlaceHolders()
+        labelsNeedPlaceHolder.appearLabelPlaceHolders()
         
+        storeModel.delegate = self
+        storeModel.getStore(storeId: 1) // 店舗のIDは決め打ち
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+    }
+    
+    @objc func login() {
+        
+    }
+    
+}
+
+extension StoreViewController: StoreModelDelegate {
+    func didRecieveStoreData(storeModel: StoreModel, store: Store) {
         storeImage.image = UIImage(url: store.image)
         storeNameLabel.text = store.name
         timeLabel.text = store.openTime + "〜" + store.closeTime
@@ -56,8 +73,10 @@ class StoreViewController: UIViewController {
         marker.map = googleMap
     }
     
-    @objc func login() {
-        
+    func didRecieveStoreError(storeModel: StoreModel, error: Error) {
+        print("Error on getStore")
     }
     
+    
 }
+
