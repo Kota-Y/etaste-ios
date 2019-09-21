@@ -24,6 +24,83 @@
 		4FBDEDE622F0C99600DFF109 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBDEDE522F0C99600DFF109 /* SearchBar.swift */; };
 		4FBDEDE922F0CC3800DFF109 /* UIColor_Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBDEDE822F0CC3800DFF109 /* UIColor_Utility.swift */; };
 		4FBDEDED22F0CCA800DFF109 /* key.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4FBDEDEC22F0CCA800DFF109 /* key.plist */; };
+		4FCEFEFC2310DD100050D668 /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEE02310DD100050D668 /* APIHelper.swift */; };
+		4FCEFEFD2310DD100050D668 /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEE02310DD100050D668 /* APIHelper.swift */; };
+		4FCEFEFE2310DD100050D668 /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEE02310DD100050D668 /* APIHelper.swift */; };
+		4FCEFEFF2310DD100050D668 /* AlamofireImplementations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEE12310DD100050D668 /* AlamofireImplementations.swift */; };
+		4FCEFF002310DD100050D668 /* AlamofireImplementations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEE12310DD100050D668 /* AlamofireImplementations.swift */; };
+		4FCEFF012310DD100050D668 /* AlamofireImplementations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEE12310DD100050D668 /* AlamofireImplementations.swift */; };
+		4FCEFF022310DD100050D668 /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEE32310DD100050D668 /* UserAPI.swift */; };
+		4FCEFF032310DD100050D668 /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEE32310DD100050D668 /* UserAPI.swift */; };
+		4FCEFF042310DD100050D668 /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEE32310DD100050D668 /* UserAPI.swift */; };
+		4FCEFF052310DD100050D668 /* StoreAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEE42310DD100050D668 /* StoreAPI.swift */; };
+		4FCEFF062310DD100050D668 /* StoreAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEE42310DD100050D668 /* StoreAPI.swift */; };
+		4FCEFF072310DD100050D668 /* StoreAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEE42310DD100050D668 /* StoreAPI.swift */; };
+		4FCEFF082310DD100050D668 /* FoodAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEE52310DD100050D668 /* FoodAPI.swift */; };
+		4FCEFF092310DD100050D668 /* FoodAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEE52310DD100050D668 /* FoodAPI.swift */; };
+		4FCEFF0A2310DD100050D668 /* FoodAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEE52310DD100050D668 /* FoodAPI.swift */; };
+		4FCEFF0B2310DD100050D668 /* FavoriteAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEE62310DD100050D668 /* FavoriteAPI.swift */; };
+		4FCEFF0C2310DD100050D668 /* FavoriteAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEE62310DD100050D668 /* FavoriteAPI.swift */; };
+		4FCEFF0D2310DD100050D668 /* FavoriteAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEE62310DD100050D668 /* FavoriteAPI.swift */; };
+		4FCEFF0E2310DD100050D668 /* CodableHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEE72310DD100050D668 /* CodableHelper.swift */; };
+		4FCEFF0F2310DD100050D668 /* CodableHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEE72310DD100050D668 /* CodableHelper.swift */; };
+		4FCEFF102310DD100050D668 /* CodableHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEE72310DD100050D668 /* CodableHelper.swift */; };
+		4FCEFF112310DD100050D668 /* JSONEncodableEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEE82310DD100050D668 /* JSONEncodableEncoding.swift */; };
+		4FCEFF122310DD100050D668 /* JSONEncodableEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEE82310DD100050D668 /* JSONEncodableEncoding.swift */; };
+		4FCEFF132310DD100050D668 /* JSONEncodableEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEE82310DD100050D668 /* JSONEncodableEncoding.swift */; };
+		4FCEFF142310DD100050D668 /* APIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEE92310DD100050D668 /* APIs.swift */; };
+		4FCEFF152310DD100050D668 /* APIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEE92310DD100050D668 /* APIs.swift */; };
+		4FCEFF162310DD100050D668 /* APIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEE92310DD100050D668 /* APIs.swift */; };
+		4FCEFF172310DD100050D668 /* StoreItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEEB2310DD100050D668 /* StoreItem.swift */; };
+		4FCEFF182310DD100050D668 /* StoreItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEEB2310DD100050D668 /* StoreItem.swift */; };
+		4FCEFF192310DD100050D668 /* StoreItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEEB2310DD100050D668 /* StoreItem.swift */; };
+		4FCEFF1A2310DD100050D668 /* FavoriteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEEC2310DD100050D668 /* FavoriteStore.swift */; };
+		4FCEFF1B2310DD100050D668 /* FavoriteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEEC2310DD100050D668 /* FavoriteStore.swift */; };
+		4FCEFF1C2310DD100050D668 /* FavoriteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEEC2310DD100050D668 /* FavoriteStore.swift */; };
+		4FCEFF1D2310DD100050D668 /* StoreDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEED2310DD100050D668 /* StoreDetail.swift */; };
+		4FCEFF1E2310DD100050D668 /* StoreDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEED2310DD100050D668 /* StoreDetail.swift */; };
+		4FCEFF1F2310DD100050D668 /* StoreDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEED2310DD100050D668 /* StoreDetail.swift */; };
+		4FCEFF202310DD100050D668 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEEE2310DD100050D668 /* User.swift */; };
+		4FCEFF212310DD100050D668 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEEE2310DD100050D668 /* User.swift */; };
+		4FCEFF222310DD100050D668 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEEE2310DD100050D668 /* User.swift */; };
+		4FCEFF232310DD100050D668 /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEEF2310DD100050D668 /* FoodItem.swift */; };
+		4FCEFF242310DD100050D668 /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEEF2310DD100050D668 /* FoodItem.swift */; };
+		4FCEFF252310DD100050D668 /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEEF2310DD100050D668 /* FoodItem.swift */; };
+		4FCEFF262310DD100050D668 /* UserLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEF02310DD100050D668 /* UserLogin.swift */; };
+		4FCEFF272310DD100050D668 /* UserLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEF02310DD100050D668 /* UserLogin.swift */; };
+		4FCEFF282310DD100050D668 /* UserLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEF02310DD100050D668 /* UserLogin.swift */; };
+		4FCEFF292310DD100050D668 /* FoodCreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEF12310DD100050D668 /* FoodCreate.swift */; };
+		4FCEFF2A2310DD100050D668 /* FoodCreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEF12310DD100050D668 /* FoodCreate.swift */; };
+		4FCEFF2B2310DD100050D668 /* FoodCreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEF12310DD100050D668 /* FoodCreate.swift */; };
+		4FCEFF2C2310DD100050D668 /* ModelError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEF22310DD100050D668 /* ModelError.swift */; };
+		4FCEFF2D2310DD100050D668 /* ModelError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEF22310DD100050D668 /* ModelError.swift */; };
+		4FCEFF2E2310DD100050D668 /* ModelError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEF22310DD100050D668 /* ModelError.swift */; };
+		4FCEFF2F2310DD100050D668 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEF32310DD100050D668 /* Store.swift */; };
+		4FCEFF302310DD100050D668 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEF32310DD100050D668 /* Store.swift */; };
+		4FCEFF312310DD100050D668 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEF32310DD100050D668 /* Store.swift */; };
+		4FCEFF332310DD100050D668 /* FoodDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEF42310DD100050D668 /* FoodDetail.swift */; };
+		4FCEFF342310DD100050D668 /* FoodDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEF42310DD100050D668 /* FoodDetail.swift */; };
+		4FCEFF352310DD100050D668 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEF52310DD100050D668 /* Food.swift */; };
+		4FCEFF362310DD100050D668 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEF52310DD100050D668 /* Food.swift */; };
+		4FCEFF372310DD100050D668 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEF52310DD100050D668 /* Food.swift */; };
+		4FCEFF382310DD100050D668 /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEF62310DD100050D668 /* Favorite.swift */; };
+		4FCEFF392310DD100050D668 /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEF62310DD100050D668 /* Favorite.swift */; };
+		4FCEFF3A2310DD100050D668 /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEF62310DD100050D668 /* Favorite.swift */; };
+		4FCEFF3B2310DD100050D668 /* FavoriteCreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEF72310DD100050D668 /* FavoriteCreate.swift */; };
+		4FCEFF3C2310DD100050D668 /* FavoriteCreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEF72310DD100050D668 /* FavoriteCreate.swift */; };
+		4FCEFF3D2310DD100050D668 /* FavoriteCreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEF72310DD100050D668 /* FavoriteCreate.swift */; };
+		4FCEFF3E2310DD100050D668 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEF82310DD100050D668 /* Extensions.swift */; };
+		4FCEFF3F2310DD100050D668 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEF82310DD100050D668 /* Extensions.swift */; };
+		4FCEFF402310DD100050D668 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEF82310DD100050D668 /* Extensions.swift */; };
+		4FCEFF412310DD100050D668 /* JSONEncodingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEF92310DD100050D668 /* JSONEncodingHelper.swift */; };
+		4FCEFF422310DD100050D668 /* JSONEncodingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEF92310DD100050D668 /* JSONEncodingHelper.swift */; };
+		4FCEFF432310DD100050D668 /* JSONEncodingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEF92310DD100050D668 /* JSONEncodingHelper.swift */; };
+		4FCEFF442310DD100050D668 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEFA2310DD100050D668 /* Models.swift */; };
+		4FCEFF452310DD100050D668 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEFA2310DD100050D668 /* Models.swift */; };
+		4FCEFF462310DD100050D668 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEFA2310DD100050D668 /* Models.swift */; };
+		4FCEFF472310DD100050D668 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEFB2310DD100050D668 /* Configuration.swift */; };
+		4FCEFF482310DD100050D668 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEFB2310DD100050D668 /* Configuration.swift */; };
+		4FCEFF492310DD100050D668 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFEFB2310DD100050D668 /* Configuration.swift */; };
 		4FCEFF4C2310EC660050D668 /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFF4B2310EC660050D668 /* APIConfiguration.swift */; };
 		4FCEFF4D2310EC660050D668 /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFF4B2310EC660050D668 /* APIConfiguration.swift */; };
 		4FCEFF4E2310EC660050D668 /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEFF4B2310EC660050D668 /* APIConfiguration.swift */; };
@@ -73,6 +150,12 @@
 		630EEFF222EF3DC50030E302 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 630EEFF122EF3DC50030E302 /* HomeViewController.storyboard */; };
 		630EEFF422EF3DDD0030E302 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630EEFF322EF3DDD0030E302 /* HomeViewController.swift */; };
 		630EEFF622F08D820030E302 /* ShopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630EEFF522F08D820030E302 /* ShopModel.swift */; };
+		630FD222232BCEFC00DC5762 /* FoodDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630FD221232BCEFC00DC5762 /* FoodDetail.swift */; };
+		630FD224232BD09000DC5762 /* StoreDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630FD223232BD09000DC5762 /* StoreDetailsViewController.swift */; };
+		630FD226232BD15C00DC5762 /* StoreDetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 630FD225232BD15C00DC5762 /* StoreDetailsViewController.storyboard */; };
+		6348453A231BA5100015D3D8 /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63484538231BA5100015D3D8 /* FavoriteTableViewCell.swift */; };
+		6348453B231BA5100015D3D8 /* FavoriteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63484539231BA5100015D3D8 /* FavoriteTableViewCell.xib */; };
+		6348453D231BA59E0015D3D8 /* FavoriteItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6348453C231BA59E0015D3D8 /* FavoriteItemCell.swift */; };
 		BBA0A12EC71EDA05B5EC4674 /* Pods_ETASTEUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77BE23D1B7392795678CE704 /* Pods_ETASTEUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -164,6 +247,12 @@
 		630EEFF122EF3DC50030E302 /* HomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
 		630EEFF322EF3DDD0030E302 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		630EEFF522F08D820030E302 /* ShopModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopModel.swift; sourceTree = "<group>"; };
+		630FD221232BCEFC00DC5762 /* FoodDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FoodDetail.swift; path = OpenAPIClient/Classes/OpenAPIs/Models/FoodDetail.swift; sourceTree = "<group>"; };
+		630FD223232BD09000DC5762 /* StoreDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreDetailsViewController.swift; sourceTree = "<group>"; };
+		630FD225232BD15C00DC5762 /* StoreDetailsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StoreDetailsViewController.storyboard; sourceTree = "<group>"; };
+		63484538231BA5100015D3D8 /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
+		63484539231BA5100015D3D8 /* FavoriteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteTableViewCell.xib; sourceTree = "<group>"; };
+		6348453C231BA59E0015D3D8 /* FavoriteItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteItemCell.swift; sourceTree = "<group>"; };
 		77BE23D1B7392795678CE704 /* Pods_ETASTEUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ETASTEUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		785291696FA3228D4BE184BC /* Pods-ETASTE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETASTE.debug.xcconfig"; path = "Target Support Files/Pods-ETASTE/Pods-ETASTE.debug.xcconfig"; sourceTree = "<group>"; };
 		A12D2E41460E47E723746E5E /* Pods-ETASTEUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETASTEUITests.release.xcconfig"; path = "Target Support Files/Pods-ETASTEUITests/Pods-ETASTEUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -375,6 +464,8 @@
 		6301B05222EF37A70078844C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				6348453C231BA59E0015D3D8 /* FavoriteItemCell.swift */,
+				63484537231BA4DD0015D3D8 /* FavoriteItem */,
 				6301B05422EF382B0078844C /* SplashViewController.storyboard */,
 				6301B05622EF38410078844C /* SplashViewController.swift */,
 				630EEFF122EF3DC50030E302 /* HomeViewController.storyboard */,
@@ -391,6 +482,15 @@
 				4F68F6DF231A4250002CE931 /* StoreViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		63484537231BA4DD0015D3D8 /* FavoriteItem */ = {
+			isa = PBXGroup;
+			children = (
+				63484538231BA5100015D3D8 /* FavoriteTableViewCell.swift */,
+				63484539231BA5100015D3D8 /* FavoriteTableViewCell.xib */,
+			);
+			path = FavoriteItem;
 			sourceTree = "<group>";
 		};
 		A97AC5B20D2420B327D8CFD1 /* Pods */ = {
@@ -527,6 +627,7 @@
 			files = (
 				4F0F7EE122FE043E00AEB6E9 /* SettingViewController.storyboard in Resources */,
 				4F0F7EDD22FE03F700AEB6E9 /* DealViewController.storyboard in Resources */,
+				630FD226232BD15C00DC5762 /* StoreDetailsViewController.storyboard in Resources */,
 				4FBDEDED22F0CCA800DFF109 /* key.plist in Resources */,
 				4F0F7ED922FE038E00AEB6E9 /* FavoriteViewController.storyboard in Resources */,
 				6301B05522EF382B0078844C /* SplashViewController.storyboard in Resources */,
@@ -686,7 +787,8 @@
 				4F0F7EDB22FE039C00AEB6E9 /* FavoriteViewController.swift in Sources */,
 				4FEE9B28232924A400A9B5AC /* FavoriteStore.swift in Sources */,
 				630EEFF622F08D820030E302 /* ShopModel.swift in Sources */,
-				4FEE9B26232924A400A9B5AC /* Trade.swift in Sources */,
+				4FCEFF352310DD100050D668 /* Food.swift in Sources */,
+				630FD222232BCEFC00DC5762 /* FoodDetail.swift in Sources */,
 				6301B05722EF38410078844C /* SplashViewController.swift in Sources */,
 				4FEE9B27232924A400A9B5AC /* TradeComplete.swift in Sources */,
 				4FEE9B1E232924A400A9B5AC /* UserAPI.swift in Sources */,
@@ -694,6 +796,8 @@
 				4FEE9B2C232924A400A9B5AC /* FoodCreate.swift in Sources */,
 				4FEE9B25232924A400A9B5AC /* APIs.swift in Sources */,
 				4FBDEDE222F0C24500DFF109 /* Color.swift in Sources */,
+				630FD224232BD09000DC5762 /* StoreDetailsViewController.swift in Sources */,
+				4FCEFF052310DD100050D668 /* StoreAPI.swift in Sources */,
 				4F0F7EDF22FE040A00AEB6E9 /* DealViewController.swift in Sources */,
 				4FEE9B3E2329367900A9B5AC /* UIImage.swift in Sources */,
 				4FCEFF4C2310EC660050D668 /* APIConfiguration.swift in Sources */,
@@ -913,8 +1017,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2TF7K92S67;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ETASTETests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -923,6 +1028,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.looker.ETASTETests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ETASTE.app/ETASTE";
@@ -935,8 +1041,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2TF7K92S67;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ETASTETests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -945,6 +1052,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.looker.ETASTETests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ETASTE.app/ETASTE";

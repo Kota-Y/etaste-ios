@@ -14,5 +14,14 @@ class DealViewController: UIViewController {
         super.viewDidLoad()
         
         self.navigationItem.title = "受取履歴"
+        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "loginicon")?.withRenderingMode(.alwaysOriginal),
+                                                                 style: .plain,
+                                                                 target: self,
+                                                                 action: #selector(login))
     }
+    @objc func login() {
+        
+    }
+    
 }
