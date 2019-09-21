@@ -1,15 +1,30 @@
 //
-//  FavoriteMocel.swift
+//  StoreFavoriteModel.swift
 //  ETASTE
 //
-//  Created by 石黒晴也 on 2019/08/24.
+//  Created by hakuchan on 2019/09/21.
 //  Copyright © 2019 ETASTE. All rights reserved.
 //
 
 import Foundation
 import UIKit
 
-class FavoriteModel {
+class StoreFavoriteModel {
+    
+    public var userid: Int64
+    public var storeid: Int64
+    public var storename: String
+    
+    
+    public init(userid: Int64, storeid: Int64, storename: String ) {
+        self.userid = userid
+        self.storeid = storeid
+        self.storename = storename
+        
+    
+    }
+    
+    
     
     func createFavorite(label: UILabel) {
         FavoriteAPI.createFavorite { data, error in

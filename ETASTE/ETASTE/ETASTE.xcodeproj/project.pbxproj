@@ -122,6 +122,7 @@
 		6348453A231BA5100015D3D8 /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63484538231BA5100015D3D8 /* FavoriteTableViewCell.swift */; };
 		6348453B231BA5100015D3D8 /* FavoriteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63484539231BA5100015D3D8 /* FavoriteTableViewCell.xib */; };
 		6348453D231BA59E0015D3D8 /* FavoriteItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6348453C231BA59E0015D3D8 /* FavoriteItemCell.swift */; };
+		63ADFD932335CBA000A0010D /* StoreFavoriteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63ADFD922335CBA000A0010D /* StoreFavoriteModel.swift */; };
 		BBA0A12EC71EDA05B5EC4674 /* Pods_ETASTEUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77BE23D1B7392795678CE704 /* Pods_ETASTEUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -211,6 +212,7 @@
 		63484538231BA5100015D3D8 /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
 		63484539231BA5100015D3D8 /* FavoriteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteTableViewCell.xib; sourceTree = "<group>"; };
 		6348453C231BA59E0015D3D8 /* FavoriteItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteItemCell.swift; sourceTree = "<group>"; };
+		63ADFD922335CBA000A0010D /* StoreFavoriteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreFavoriteModel.swift; sourceTree = "<group>"; };
 		77BE23D1B7392795678CE704 /* Pods_ETASTEUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ETASTEUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		785291696FA3228D4BE184BC /* Pods-ETASTE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETASTE.debug.xcconfig"; path = "Target Support Files/Pods-ETASTE/Pods-ETASTE.debug.xcconfig"; sourceTree = "<group>"; };
 		A12D2E41460E47E723746E5E /* Pods-ETASTEUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETASTEUITests.release.xcconfig"; path = "Target Support Files/Pods-ETASTEUITests/Pods-ETASTEUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -410,6 +412,7 @@
 				4FCEFEDD2310DD100050D668 /* OpenAPIClient */,
 				630EEFF522F08D820030E302 /* ShopModel.swift */,
 				4FCEFF4F2310F22B0050D668 /* FavoriteMocel.swift */,
+				63ADFD922335CBA000A0010D /* StoreFavoriteModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -746,6 +749,7 @@
 				4FCEFF052310DD100050D668 /* StoreAPI.swift in Sources */,
 				4F0F7EDF22FE040A00AEB6E9 /* DealViewController.swift in Sources */,
 				4FCEFF4C2310EC660050D668 /* APIConfiguration.swift in Sources */,
+				63ADFD932335CBA000A0010D /* StoreFavoriteModel.swift in Sources */,
 				4FCEFF1A2310DD100050D668 /* FavoriteStore.swift in Sources */,
 				4F68F6E2231A4268002CE931 /* Label.swift in Sources */,
 				4FCEFF232310DD100050D668 /* FoodItem.swift in Sources */,
