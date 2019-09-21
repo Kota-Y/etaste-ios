@@ -14,29 +14,39 @@ class StoreFavoriteModel {
     public var userid: Int64
     public var storeid: Int64
     public var storename: String
+    var data1:FavoriteCreate!
     
     
     public init(userid: Int64, storeid: Int64, storename: String ) {
         self.userid = userid
         self.storeid = storeid
         self.storename = storename
-        
-    
+        data1 = FavoriteCreate(userId: userid, storeId: storeid, storeName: storename)
+
     }
     
     
-    
-    func createFavorite(label: UILabel) {
-        FavoriteAPI.createFavorite { data, error in
+    func createFavorite(){
+        FavoriteAPI.createFavorite { data1, error in
             if let _ = error {
-                print(error)
-                label.text = "error"
+                print("error")
             } else {
-                //print(data)
-                label.text = "success"
+                print("okcreate")
             }
         }
     }
+    
+    
+    func deleteFavorite(){
+        FavoriteAPI.deleteFavorite(storeId: storeid) { storeid, error in
+            if let _ = error {
+                print("error")
+            } else {
+                print("okdelete")
+            }
+        }
+    }
+    
     
     
 }

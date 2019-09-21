@@ -152,7 +152,7 @@ KUMADAIビル1F</string>
                                 </constraints>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IOY-my-pdh">
-                                <rect key="frame" x="295" y="592" width="60" height="60"/>
+                                <rect key="frame" x="295" y="587" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="Bae-QO-PsV"/>
                                     <constraint firstAttribute="height" constant="60" id="gRa-A3-Ua3"/>
@@ -170,7 +170,7 @@ KUMADAIビル1F</string>
                             <constraint firstItem="yo6-4H-6li" firstAttribute="top" secondItem="Bkn-XU-aog" secondAttribute="top" id="SYd-Ol-cVU"/>
                             <constraint firstItem="yo6-4H-6li" firstAttribute="leading" secondItem="Bkn-XU-aog" secondAttribute="leading" id="VaR-oW-Zss"/>
                             <constraint firstItem="yo6-4H-6li" firstAttribute="trailing" secondItem="Bkn-XU-aog" secondAttribute="trailing" id="Z7v-9m-Q59"/>
-                            <constraint firstItem="Bkn-XU-aog" firstAttribute="bottom" secondItem="IOY-my-pdh" secondAttribute="bottom" constant="15" id="c2z-i8-1LN"/>
+                            <constraint firstItem="Bkn-XU-aog" firstAttribute="bottom" secondItem="IOY-my-pdh" secondAttribute="bottom" constant="20" id="c2z-i8-1LN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Bkn-XU-aog"/>
                     </view>

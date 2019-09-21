@@ -12,6 +12,7 @@ import UIKit
 class FavoriteViewController: UIViewController{
     @IBOutlet weak var favoritetable: UITableView!
     var favoritecell:[FavoriteItemCell] = [FavoriteItemCell]()
+   
   
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +27,8 @@ class FavoriteViewController: UIViewController{
         favoritetable.tableFooterView = UIView(frame: .zero)
         favoritetable.register(UINib(nibName: "FavoriteTableViewCell", bundle: nil), forCellReuseIdentifier: "FavoriteTableViewCell")
         self.setupFavoriteTable()
-
+        
+         
     }
     
     @objc func login() {

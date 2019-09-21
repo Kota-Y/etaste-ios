@@ -23,6 +23,8 @@ class StoreDetailsViewController: UIViewController {
 
     @IBOutlet weak var favbutton: UIButton!
     
+    var storefavorite:StoreFavoriteModel!
+   
     var isfavorite:Bool!
     
     
@@ -61,6 +63,11 @@ class StoreDetailsViewController: UIViewController {
         marker.position = storeDetailModel.map
         marker.map = googleMap
         
+        let userid:Int64 = 1
+        
+        storefavorite = StoreFavoriteModel(userid: Int64(userid), storeid: Int64(storeDetailModel.id), storename: storeDetailModel.name)
+        
+        
        
     }
     
@@ -70,9 +77,12 @@ class StoreDetailsViewController: UIViewController {
         if isfavorite {
             let image = UIImage(named: "fav2") // hogeImageという名前の画像
             favbutton.setBackgroundImage(image, for: .normal) // 背景に画像をset
+            storefavorite.createFavorite()
+            
         } else {
             let image = UIImage(named: "fav1") // hogeImageという名前の画像
             favbutton.setBackgroundImage(image, for: .normal) // 背景に画像をset
+            storefavorite.deleteFavorite()
         }
         
     }
