@@ -67,7 +67,7 @@ class StoreDetailsViewController: UIViewController {
         
         storefavorite = StoreFavoriteModel(userid: Int64(userid), storeid: Int64(storeDetailModel.id), storename: storeDetailModel.name)
         
-        
+        storefavorite.getisFavorite()
        
     }
     

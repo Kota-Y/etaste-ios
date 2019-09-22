@@ -47,6 +47,18 @@ class StoreFavoriteModel {
         }
     }
     
-    
+    func getisFavorite(){
+        FavoriteAPI.getFavorite(userId: userid){ data, error in
+            if let _ = error {
+                print("geterror")
+                
+            } else {
+                print("getok")
+                print(data)
+            }
+        }
+        
+        
+    }
     
 }
