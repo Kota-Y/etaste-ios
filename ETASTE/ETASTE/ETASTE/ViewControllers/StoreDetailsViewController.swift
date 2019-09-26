@@ -23,10 +23,10 @@ class StoreDetailsViewController: UIViewController {
 
     @IBOutlet weak var favbutton: UIButton!
     
-    var storefavorite:StoreFavoriteModel!
+  
    
     var isfavorite:Bool!
-    
+    let storefavorite = StoreFavoriteModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +36,9 @@ class StoreDetailsViewController: UIViewController {
                                                                  style: .plain,
                                                                  target: self,
                                                                  action: #selector(login))
-         isfavorite = false
+        isfavorite = false
+        
+        storefavorite.delegate = self
         
     }
     
@@ -64,24 +66,36 @@ class StoreDetailsViewController: UIViewController {
         marker.map = googleMap
         
         let userid:Int64 = 1
-        
-        storefavorite = StoreFavoriteModel(userid: Int64(userid), storeid: Int64(storeDetailModel.id), storename: storeDetailModel.name)
-        
+        storefavorite.set(userid: Int64(userid), storeid: Int64(storeDetailModel.id), storename: storeDetailModel.name)
+       print("start")
         storefavorite.getisFavorite()
+        print("switch")
        
+        
     }
     
     
-    @IBAction func favoritebutton(_ sender: Any) {
-        isfavorite = !isfavorite
-        if isfavorite {
+    
+    func switchfavorite(){
+        
+        if storefavorite.isfavorite {
             let image = UIImage(named: "fav2") // hogeImageという名前の画像
             favbutton.setBackgroundImage(image, for: .normal) // 背景に画像をset
-            storefavorite.createFavorite()
             
         } else {
             let image = UIImage(named: "fav1") // hogeImageという名前の画像
             favbutton.setBackgroundImage(image, for: .normal) // 背景に画像をset
+    
+        }
+    }
+    
+    @IBAction func favoritebutton(_ sender: Any) {
+        storefavorite.isfavorite = !storefavorite.isfavorite
+        switchfavorite()
+        
+        if  storefavorite.isfavorite {
+            storefavorite.createFavorite()
+        } else {
             storefavorite.deleteFavorite()
         }
         
@@ -94,4 +108,23 @@ class StoreDetailsViewController: UIViewController {
         
     }
     
+}
+
+extension StoreDetailsViewController:StoreFavoriteModelDelegate {
+    func didReceiveStoreFavoriteModel(storeFavoritemodel: StoreFavoriteModel, Favorite: Favorite) {
+        let fav = Favorite.favoriteStores
+            for i in 0..<fav.count {
+                if fav[i]._id == storefavorite.storeid {
+                    self.isfavorite = true
+                    storefavorite.isfavorite = true
+                    self.switchfavorite()
+                }
+            }
+
+    }
+    
+    
+    func didRecieveStoreFavoriteError(storeFavoritemodel:StoreFavoriteModel, error: Error){
+         print("Error on getFood :", error)
+    }
 }
