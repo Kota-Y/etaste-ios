@@ -139,18 +139,32 @@ KUMADAIビル1F</string>
                                     <constraint firstItem="ziN-c7-9OW" firstAttribute="leading" secondItem="yo6-4H-6li" secondAttribute="leading" id="qz1-bI-XSb"/>
                                 </constraints>
                             </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yO1-qH-dFV">
+                                <rect key="frame" x="339" y="787" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="8xu-BF-Ow6"/>
+                                    <constraint firstAttribute="width" constant="60" id="wo9-zM-5ER"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="fav2"/>
+                                <connections>
+                                    <action selector="favoritebutton:" destination="8e9-Dk-6gn" eventType="touchUpInside" id="FNd-b2-bkh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="yo6-4H-6li" firstAttribute="bottom" secondItem="Bkn-XU-aog" secondAttribute="bottom" id="EEa-D3-d6Y"/>
                             <constraint firstItem="yo6-4H-6li" firstAttribute="top" secondItem="Bkn-XU-aog" secondAttribute="top" id="SYd-Ol-cVU"/>
                             <constraint firstItem="yo6-4H-6li" firstAttribute="leading" secondItem="Bkn-XU-aog" secondAttribute="leading" id="VaR-oW-Zss"/>
+                            <constraint firstItem="Bkn-XU-aog" firstAttribute="bottom" secondItem="yO1-qH-dFV" secondAttribute="bottom" constant="15" id="Z6B-Ra-DGk"/>
                             <constraint firstItem="yo6-4H-6li" firstAttribute="trailing" secondItem="Bkn-XU-aog" secondAttribute="trailing" id="Z7v-9m-Q59"/>
+                            <constraint firstItem="Bkn-XU-aog" firstAttribute="trailing" secondItem="yO1-qH-dFV" secondAttribute="trailing" constant="15" id="pq9-AA-yBe"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Bkn-XU-aog"/>
                     </view>
                     <connections>
                         <outlet property="addressLabel" destination="Krs-ey-Fnl" id="Pb3-OV-oP2"/>
+                        <outlet property="favoritebutton" destination="yO1-qH-dFV" id="XVl-Wt-gj3"/>
                         <outlet property="googleMap" destination="YEx-Xv-uAT" id="Wla-WK-GoU"/>
                         <outlet property="holidayLabel" destination="NEs-I0-quj" id="FdJ-Ur-WX6"/>
                         <outlet property="parkingLabel" destination="woO-1L-9IX" id="Ari-Zp-vVz"/>
@@ -166,4 +180,7 @@ KUMADAIビル1F</string>
             <point key="canvasLocation" x="-456.52173913043481" y="-141.29464285714286"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="fav2" width="56" height="56"/>
+    </resources>
 </document>

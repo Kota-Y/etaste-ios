@@ -20,8 +20,13 @@ class StoreViewController: UIViewController {
     @IBOutlet weak var parkingLabel: UILabel!
     @IBOutlet weak var urlLabel: UILabel!
     @IBOutlet weak var googleMap: GMSMapView!
+    @IBOutlet weak var favoritebutton: UIButton!
     
     var store: Store!
+    var isfavorite:Bool!
+    
+    let storefavorite = StoreFavoriteModel()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +36,9 @@ class StoreViewController: UIViewController {
                                                                  style: .plain,
                                                                  target: self,
                                                                  action: #selector(login))
+        isfavorite = false
+        storefavorite.delegate = self
+        storefavorite.getisFavorite(userid: 1)
         
     }
     
@@ -54,10 +62,48 @@ class StoreViewController: UIViewController {
         let marker = GMSMarker()
         marker.position = mapPosition
         marker.map = googleMap
+        
+        
+        
     }
+    
+    @IBAction func favoritebutton(_ sender: Any) {
+        isfavorite = !isfavorite
+         switcfavorite()
+    }
+    
+    func switcfavorite(){
+        
+        if isfavorite {
+            let image = UIImage(named: "fav2")
+            favoritebutton.setBackgroundImage(image, for: .normal)
+        } else {
+            let image = UIImage(named: "fav1")
+            favoritebutton.setBackgroundImage(image, for: .normal)
+        }
+    }
+    
     
     @objc func login() {
         
     }
     
+}
+
+
+extension StoreViewController:StoreFavoriteModelDelegate {
+    func didReceiveStoreFavoriteModel(storeFavoritemodel: StoreFavoriteModel, Favorite: Favorite) {
+        let fav = Favorite.favoriteStores
+        for i in 0..<fav.count {
+            if fav[i]._id == store._id {
+                self.isfavorite = true
+                self.switcfavorite()
+            }
+        }
+    }
+    
+    
+    func didRecieveStoreFavoriteError(storeFavoritemodel:StoreFavoriteModel, error: Error){
+        print("Error on getFood :", error)
+    }
 }

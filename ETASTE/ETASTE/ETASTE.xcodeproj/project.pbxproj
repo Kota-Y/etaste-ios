@@ -78,6 +78,7 @@
 		630EEFF222EF3DC50030E302 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 630EEFF122EF3DC50030E302 /* HomeViewController.storyboard */; };
 		630EEFF422EF3DDD0030E302 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630EEFF322EF3DDD0030E302 /* HomeViewController.swift */; };
 		630EEFF622F08D820030E302 /* ShopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630EEFF522F08D820030E302 /* ShopModel.swift */; };
+		63AB02FC233E016200BA1D7D /* StoreFavoriteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AB02FB233E016200BA1D7D /* StoreFavoriteModel.swift */; };
 		BBA0A12EC71EDA05B5EC4674 /* Pods_ETASTEUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77BE23D1B7392795678CE704 /* Pods_ETASTEUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -172,6 +173,7 @@
 		630EEFF122EF3DC50030E302 /* HomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
 		630EEFF322EF3DDD0030E302 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		630EEFF522F08D820030E302 /* ShopModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopModel.swift; sourceTree = "<group>"; };
+		63AB02FB233E016200BA1D7D /* StoreFavoriteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreFavoriteModel.swift; sourceTree = "<group>"; };
 		77BE23D1B7392795678CE704 /* Pods_ETASTEUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ETASTEUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		785291696FA3228D4BE184BC /* Pods-ETASTE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETASTE.debug.xcconfig"; path = "Target Support Files/Pods-ETASTE/Pods-ETASTE.debug.xcconfig"; sourceTree = "<group>"; };
 		A12D2E41460E47E723746E5E /* Pods-ETASTEUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETASTEUITests.release.xcconfig"; path = "Target Support Files/Pods-ETASTEUITests/Pods-ETASTEUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -393,6 +395,7 @@
 				630EEFF522F08D820030E302 /* ShopModel.swift */,
 				4FCEFF4F2310F22B0050D668 /* FavoriteMocel.swift */,
 				4FEE9B3B2329293F00A9B5AC /* StoreModel.swift */,
+				63AB02FB233E016200BA1D7D /* StoreFavoriteModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -732,6 +735,7 @@
 				4FEE9B2D232924A400A9B5AC /* ModelError.swift in Sources */,
 				4FEE9B2B232924A400A9B5AC /* UserLogin.swift in Sources */,
 				4FEE9B24232924A400A9B5AC /* JSONEncodableEncoding.swift in Sources */,
+				63AB02FC233E016200BA1D7D /* StoreFavoriteModel.swift in Sources */,
 				4F68F6E2231A4268002CE931 /* Label.swift in Sources */,
 				630EEFF422EF3DDD0030E302 /* HomeViewController.swift in Sources */,
 				4FEE9B3C2329293F00A9B5AC /* StoreModel.swift in Sources */,
