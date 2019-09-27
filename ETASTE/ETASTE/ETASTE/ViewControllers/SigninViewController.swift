@@ -10,6 +10,14 @@ import UIKit
 
 class SigninViewController: UIViewController,UITextFieldDelegate {
 
+   
+    
+    @IBOutlet weak var addresstextfield: UITextField!
+    @IBOutlet weak var passwordtextfield: UITextField!
+    @IBOutlet weak var errorlabel: UILabel!
+    var email:String!
+    var password:String!
+    
     override func viewDidLoad() {
         self.navigationItem.title = "サインイン"
         addresstextfield.delegate = self
@@ -17,14 +25,9 @@ class SigninViewController: UIViewController,UITextFieldDelegate {
         configureObserver()
         // Do any additional setup after loading the view.
     }
-    
-    @IBOutlet weak var addresstextfield: UITextField!
-    @IBOutlet weak var passwordtextfield: UITextField!
-    @IBOutlet weak var errorlabel: UILabel!
-    var email:String!
-    var password:String!
-  
-    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
     
   
     @IBAction func SignUpbutton(_ sender: Any) {
@@ -64,10 +67,7 @@ class SigninViewController: UIViewController,UITextFieldDelegate {
     }
     
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
-        self.view.endEditing(true)
-    }
+   
     
     
     

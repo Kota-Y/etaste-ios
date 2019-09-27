@@ -16,6 +16,17 @@ var LastNameKatakana:String!
 
 class Signup2ViewController: UIViewController ,UITextFieldDelegate{
 
+    @IBOutlet weak var emailaddress: CustomTextField!
+    @IBOutlet weak var password: CustomTextField!
+    @IBOutlet weak var passwordconfirm: CustomTextField!
+    @IBOutlet weak var Errorlabel: UILabel!
+    
+    var flag2 = false
+    
+    var EmailAddress:String!
+    var Password:String!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "サインアップ"
@@ -23,24 +34,17 @@ class Signup2ViewController: UIViewController ,UITextFieldDelegate{
         password.delegate = self
         passwordconfirm.delegate = self
         Errorlabel.numberOfLines = 0
-
+        
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
         self.flag2 = false
-       Errorlabel.text = ""
+        Errorlabel.text = ""
         
     }
-    @IBOutlet weak var emailaddress: CustomTextField!
-    @IBOutlet weak var password: CustomTextField!
-    @IBOutlet weak var passwordconfirm: CustomTextField!
-    @IBOutlet weak var Errorlabel: UILabel!
-    
-    
-    var flag2 = false
-    
-    var EmailAddress:String!
-    var Password:String!
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
     
     
     @IBAction func nextbutton(_ sender: Any) {
@@ -75,10 +79,10 @@ class Signup2ViewController: UIViewController ,UITextFieldDelegate{
         let viewController = viewControllerStoryboard.instantiateInitialViewController() as! Signup3ViewController
         viewController.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(viewController, animated: true)
-
         }
-      
     }
+    
+    
     func signup(){
         let user = User(firstName: FirstNameKanzi, lastName: LastNameKanzi, firstNameKana: FirstNameKatakana, lastNameKana:LastNameKatakana, mail: EmailAddress, password: Password)
         let startsignup = SignUpModel()

@@ -13,27 +13,7 @@ import Foundation
 
 class Signup1ViewController: UIViewController,UITextFieldDelegate {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.title = "サインアップ"
-        lastnamekanzi.delegate = self
-        firstnamekanzi.delegate = self
-        lastnamekatakana.delegate = self
-        firstnamekatakana.delegate = self
-        // Do any additional setup after loading the view.
-         configureObserver()
-        lastnamekanzi.text = LastNameKanzi
-        firstnamekanzi.text = FirstNameKanzi
-        lastnamekatakana.text = LastNameKatakana
-        firstnamekatakana.text = FirstNameKatakana
-       
-    }
-    override func viewWillAppear(_ animated: Bool) {
-       
-        errorlabel.text = ""
-        self.flag1 = false
-        
-    }
+   
     @IBOutlet weak var lastnamekanzi: CustomTextField!
     @IBOutlet weak var firstnamekanzi: CustomTextField!
     @IBOutlet weak var lastnamekatakana: CustomTextField!
@@ -42,6 +22,31 @@ class Signup1ViewController: UIViewController,UITextFieldDelegate {
     
     var flag1 = false
     var t = false
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.title = "サインアップ"
+        lastnamekanzi.delegate = self
+        firstnamekanzi.delegate = self
+        lastnamekatakana.delegate = self
+        firstnamekatakana.delegate = self
+        // Do any additional setup after loading the view.
+        configureObserver()
+        lastnamekanzi.text = LastNameKanzi
+        firstnamekanzi.text = FirstNameKanzi
+        lastnamekatakana.text = LastNameKatakana
+        firstnamekatakana.text = FirstNameKatakana
+        
+        
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        errorlabel.text = ""
+        self.flag1 = false
+        
+    }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
     
     
     @IBAction func wantscroll(_ sender: Any) {
