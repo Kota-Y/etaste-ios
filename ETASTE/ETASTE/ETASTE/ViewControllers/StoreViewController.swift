@@ -63,12 +63,15 @@ class StoreViewController: UIViewController {
         marker.position = mapPosition
         marker.map = googleMap
         
-        
-        
     }
     
     @IBAction func favoritebutton(_ sender: Any) {
         isfavorite = !isfavorite
+        if isfavorite {
+            storefavorite.createFavorite()
+        } else {
+            storefavorite.deleteFavorite(storeid: store._id)
+        }
          switcfavorite()
     }
     

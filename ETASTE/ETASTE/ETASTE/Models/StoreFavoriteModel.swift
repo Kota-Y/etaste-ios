@@ -24,6 +24,26 @@ class StoreFavoriteModel {
         }
     }
     
+    func deleteFavorite(storeid:Int64){
+        FavoriteAPI.deleteFavorite(storeId: storeid) { storeid, error in
+            if let _ = error {
+                print("error")
+            } else {
+                print("okdelete")
+            }
+        }
+    }
+    
+    func createFavorite(){
+        FavoriteAPI.createFavorite { data1, error in
+            if let _ = error {
+                print("error")
+            } else {
+                print("okcreate")
+            }
+        }
+    }
+    
     
     
 }
