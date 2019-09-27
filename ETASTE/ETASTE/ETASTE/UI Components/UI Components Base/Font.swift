@@ -9,8 +9,8 @@
 import UIKit
 
 extension UIFont {
-    static let jpFont = "HiraginoSans-"
-    static let enFont = "HiraginoSans-"
+    static let jpFont = "HiraginoSans"
+    static let enFont = "HiraginoSans"
     
     convenience init?(type: FontType, size: CGFloat) {
         let descriptorJa = UIFontDescriptor(name: "\(UIFont.jpFont)-\(type.rawValue)", size: 0)

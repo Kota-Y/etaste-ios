@@ -14,24 +14,59 @@ public struct Store: Codable {
     public var _id: Int64
     public var name: String
     public var image: String
-    /** Number of items in foods. */
-    public var foodNum: Int
-    public var foods: [StoreItem]
+    public var openTime: String
+    public var closeTime: String
+    public var areaPref: String
+    public var areaCity: String
+    public var areaOther: String
+    public var zip: String
+    public var address: String
+    public var tel: String
+    public var holiday: String
+    public var parking: String
+    public var access: String
+    public var mapLatitude: String
+    public var mapLongitude: String
+    public var url: String
 
-    public init(_id: Int64, name: String, image: String, foodNum: Int, foods: [StoreItem]) {
+    public init(_id: Int64, name: String, image: String, openTime: String, closeTime: String, areaPref: String, areaCity: String, areaOther: String, zip: String, address: String, tel: String, holiday: String, parking: String, access: String, mapLatitude: String, mapLongitude: String, url: String) {
         self._id = _id
         self.name = name
         self.image = image
-        self.foodNum = foodNum
-        self.foods = foods
+        self.openTime = openTime
+        self.closeTime = closeTime
+        self.areaPref = areaPref
+        self.areaCity = areaCity
+        self.areaOther = areaOther
+        self.zip = zip
+        self.address = address
+        self.tel = tel
+        self.holiday = holiday
+        self.parking = parking
+        self.access = access
+        self.mapLatitude = mapLatitude
+        self.mapLongitude = mapLongitude
+        self.url = url
     }
 
     public enum CodingKeys: String, CodingKey { 
         case _id = "id"
         case name
         case image
-        case foodNum
-        case foods
+        case openTime
+        case closeTime
+        case areaPref
+        case areaCity
+        case areaOther
+        case zip
+        case address
+        case tel
+        case holiday
+        case parking
+        case access
+        case mapLatitude
+        case mapLongitude
+        case url
     }
 
 
