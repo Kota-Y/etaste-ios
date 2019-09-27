@@ -22,7 +22,7 @@ class Signup2ViewController: UIViewController ,UITextFieldDelegate{
     @IBOutlet weak var Errorlabel: UILabel!
     
     var flag2 = false
-    
+    var term_of_service_ischeck:Bool! = false
     var EmailAddress:String!
     var Password:String!
     
@@ -34,16 +34,22 @@ class Signup2ViewController: UIViewController ,UITextFieldDelegate{
         password.delegate = self
         passwordconfirm.delegate = self
         Errorlabel.numberOfLines = 0
-        
+        term_of_service_ischeck = false
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
         self.flag2 = false
         Errorlabel.text = ""
+        self.term_of_service_ischeck = false
         
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
+    }
+    
+    
+    @IBAction func terms_of_service_check(_ sender: Any) {
+        term_of_service_ischeck = !term_of_service_ischeck
     }
     
     
@@ -62,7 +68,9 @@ class Signup2ViewController: UIViewController ,UITextFieldDelegate{
                 self.Errorlabel.text = "パスワードを半角英数字8文字以上で記入してください"
         }else if(text6 != text7) {
                 self.Errorlabel.text = "パスワードが一致しません"
-            }else{
+            }else if(term_of_service_ischeck == false){
+                self.Errorlabel.text = "利用規約に同意してください"
+        }else{
                 self.flag2 = true
             }
             

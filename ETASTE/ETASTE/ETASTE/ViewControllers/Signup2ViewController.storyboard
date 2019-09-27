@@ -69,6 +69,9 @@
                                             <constraint firstAttribute="width" constant="30" id="d7m-Cf-4AW"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="terms_of_service_check:" destination="2I4-WT-06l" eventType="touchUpInside" id="jCm-M4-ugu"/>
+                                        </connections>
                                     </button>
                                     <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="利用規約・特定取引商法に同意" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wya-dL-RWL">
                                         <rect key="frame" x="30" y="0.0" width="270" height="30"/>
