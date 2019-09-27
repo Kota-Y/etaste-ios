@@ -17,6 +17,7 @@ class SplashViewController: UIViewController {
         let mainTabBarControllerStoryboard = UIStoryboard(name: "MainTabBarController", bundle: nil)
         let mainTabBarController = mainTabBarControllerStoryboard.instantiateInitialViewController() as! MainTabBarController
         present(mainTabBarController, animated: false, completion: nil)
+        
     }
     
 }

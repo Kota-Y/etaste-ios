@@ -18,6 +18,7 @@ open class UserAPI {
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func createUser(user: User? = nil, completion: @escaping ((_ data: Void?,_ error: Error?) -> Void)) {
+        print("startsignupok")
         createUserWithRequestBuilder(user: user).execute { (response, error) -> Void in
             if error == nil {
                 completion((), error)
@@ -26,7 +27,6 @@ open class UserAPI {
             }
         }
     }
-
 
     /**
      Create User.
@@ -62,7 +62,6 @@ open class UserAPI {
         }
     }
 
-
     /**
      Delete User.
      - DELETE /user/{userId}
@@ -71,7 +70,7 @@ open class UserAPI {
      */
     open class func deleteUserWithRequestBuilder(userId: Int64) -> RequestBuilder<Void> {
         var path = "/user/{userId}"
-        let userIdPreEscape = "\(userId)"
+        let userIdPreEscape = "\(APIHelper.mapValueToPathItem(userId))"
         let userIdPostEscape = userIdPreEscape.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) ?? ""
         path = path.replacingOccurrences(of: "{userId}", with: userIdPostEscape, options: .literal, range: nil)
         let URLString = OpenAPIClientAPI.basePath + path
@@ -99,7 +98,6 @@ open class UserAPI {
             }
         }
     }
-
 
     /**
      Login User.
@@ -133,7 +131,6 @@ open class UserAPI {
             }
         }
     }
-
 
     /**
      Logout User.

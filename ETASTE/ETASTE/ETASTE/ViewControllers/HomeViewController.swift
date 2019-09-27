@@ -55,9 +55,12 @@ class HomeViewController: UIViewController {
 
 
     }
-    
+     var window: UIWindow?
     @objc func login() {
-        
+        let viewControllerStoryboard = UIStoryboard(name: "SigninViewController", bundle: nil)
+        let viewController = viewControllerStoryboard.instantiateInitialViewController() as! SigninViewController
+        viewController.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
     
     // 画面遷移のテスト用
