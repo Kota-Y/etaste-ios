@@ -37,8 +37,8 @@ class StoreDetailsViewController: UIViewController {
                                                                  target: self,
                                                                  action: #selector(login))
         isfavorite = false
-        
         storefavorite.delegate = self
+        
         
     }
     
@@ -67,42 +67,32 @@ class StoreDetailsViewController: UIViewController {
         
         let userid:Int64 = 1
         storefavorite.set(userid: Int64(userid), storeid: Int64(storeDetailModel.id), storename: storeDetailModel.name)
-       print("start")
         storefavorite.getisFavorite()
-        print("switch")
        
-        
     }
     
     
     
     func switchfavorite(){
-        
         if storefavorite.isfavorite {
-            let image = UIImage(named: "fav2") // hogeImageという名前の画像
-            favbutton.setBackgroundImage(image, for: .normal) // 背景に画像をset
-            
+            let image = UIImage(named: "fav2")
+            favbutton.setBackgroundImage(image, for: .normal)
         } else {
-            let image = UIImage(named: "fav1") // hogeImageという名前の画像
-            favbutton.setBackgroundImage(image, for: .normal) // 背景に画像をset
-    
+            let image = UIImage(named: "fav1")
+            favbutton.setBackgroundImage(image, for: .normal)
         }
     }
     
     @IBAction func favoritebutton(_ sender: Any) {
         storefavorite.isfavorite = !storefavorite.isfavorite
         switchfavorite()
-        
         if  storefavorite.isfavorite {
             storefavorite.createFavorite()
         } else {
             storefavorite.deleteFavorite()
         }
-        
     }
-    
-    
-    
+
     
     @objc func login() {
         
@@ -120,10 +110,7 @@ extension StoreDetailsViewController:StoreFavoriteModelDelegate {
                     self.switchfavorite()
                 }
             }
-
     }
-    
-    
     func didRecieveStoreFavoriteError(storeFavoritemodel:StoreFavoriteModel, error: Error){
          print("Error on getFood :", error)
     }

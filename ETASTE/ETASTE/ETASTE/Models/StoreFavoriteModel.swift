@@ -49,21 +49,15 @@ class StoreFavoriteModel {
     }
     
     func getisFavorite() {
-        
         FavoriteAPI.getFavorite(userId: userid){ data, error in
             if let error = error {
-                
                 self.delegate?.didRecieveStoreFavoriteError(storeFavoritemodel: self, error: error)
-                
                 self.isfavorite = false
             } else {
-                
                 self.delegate?.didReceiveStoreFavoriteModel(storeFavoritemodel: self, Favorite: data!)
             }
         }
-       
     }
-    
 }
 
 protocol StoreFavoriteModelDelegate {
