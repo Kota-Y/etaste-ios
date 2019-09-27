@@ -39,6 +39,7 @@ class Signup1ViewController: UIViewController,UITextFieldDelegate {
         
         
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         errorlabel.text = ""
         self.flag1 = false
@@ -46,10 +47,14 @@ class Signup1ViewController: UIViewController,UITextFieldDelegate {
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
+        
     }
     
     
-    @IBAction func wantscroll(_ sender: Any) {
+    @IBAction func wantscrollmei(_ sender: Any) {
+        t = true
+    }
+    @IBAction func wantscrollsei(_ sender: Any) {
         t = true
     }
     
@@ -80,8 +85,6 @@ class Signup1ViewController: UIViewController,UITextFieldDelegate {
         
         self.navigationController?.pushViewController(viewController, animated: true)
         } else{
-            
-            
         }
     }
     
@@ -113,6 +116,7 @@ extension Signup1ViewController{
     
     /// キーボードが表示時に画面をずらす。
     @objc func keyboardWillShow(_ notification: Notification?) {
+        print(t)
         if(t == true){
             guard let rect = (notification?.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue,
                 let duration = notification?.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as? TimeInterval else { return }
@@ -133,6 +137,8 @@ extension Signup1ViewController{
             }
             print("keyboardWillHideを実行")
             t = false
+            print(t)
+            print("tfalse")
         }
     }
 }

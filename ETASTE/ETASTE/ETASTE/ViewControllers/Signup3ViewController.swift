@@ -10,27 +10,17 @@ import UIKit
 
 class Signup3ViewController: UIViewController {
 
+    
+    @IBOutlet weak var toplabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "メール確認"
-      self.navigationItem.hidesBackButton = true
+        self.navigationItem.hidesBackButton = true
         // Do any additional setup after loading the view.
-       toplabel.numberOfLines = 0
+        toplabel.numberOfLines = 0
     }
-   
-    @IBOutlet weak var toplabel: UILabel!
-   
+    
     @IBAction func signupagainbutton(_ sender: Any) {
-//        let viewControllerStoryboard = UIStoryboard(name: "Signup1ViewController", bundle: nil)
-//                let viewController = viewControllerStoryboard.instantiateInitialViewController() as! Signup1ViewController
-//                viewController.hidesBottomBarWhenPushed = true
-//                    self.navigationController?.pushViewController(viewController, animated: true)
-//
-//
-//        let viewControllerStoryboard = UIStoryboard(name: "Signup1ViewController", bundle: nil)
-//        let viewController = viewControllerStoryboard.instantiateInitialViewController() as! Signup1ViewController
-//
-//        self.present(viewController, animated: true)
         let layere_number = navigationController!.viewControllers.count
     self.navigationController?.popToViewController(navigationController!.viewControllers[layere_number-4], animated: true)
     }

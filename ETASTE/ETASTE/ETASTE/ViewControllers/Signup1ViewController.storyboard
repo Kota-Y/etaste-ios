@@ -37,6 +37,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" textContentType="name"/>
+                                <connections>
+                                    <action selector="wantscrollsei:" destination="LB0-s0-vJb" eventType="touchDown" id="BUZ-gn-aQg"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="メイ" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ujp-mq-Es5" customClass="CustomTextField" customModule="ETASTE" customModuleProvider="target">
                                 <rect key="frame" x="62.5" y="423.5" width="250" height="20"/>
@@ -48,7 +51,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" textContentType="name"/>
                                 <connections>
-                                    <action selector="wantscroll:" destination="LB0-s0-vJb" eventType="touchDown" id="cej-ge-ORP"/>
+                                    <action selector="wantscrollmei:" destination="LB0-s0-vJb" eventType="touchDown" id="paN-ii-fMc"/>
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="INS-J7-uSu">
