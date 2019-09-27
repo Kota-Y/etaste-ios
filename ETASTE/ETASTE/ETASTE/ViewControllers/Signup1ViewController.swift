@@ -47,9 +47,7 @@ class Signup1ViewController: UIViewController,UITextFieldDelegate {
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
-        
     }
-    
     
     @IBAction func wantscrollmei(_ sender: Any) {
         t = true
@@ -116,7 +114,6 @@ extension Signup1ViewController{
     
     /// キーボードが表示時に画面をずらす。
     @objc func keyboardWillShow(_ notification: Notification?) {
-        print(t)
         if(t == true){
             guard let rect = (notification?.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue,
                 let duration = notification?.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as? TimeInterval else { return }
@@ -137,8 +134,6 @@ extension Signup1ViewController{
             }
             print("keyboardWillHideを実行")
             t = false
-            print(t)
-            print("tfalse")
         }
     }
 }
