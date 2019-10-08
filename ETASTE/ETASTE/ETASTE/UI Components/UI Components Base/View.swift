@@ -63,3 +63,13 @@ protocol DesinableView {
         layer.shadowOpacity = 0.5
     }
 }
+
+@IBDesignable class UpperRoundedView: CustomView {
+    override func setupStyle() {
+        layer.cornerRadius = 20
+        layer.masksToBounds = true
+        layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        layer.borderColor = UIColor.etasteGray.cgColor
+        layer.borderWidth = 1
+    }
+}

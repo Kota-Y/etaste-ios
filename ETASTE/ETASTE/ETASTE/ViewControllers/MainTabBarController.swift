@@ -61,7 +61,7 @@ class MainTabBarController: UITabBarController {
         super.viewDidLoad()
         
         tabBar.tintColor = UIColor.etasteDarkerYellow
-        tabBar.unselectedItemTintColor = UIColor.gray
+        tabBar.unselectedItemTintColor = UIColor.etasteGray
         tabBar.barTintColor = UIColor.paleWhite
         
         var viewControllers = [UIViewController]()

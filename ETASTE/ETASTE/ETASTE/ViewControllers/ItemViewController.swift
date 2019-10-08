@@ -31,9 +31,16 @@ class ItemViewController: UIViewController {
     @IBOutlet weak var urlLabel: UILabel!
     @IBOutlet weak var googleMap: GMSMapView!
     
+    @IBOutlet weak var handleImage: UIImageView!
+    @IBOutlet weak var amountTextField: UITextField!
+    @IBOutlet weak var receiveTimeTextField: UITextField!
+    @IBOutlet weak var halfModalViewHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var fadeView: UIView!
+    @IBOutlet var panGestureRecognizerOnHalfModalView: UIPanGestureRecognizer!
+    @IBOutlet var halfModalViewsParts: [UIView]!
+    
     @IBOutlet var imagesNeedPlaceHolder: [UIImageView]!
     @IBOutlet var labelsNeedPlaceHolder: [UILabel]!
-    @IBOutlet var viewsNeedPlaceHolder: [UIView]!
     
     @IBOutlet weak var lowerViewTopConstraint: NSLayoutConstraint!
     let openLowerViewTopConstraint: CGFloat = 0
@@ -43,6 +50,11 @@ class ItemViewController: UIViewController {
     @IBOutlet weak var lowerViewHight: NSLayoutConstraint!
     
     let foodDetailModel = FoodDetailModel()
+    let animation = Animation()
+    
+    var isHalfModalViewOpen = false
+    var halfModalViewClosingHeight: CGFloat = 100.0
+    var halfModalViewOpeningHeight: CGFloat = 260.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,12 +69,15 @@ class ItemViewController: UIViewController {
         
         imagesNeedPlaceHolder.appearImagePlaceHolders()
         labelsNeedPlaceHolder.appearLabelPlaceHolders()
-        //viewsNeedPlaceHolder.appearViewPlaceHolders()
         
         foodDetailModel.delegate = self
         
         foodDetailModel.getFoodDetail(foodId: 1) // 暫定の決めうち
         
+        halfModalViewHeightConstraint.constant = halfModalViewClosingHeight
+        handleImage.image = UIImage(named: "neutralHandleOnHalf-ModalView")
+        fadeView.backgroundColor = UIColor.white
+        fadeView.alpha = 1
     }
     
     
@@ -84,6 +99,43 @@ class ItemViewController: UIViewController {
             })
         }
     }
+    
+    @IBAction func panHalfModalView(_ sender: UIPanGestureRecognizer) {
+        switch sender.state {
+        case .changed:
+            let deviation: CGPoint = sender.translation(in: view)
+            let movedConstraint = halfModalViewHeightConstraint.constant - deviation.y
+            if halfModalViewClosingHeight <= movedConstraint && movedConstraint <= halfModalViewOpeningHeight {
+                halfModalViewHeightConstraint.constant = movedConstraint
+            }
+            fadeView.alpha = 1 - ((movedConstraint - halfModalViewClosingHeight) / (halfModalViewOpeningHeight - halfModalViewClosingHeight))
+            sender.setTranslation(CGPoint(x: deviation.x, y: 0), in: view)
+        case .ended:
+            let halfAreaHeight = (halfModalViewOpeningHeight + halfModalViewClosingHeight) / 2
+            let velocity = sender.velocity(in: view)
+            var isShouldBeClose = halfModalViewHeightConstraint.constant <= halfAreaHeight
+            if isHalfModalViewOpen == true && 500.0 <= velocity.y {
+                isShouldBeClose = true
+            } else if isHalfModalViewOpen == false && -500.0 >= velocity.y {
+                isShouldBeClose = false
+            }
+            animation.animateHalfModalView(
+                imageView: handleImage,
+                imageName: isShouldBeClose ? "neutralHandleOnHalf-ModalView" : "toCloseHandleOnHalf-ModalView",
+                heightConstraint: halfModalViewHeightConstraint,
+                height: isShouldBeClose ? halfModalViewClosingHeight : halfModalViewOpeningHeight,
+                withDuration: 0.5,
+                uiView: self.view,
+                isDoTransparent: !isShouldBeClose,
+                transparentUIView: fadeView,
+                completion: {}
+            )
+            isHalfModalViewOpen = !isShouldBeClose
+        default:
+            break
+        }
+    }
+    
     
 }
 
@@ -130,8 +182,8 @@ extension ItemViewController: FoodDetailModelDelegate {
             }
             
             tag.topAnchor.constraint(equalTo: allergiesTagTitleView.bottomAnchor, constant: CGFloat(13 * steps) + tag.frame.maxY / 2 * steps).isActive = true
-            
         }
+        halfModalViewsParts.forEach { self.view.bringSubviewToFront($0) } // アレルギータグがaddSubview されて最前面にくるのでハーフモーダルビュー関連のUIを最前面に持ってくる
         
         storeImage.image = UIImage(url: storeInfo.image)
         storeNameLabel.text = storeInfo.name

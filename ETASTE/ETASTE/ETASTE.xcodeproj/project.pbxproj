@@ -29,6 +29,7 @@
 		4F940BF9234C396500793F09 /* Trade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F940BF8234C396500793F09 /* Trade.swift */; };
 		4F940BFB234C398A00793F09 /* FavoriteItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F940BFA234C398A00793F09 /* FavoriteItemCell.swift */; };
 		4F940BFD234C3A0200793F09 /* StoreFavoriteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F940BFC234C3A0200793F09 /* StoreFavoriteModel.swift */; };
+		4F940BFF234D3E6400793F09 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F940BFE234D3E6400793F09 /* Animation.swift */; };
 		4FB18703232E616800E9EFD2 /* FoodDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB18702232E616800E9EFD2 /* FoodDetailModel.swift */; };
 		4FBDEDE222F0C24500DFF109 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBDEDE122F0C24500DFF109 /* Color.swift */; };
 		4FBDEDE622F0C99600DFF109 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBDEDE522F0C99600DFF109 /* SearchBar.swift */; };
@@ -133,6 +134,7 @@
 		4F940BF8234C396500793F09 /* Trade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Trade.swift; path = ../../../../../../../../../OpenAPI_generator/OpenAPIClient/Classes/OpenAPIs/Models/Trade.swift; sourceTree = "<group>"; };
 		4F940BFA234C398A00793F09 /* FavoriteItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteItemCell.swift; sourceTree = "<group>"; };
 		4F940BFC234C3A0200793F09 /* StoreFavoriteModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoreFavoriteModel.swift; path = ETASTE/Models/StoreFavoriteModel.swift; sourceTree = SOURCE_ROOT; };
+		4F940BFE234D3E6400793F09 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 		4FB18702232E616800E9EFD2 /* FoodDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailModel.swift; sourceTree = "<group>"; };
 		4FBDEDE122F0C24500DFF109 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		4FBDEDE522F0C99600DFF109 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
@@ -269,6 +271,7 @@
 			children = (
 				4FBDEDE822F0CC3800DFF109 /* UIColor_Utility.swift */,
 				4FEE9B48232AA4B100A9B5AC /* UIView_Utility.swift */,
+				4F940BFE234D3E6400793F09 /* Animation.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -766,6 +769,7 @@
 				4FEE9B2B232924A400A9B5AC /* UserLogin.swift in Sources */,
 				4FEE9B24232924A400A9B5AC /* JSONEncodableEncoding.swift in Sources */,
 				4F68F6E2231A4268002CE931 /* Label.swift in Sources */,
+				4F940BFF234D3E6400793F09 /* Animation.swift in Sources */,
 				630EEFF422EF3DDD0030E302 /* HomeViewController.swift in Sources */,
 				4FEE9B49232AA4B100A9B5AC /* UIView_Utility.swift in Sources */,
 				4FEE9B3C2329293F00A9B5AC /* StoreModel.swift in Sources */,
@@ -868,7 +872,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -923,7 +927,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
