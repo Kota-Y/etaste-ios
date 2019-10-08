@@ -20,6 +20,7 @@ class StoreViewController: UIViewController {
     @IBOutlet weak var parkingLabel: UILabel!
     @IBOutlet weak var urlLabel: UILabel!
     @IBOutlet weak var googleMap: GMSMapView!
+    @IBOutlet weak var favoritebutton: UIButton!
     
     @IBOutlet var imagesNeedPlaceHolder: [UIImageView]!
     @IBOutlet var labelsNeedPlaceHolder: [UILabel]!
@@ -71,6 +72,28 @@ extension StoreViewController: StoreModelDelegate {
         let marker = GMSMarker()
         marker.position = mapPosition
         marker.map = googleMap
+        
+    }
+    
+    @IBAction func favoritebutton(_ sender: Any) {
+        isfavorite = !isfavorite
+        if isfavorite {
+            storefavorite.createFavorite()
+        } else {
+            storefavorite.deleteFavorite(storeid: store._id)
+        }
+         switcfavorite()
+    }
+    
+    func switcfavorite(){
+        
+        if isfavorite {
+            let image = UIImage(named: "fav2")
+            favoritebutton.setBackgroundImage(image, for: .normal)
+        } else {
+            let image = UIImage(named: "fav1")
+            favoritebutton.setBackgroundImage(image, for: .normal)
+        }
     }
     
     func didRecieveStoreError(storeModel: StoreModel, error: Error) {
