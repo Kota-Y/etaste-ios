@@ -25,7 +25,11 @@ class StoreViewController: UIViewController {
     @IBOutlet var imagesNeedPlaceHolder: [UIImageView]!
     @IBOutlet var labelsNeedPlaceHolder: [UILabel]!
     
+    var store: Store!
+    var isfavorite = false
+    
     let storeModel = StoreModel()
+    let storefavorite = StoreFavoriteModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,6 +53,26 @@ class StoreViewController: UIViewController {
     
     @objc func login() {
         
+    }
+    
+    @IBAction func favoritebutton(_ sender: Any) {
+        isfavorite = !isfavorite
+        if isfavorite {
+            storefavorite.createFavorite()
+        } else {
+            storefavorite.deleteFavorite(storeid: store._id)
+        }
+         switchfavorite()
+    }
+    
+    func switchfavorite(){
+        if isfavorite {
+            let image = UIImage(named: "fav2")
+            favoritebutton.setBackgroundImage(image, for: .normal)
+        } else {
+            let image = UIImage(named: "fav1")
+            favoritebutton.setBackgroundImage(image, for: .normal)
+        }
     }
     
 }
@@ -75,31 +99,27 @@ extension StoreViewController: StoreModelDelegate {
         
     }
     
-    @IBAction func favoritebutton(_ sender: Any) {
-        isfavorite = !isfavorite
-        if isfavorite {
-            storefavorite.createFavorite()
-        } else {
-            storefavorite.deleteFavorite(storeid: store._id)
-        }
-         switcfavorite()
-    }
-    
-    func switcfavorite(){
-        
-        if isfavorite {
-            let image = UIImage(named: "fav2")
-            favoritebutton.setBackgroundImage(image, for: .normal)
-        } else {
-            let image = UIImage(named: "fav1")
-            favoritebutton.setBackgroundImage(image, for: .normal)
-        }
-    }
-    
     func didRecieveStoreError(storeModel: StoreModel, error: Error) {
         print("Error on getStore")
     }
     
-    
 }
+
+extension StoreViewController:StoreFavoriteModelDelegate {
+    func didReceiveStoreFavoriteModel(storeFavoritemodel: StoreFavoriteModel, Favorite: Favorite) {
+        let fav = Favorite.favoriteStores
+        for i in 0..<fav.count {
+            if fav[i]._id == store._id {
+                self.isfavorite = true
+                self.switchfavorite()
+            }
+        }
+    }
+    
+    
+    func didRecieveStoreFavoriteError(storeFavoritemodel:StoreFavoriteModel, error: Error){
+        print("Error on getFood :", error)
+    }
+}
+
 
