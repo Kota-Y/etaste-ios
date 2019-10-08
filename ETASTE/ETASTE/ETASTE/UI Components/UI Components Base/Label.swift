@@ -36,7 +36,11 @@ class CustomLabel: UILabel, DesinableLabel {
 
     override var text: String? {
         didSet {
-            backgroundColor = UIColor.clear
+            setupStyle()
+            let attributes: [NSAttributedString.Key : Any] = [
+                .backgroundColor : UIColor.clear
+            ]
+            attributedText = NSAttributedString(string: text!, attributes: attributes)
         }
     }
 }
