@@ -19,7 +19,8 @@ class HomeViewController: UIViewController {
     var marker: [GMSMarker] = []
     var lalo:[[Double]] = [[32.815183,130.727428],[32.814949,130.727842],[32.814419,130.726572]]
     
-    let storeModel = StoreModel()
+    // TODO: 商品画面への遷移かどうか使うフラグ。いつか消すように
+    var isToItemViewFlag = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +32,6 @@ class HomeViewController: UIViewController {
                                                                  action: #selector(login))
                 
         searchBar.delegate = self
-        storeModel.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -64,7 +64,19 @@ class HomeViewController: UIViewController {
     
     // 画面遷移のテスト用
     @IBAction func tapTestButton(_ sender: UIButton) {
-        storeModel.getStore(storeId: 1) // 店舗のIDは決め打ち
+        let storeViewControllerStoryboard = UIStoryboard(name: "StoreViewController", bundle: nil)
+        let storeViewController = storeViewControllerStoryboard.instantiateInitialViewController() as! StoreViewController
+        self.navigationController?.pushViewController(storeViewController, animated: true)
+    }
+    // 商品購入画面への遷移用
+    @IBAction func tapToItemViewButton(_ sender: UIButton) {
+        let itemViewControllerStoryboard = UIStoryboard(name: "ItemViewController", bundle: nil)
+        let itemViewController = itemViewControllerStoryboard.instantiateInitialViewController() as! ItemViewController
+        self.navigationController?.pushViewController(itemViewController, animated: true)
+
+    }
+    @IBAction func tapToNoItemViewButton(_ sender: UIButton) {
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -77,16 +89,4 @@ class HomeViewController: UIViewController {
 extension HomeViewController: UISearchBarDelegate {
 }
 
-extension HomeViewController: StoreModelDelegate {
-    func didRecieveStoreData(storeModel: StoreModel, store: Store) {
-        let storeViewControllerStoryboard = UIStoryboard(name: "StoreViewController", bundle: nil)
-        let storeViewController = storeViewControllerStoryboard.instantiateInitialViewController() as! StoreViewController
-        storeViewController.store = store
-        
-        self.navigationController?.pushViewController(storeViewController, animated: true)
-    }
-    
-    func didRecieveError(storeModel: StoreModel, error: Error) {
-        print("Error on getStore")
-    }
-}
+
