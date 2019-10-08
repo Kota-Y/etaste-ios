@@ -109,17 +109,17 @@ extension ItemViewController: FoodDetailModelDelegate {
         whySaleTextLabel.text = foodInfo.whySale
         
         allergiesTagTitleLabel.text = "アレルギー表示"
-        //
-        let allergies = ["卵", "乳", "小麦", "落花生", "えび", "かに"] // テスト用
-        
+        let allergys = foodInfo.allergys
+        guard let allergies = allergys else {
+            return
+        }
         if allergies.count > 4 {
             lowerViewHight.constant += 43
         }
-        
         for (index, allergy) in allergies.enumerated() {
             let nib = UINib(nibName: "AllergiesTagView", bundle: nil)
             let tag = nib.instantiate(withOwner: nil, options: nil)[0] as! AllergiesTagView
-            tag.allergiesTagLabel.text = allergy
+            tag.allergiesTagLabel.text = allergy.name
             tag.translatesAutoresizingMaskIntoConstraints = false
             self.view.addSubview(tag)
             let steps: CGFloat = CGFloat((index / 4) + 1) // 段数。最初を１段とする
@@ -133,7 +133,6 @@ extension ItemViewController: FoodDetailModelDelegate {
             
         }
         
-        //
         storeImage.image = UIImage(url: storeInfo.image)
         storeNameLabel.text = storeInfo.name
         storeTimeLabel.text = storeInfo.openTime + "〜" + storeInfo.closeTime
