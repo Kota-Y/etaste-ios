@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import GoogleMaps
 
-class ItemViewController: UIViewController {
+class ItemViewController: TextFieldViewController {
     @IBOutlet weak var itemImage: UIImageView!
     @IBOutlet weak var itemNameLabel: UILabel!
     @IBOutlet weak var itemPriceLabel: UILabel!
@@ -38,6 +38,9 @@ class ItemViewController: UIViewController {
     @IBOutlet weak var fadeView: UIView!
     @IBOutlet var panGestureRecognizerOnHalfModalView: UIPanGestureRecognizer!
     @IBOutlet var halfModalViewsParts: [UIView]!
+    @IBOutlet weak var payButton: UIButton!
+    @IBOutlet weak var payButtonTitleLabel: UILabel!
+    @IBOutlet weak var backgroundOfPayButtonViewHeightConstraint: NSLayoutConstraint!
     
     @IBOutlet var imagesNeedPlaceHolder: [UIImageView]!
     @IBOutlet var labelsNeedPlaceHolder: [UILabel]!
@@ -47,14 +50,18 @@ class ItemViewController: UIViewController {
     let closeLowerViewTopConstraint: CGFloat = -130
     var isWhySaleTextOpen = true
     
-    @IBOutlet weak var lowerViewHight: NSLayoutConstraint!
+    @IBOutlet weak var lowerViewHeight: NSLayoutConstraint!
     
     let foodDetailModel = FoodDetailModel()
     let animation = Animation()
     
     var isHalfModalViewOpen = false
-    var halfModalViewClosingHeight: CGFloat = 100.0
+    var halfModalViewClosingHeight: CGFloat = 110.0
     var halfModalViewOpeningHeight: CGFloat = 260.0
+    var defaultBackgroundOfPayButtonViewHeight: CGFloat!
+    
+    var amountPickerData: [[String]] = [[], []]
+    var receivePickerData: [[String]] = [[], []]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -74,12 +81,47 @@ class ItemViewController: UIViewController {
         
         foodDetailModel.getFoodDetail(foodId: 1) // 暫定の決めうち
         
+        // ハーフモーダルビュー
         halfModalViewHeightConstraint.constant = halfModalViewClosingHeight
         handleImage.image = UIImage(named: "neutralHandleOnHalf-ModalView")
         fadeView.backgroundColor = UIColor.white
         fadeView.alpha = 1
+        defaultBackgroundOfPayButtonViewHeight = backgroundOfPayButtonViewHeightConstraint.constant
+        
+        // TextField
+//        setTextFieldsDelegate()
+        self.amountTextField.delegate = self
+        self.receiveTimeTextField.delegate = self
+        
+        let amountPickerView = UIPickerView()
+        let receiveTimePickerView = UIPickerView()
+        amountPickerView.tag = PickerSource.amount.rawValue
+        amountPickerView.delegate = self
+        amountPickerView.dataSource = self
+        receiveTimePickerView.tag = PickerSource.receiveTime.rawValue
+        receiveTimePickerView.delegate = self
+        receiveTimePickerView.dataSource = self
+        
+        print("amountPickerView.frame.height : ", amountPickerView.frame.height)
+        
+        amountTextField.inputView = amountPickerView
+        receiveTimeTextField.inputView = receiveTimePickerView
+        
+        amountPickerData = [["1", "2", "3", "4", "5"], [""]]
+        
+        for hour in 0..<24 {
+            receivePickerData[0].append(String(hour))
+        }
+        for minutes in 0..<60 {
+            receivePickerData[1].append(String(minutes))
+        }
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        // TextField
+        self.setUpNotificationForTextField()
+    }
     
     @IBAction func whySaleTitleTap(_ sender: UITapGestureRecognizer) {
         animationWhySaleText(animated: true)
@@ -128,14 +170,42 @@ class ItemViewController: UIViewController {
                 uiView: self.view,
                 isDoTransparent: !isShouldBeClose,
                 transparentUIView: fadeView,
-                completion: {}
+                completion: {
+                    self.backgroundOfPayButtonViewHeightConstraint.constant = self.defaultBackgroundOfPayButtonViewHeight
+                }
             )
             isHalfModalViewOpen = !isShouldBeClose
+            self.payButton.isEnabled = isShouldBeClose
+            self.payButtonTitleLabel.text = isShouldBeClose ? "購入" : "購入確認"
+            let backImage = isShouldBeClose ? UIImage(named: "ETASTEsFrame") : UIImage(named: "ETASTEsFrame")?.withRenderingMode(UIImage.RenderingMode.alwaysTemplate)
+            self.payButton.setImage(backImage, for: .normal)
+            self.payButton.tintColor = UIColor.etasteGray
+            backgroundOfPayButtonViewHeightConstraint.constant = isShouldBeClose ? 60 : defaultBackgroundOfPayButtonViewHeight
         default:
             break
         }
     }
     
+    @IBAction func payButtonTap(_ sender: UIButton) {
+        // 開く動きのみなので、後で関数にして共通化した方が良い
+        animation.animateHalfModalView(
+            imageView: handleImage,
+            imageName: "toCloseHandleOnHalf-ModalView",
+            heightConstraint: halfModalViewHeightConstraint,
+            height: halfModalViewOpeningHeight,
+            withDuration: 1,
+            uiView: self.view,
+            isDoTransparent: true,
+            transparentUIView: fadeView,
+            completion: {}
+        )
+        isHalfModalViewOpen = true
+        self.payButton.isEnabled = false
+        self.payButtonTitleLabel.text = "購入確認"
+        let backImage = UIImage(named: "ETASTEsFrame")?.withRenderingMode(UIImage.RenderingMode.alwaysTemplate)
+        self.payButton.setImage(backImage, for: .normal)
+        self.payButton.tintColor = UIColor.etasteGray
+    }
     
 }
 
@@ -166,7 +236,7 @@ extension ItemViewController: FoodDetailModelDelegate {
             return
         }
         if allergies.count > 4 {
-            lowerViewHight.constant += 43
+            lowerViewHeight.constant += 43
         }
         for (index, allergy) in allergies.enumerated() {
             let nib = UINib(nibName: "AllergiesTagView", bundle: nil)
@@ -207,3 +277,79 @@ extension ItemViewController: FoodDetailModelDelegate {
         print("Error on getFood :", error)
     }
 }
+
+enum PickerSource: Int, CaseIterable {
+    case amount = 1
+    case receiveTime = 2
+    
+    var row: Int {
+        switch self {
+        case .amount:
+            return 1
+        case .receiveTime:
+            return 2
+        }
+    }
+    
+//    var pickData: [[String]] {
+//        switch self {
+//        case .amount:
+//            return [["1", "2", "3", "4", "5"], [""]]
+//        case .receiveTime:
+//            var array: [[String]] = [[], []]
+//            for hour in 0..<24 {
+//                array[0].append(String(hour))
+//            }
+//            for minutes in 0..<60 {
+//                array[1].append(String(minutes))
+//            }
+//            return array
+//        }
+//    }
+}
+
+extension ItemViewController: UIPickerViewDataSource {
+    // UIPickerViewの列の数
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return PickerSource(rawValue: pickerView.tag)!.row
+    }
+    
+    // UIPickerViewの行数、リストの数
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        switch PickerSource(rawValue: pickerView.tag) {
+        case .amount?:
+            return amountPickerData[0].count - 1
+        case .receiveTime?:
+            return receivePickerData[1].count - 1
+        case _:
+            return 0
+        }
+    }
+    
+    // UIPickerViewの最初の表示
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        switch PickerSource(rawValue: pickerView.tag) {
+        case .amount?:
+            return amountPickerData[0][row]
+        case .receiveTime?:
+            return receivePickerData[component][row]
+        case _:
+            return ""
+        }
+    }
+}
+
+extension ItemViewController: UIPickerViewDelegate {
+    // UIPickerViewのRowが選択された時の挙動
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        //label.text = dataList[row]
+        switch PickerSource(rawValue: pickerView.tag)! {
+        case .amount:
+            amountTextField.text = amountPickerData[component][row]
+        case .receiveTime:
+            receiveTimeTextField.text = receivePickerData[component][row]
+        }
+    }
+}
+
+

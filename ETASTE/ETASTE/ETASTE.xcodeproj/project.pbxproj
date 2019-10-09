@@ -23,13 +23,14 @@
 		4F766DD72332C899008E95AF /* AllergiesTagView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F766DD62332C899008E95AF /* AllergiesTagView.xib */; };
 		4F766DD92332C8AA008E95AF /* AllergiesTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F766DD82332C8AA008E95AF /* AllergiesTagView.swift */; };
 		4F940BE6234C32F300793F09 /* Allergy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F940BE5234C32F200793F09 /* Allergy.swift */; };
-		4F940BE8234C33B600793F09 /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F940BE7234C33B600793F09 /* FoodItem.swift */; };
 		4F940BF6234C395700793F09 /* FavoriteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F940BF4234C395700793F09 /* FavoriteTableViewCell.xib */; };
 		4F940BF7234C395700793F09 /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F940BF5234C395700793F09 /* FavoriteTableViewCell.swift */; };
 		4F940BF9234C396500793F09 /* Trade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F940BF8234C396500793F09 /* Trade.swift */; };
 		4F940BFB234C398A00793F09 /* FavoriteItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F940BFA234C398A00793F09 /* FavoriteItemCell.swift */; };
 		4F940BFD234C3A0200793F09 /* StoreFavoriteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F940BFC234C3A0200793F09 /* StoreFavoriteModel.swift */; };
 		4F940BFF234D3E6400793F09 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F940BFE234D3E6400793F09 /* Animation.swift */; };
+		4F940C01234DEE0F00793F09 /* TextFieldView_Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F940C00234DEE0F00793F09 /* TextFieldView_Utility.swift */; };
+		4F940C07234DF71400793F09 /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F940C06234DF71400793F09 /* FoodItem.swift */; };
 		4FB18703232E616800E9EFD2 /* FoodDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB18702232E616800E9EFD2 /* FoodDetailModel.swift */; };
 		4FBDEDE222F0C24500DFF109 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBDEDE122F0C24500DFF109 /* Color.swift */; };
 		4FBDEDE622F0C99600DFF109 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBDEDE522F0C99600DFF109 /* SearchBar.swift */; };
@@ -128,13 +129,14 @@
 		4F766DD62332C899008E95AF /* AllergiesTagView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllergiesTagView.xib; sourceTree = "<group>"; };
 		4F766DD82332C8AA008E95AF /* AllergiesTagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllergiesTagView.swift; sourceTree = "<group>"; };
 		4F940BE5234C32F200793F09 /* Allergy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Allergy.swift; sourceTree = "<group>"; };
-		4F940BE7234C33B600793F09 /* FoodItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FoodItem.swift; path = ../../../../../../../../../OpenAPI_generator/OpenAPIClient/Classes/OpenAPIs/Models/FoodItem.swift; sourceTree = "<group>"; };
 		4F940BF4234C395700793F09 /* FavoriteTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavoriteTableViewCell.xib; sourceTree = "<group>"; };
 		4F940BF5234C395700793F09 /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
 		4F940BF8234C396500793F09 /* Trade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Trade.swift; path = ../../../../../../../../../OpenAPI_generator/OpenAPIClient/Classes/OpenAPIs/Models/Trade.swift; sourceTree = "<group>"; };
 		4F940BFA234C398A00793F09 /* FavoriteItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteItemCell.swift; sourceTree = "<group>"; };
 		4F940BFC234C3A0200793F09 /* StoreFavoriteModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoreFavoriteModel.swift; path = ETASTE/Models/StoreFavoriteModel.swift; sourceTree = SOURCE_ROOT; };
 		4F940BFE234D3E6400793F09 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		4F940C00234DEE0F00793F09 /* TextFieldView_Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldView_Utility.swift; sourceTree = "<group>"; };
+		4F940C06234DF71400793F09 /* FoodItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
 		4FB18702232E616800E9EFD2 /* FoodDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailModel.swift; sourceTree = "<group>"; };
 		4FBDEDE122F0C24500DFF109 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		4FBDEDE522F0C99600DFF109 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
@@ -272,6 +274,7 @@
 				4FBDEDE822F0CC3800DFF109 /* UIColor_Utility.swift */,
 				4FEE9B48232AA4B100A9B5AC /* UIView_Utility.swift */,
 				4F940BFE234D3E6400793F09 /* Animation.swift */,
+				4F940C00234DEE0F00793F09 /* TextFieldView_Utility.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -333,8 +336,8 @@
 		4FEE9B06232924A400A9B5AC /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				4F940C06234DF71400793F09 /* FoodItem.swift */,
 				4F940BF8234C396500793F09 /* Trade.swift */,
-				4F940BE7234C33B600793F09 /* FoodItem.swift */,
 				4F940BE5234C32F200793F09 /* Allergy.swift */,
 				4FEE9B08232924A400A9B5AC /* TradeComplete.swift */,
 				4FEE9B09232924A400A9B5AC /* FavoriteStore.swift */,
@@ -723,6 +726,7 @@
 			files = (
 				4FEE9B46232963FB00A9B5AC /* View.swift in Sources */,
 				4FEE9B2F232924A400A9B5AC /* FoodDetail.swift in Sources */,
+				4F940C07234DF71400793F09 /* FoodItem.swift in Sources */,
 				4FEE9B1C232924A400A9B5AC /* APIHelper.swift in Sources */,
 				4FBDEDE922F0CC3800DFF109 /* UIColor_Utility.swift in Sources */,
 				4FEE9B39232924A400A9B5AC /* Models.swift in Sources */,
@@ -758,6 +762,7 @@
 				4FEE9B1E232924A400A9B5AC /* UserAPI.swift in Sources */,
 				4FEE9B35232924A400A9B5AC /* TradeStoreItem.swift in Sources */,
 				4FEE9B2C232924A400A9B5AC /* FoodCreate.swift in Sources */,
+				4F940C01234DEE0F00793F09 /* TextFieldView_Utility.swift in Sources */,
 				4FEE9B25232924A400A9B5AC /* APIs.swift in Sources */,
 				4FBDEDE222F0C24500DFF109 /* Color.swift in Sources */,
 				4FCEFF052310DD100050D668 /* (null) in Sources */,
@@ -781,7 +786,6 @@
 				4FEE9B23232924A400A9B5AC /* CodableHelper.swift in Sources */,
 				4F68F6E6231A4346002CE931 /* Font.swift in Sources */,
 				4F940BF9234C396500793F09 /* Trade.swift in Sources */,
-				4F940BE8234C33B600793F09 /* FoodItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
