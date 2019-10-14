@@ -127,10 +127,10 @@
 		4F766DD62332C899008E95AF /* AllergiesTagView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllergiesTagView.xib; sourceTree = "<group>"; };
 		4F766DD82332C8AA008E95AF /* AllergiesTagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllergiesTagView.swift; sourceTree = "<group>"; };
 		4F940BE5234C32F200793F09 /* Allergy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Allergy.swift; sourceTree = "<group>"; };
-		4F940BE7234C33B600793F09 /* FoodItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FoodItem.swift; path = ../../../../../../../../../OpenAPI_generator/OpenAPIClient/Classes/OpenAPIs/Models/FoodItem.swift; sourceTree = "<group>"; };
+		4F940BE7234C33B600793F09 /* FoodItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
 		4F940BF4234C395700793F09 /* FavoriteTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavoriteTableViewCell.xib; sourceTree = "<group>"; };
 		4F940BF5234C395700793F09 /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
-		4F940BF8234C396500793F09 /* Trade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Trade.swift; path = ../../../../../../../../../OpenAPI_generator/OpenAPIClient/Classes/OpenAPIs/Models/Trade.swift; sourceTree = "<group>"; };
+		4F940BF8234C396500793F09 /* Trade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trade.swift; sourceTree = "<group>"; };
 		4F940BFA234C398A00793F09 /* FavoriteItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteItemCell.swift; sourceTree = "<group>"; };
 		4F940BFC234C3A0200793F09 /* StoreFavoriteModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoreFavoriteModel.swift; path = ETASTE/Models/StoreFavoriteModel.swift; sourceTree = SOURCE_ROOT; };
 		4FB18702232E616800E9EFD2 /* FoodDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailModel.swift; sourceTree = "<group>"; };

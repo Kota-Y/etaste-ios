@@ -44,7 +44,7 @@ public struct FoodItem: Codable {
         case salePrice
         case startTime
         case endTime
-        case allergy
+        case allergys
         case whySale
         case image
         case mapLatitude
