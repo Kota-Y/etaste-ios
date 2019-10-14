@@ -88,6 +88,8 @@
 		630EEFF422EF3DDD0030E302 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630EEFF322EF3DDD0030E302 /* HomeViewController.swift */; };
 		630EEFF622F08D820030E302 /* ShopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630EEFF522F08D820030E302 /* ShopModel.swift */; };
 		BBA0A12EC71EDA05B5EC4674 /* Pods_ETASTEUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77BE23D1B7392795678CE704 /* Pods_ETASTEUITests.framework */; };
+		CB9D60572354608A007D43D7 /* FinViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB9D60562354608A007D43D7 /* FinViewController.storyboard */; };
+		CB9D6059235460E8007D43D7 /* FinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9D6058235460E8007D43D7 /* FinViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -193,6 +195,8 @@
 		77BE23D1B7392795678CE704 /* Pods_ETASTEUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ETASTEUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		785291696FA3228D4BE184BC /* Pods-ETASTE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETASTE.debug.xcconfig"; path = "Target Support Files/Pods-ETASTE/Pods-ETASTE.debug.xcconfig"; sourceTree = "<group>"; };
 		A12D2E41460E47E723746E5E /* Pods-ETASTEUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETASTEUITests.release.xcconfig"; path = "Target Support Files/Pods-ETASTEUITests/Pods-ETASTEUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CB9D60562354608A007D43D7 /* FinViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FinViewController.storyboard; sourceTree = "<group>"; };
+		CB9D6058235460E8007D43D7 /* FinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinViewController.swift; sourceTree = "<group>"; };
 		DB3A248EB3E412C20BE8EE9F /* Pods-ETASTEUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETASTEUITests.debug.xcconfig"; path = "Target Support Files/Pods-ETASTEUITests/Pods-ETASTEUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E086B855740E4679EBD13C88 /* Pods-ETASTETests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETASTETests.release.xcconfig"; path = "Target Support Files/Pods-ETASTETests/Pods-ETASTETests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -430,6 +434,8 @@
 				6301B05622EF38410078844C /* SplashViewController.swift */,
 				630EEFF122EF3DC50030E302 /* HomeViewController.storyboard */,
 				630EEFF322EF3DDD0030E302 /* HomeViewController.swift */,
+				CB9D60562354608A007D43D7 /* FinViewController.storyboard */,
+				CB9D6058235460E8007D43D7 /* FinViewController.swift */,
 				4F940BFA234C398A00793F09 /* FavoriteItemCell.swift */,
 				4F0F7ED822FE038E00AEB6E9 /* FavoriteViewController.storyboard */,
 				4F0F7EDA22FE039C00AEB6E9 /* FavoriteViewController.swift */,
@@ -582,6 +588,7 @@
 				4F766DD72332C899008E95AF /* AllergiesTagView.xib in Resources */,
 				4F0F7EE122FE043E00AEB6E9 /* SettingViewController.storyboard in Resources */,
 				4F0F7EDD22FE03F700AEB6E9 /* DealViewController.storyboard in Resources */,
+				CB9D60572354608A007D43D7 /* FinViewController.storyboard in Resources */,
 				4FEE9B4023294BA700A9B5AC /* ItemViewController.storyboard in Resources */,
 				4FBDEDED22F0CCA800DFF109 /* key.plist in Resources */,
 				4F940BF6234C395700793F09 /* FavoriteTableViewCell.xib in Resources */,
@@ -762,6 +769,7 @@
 				4FEE9B3E2329367900A9B5AC /* UIImage.swift in Sources */,
 				4FCEFF4C2310EC660050D668 /* APIConfiguration.swift in Sources */,
 				4FEE9B21232924A400A9B5AC /* FoodAPI.swift in Sources */,
+				CB9D6059235460E8007D43D7 /* FinViewController.swift in Sources */,
 				4FEE9B2D232924A400A9B5AC /* ModelError.swift in Sources */,
 				4FEE9B2B232924A400A9B5AC /* UserLogin.swift in Sources */,
 				4FEE9B24232924A400A9B5AC /* JSONEncodableEncoding.swift in Sources */,
