@@ -19,9 +19,6 @@
                         <viewLayoutGuide key="safeArea" id="B7d-Ya-iAU"/>
                     </view>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="test" destination="DFY-7T-kyq" id="7VS-94-y90"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QOR-tE-tFf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -10,9 +10,16 @@ import UIKit
 
 class FinViewController: UIViewController{
     
-    @IBOutlet var test: UIView!
     override func viewDidLoad() {
-        print("Hello World!")
+        self.navigationItem.title = "購入完了"
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "loginicon")?.withRenderingMode(.alwaysOriginal),
+                                                                 style: .plain,
+                                                                 target: self,
+                                                                 action: #selector(login))
+    }
+
+    @objc func login() {
+        
     }
     
 }
