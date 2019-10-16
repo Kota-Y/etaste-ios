@@ -33,7 +33,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TFO-yb-zJp">
                                 <rect key="frame" x="159" y="256" width="56" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="fav1"/>
+                                <state key="normal" backgroundImage="fav1"/>
                                 <connections>
                                     <action selector="favorite:" destination="tck-Nt-nD9" eventType="touchUpInside" id="xUt-ot-J7i"/>
                                 </connections>

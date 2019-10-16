@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class FinViewController: UIViewController{
     
@@ -26,10 +27,10 @@ class FinViewController: UIViewController{
         self.navigationItem.title = "購入完了"
 
         //ホームへ遷移できるようにする
-        let myTap: UITapGestureRecognizer = UITapGestureRecognizer( target: self, 
+        let tapToHome: UITapGestureRecognizer = UITapGestureRecognizer( target: self, 
                                                                     action: #selector(FinViewController.toHomeButton(_ :)))
         self.toHomeLink.isUserInteractionEnabled = true
-        self.toHomeLink.addGestureRecognizer(myTap)
+        self.toHomeLink.addGestureRecognizer(tapToHome)
         
         //タブバーを非表示にする
         self.tabBarController?.tabBar.isHidden = true
@@ -66,7 +67,7 @@ class FinViewController: UIViewController{
         }
     }
     
-    //完了ボタンからdeal画面へ
+    //「完了」ボタンからdeal画面へ
     @IBAction func toDealViewButton(_ sender: Any) {
 
         let mainTabBarControllerStoryboard = UIStoryboard(name: "MainTabBarController", bundle: nil)
