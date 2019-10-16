@@ -55,6 +55,7 @@ class HomeViewController: UIViewController {
             marker.append(mark)
         }
 
+        self.tabBarController?.tabBar.isHidden = false
 
     }
     

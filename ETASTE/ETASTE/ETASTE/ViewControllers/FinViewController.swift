@@ -18,10 +18,7 @@ class FinViewController: UIViewController{
     
     override func viewDidLoad() {
         self.navigationItem.title = "購入完了"
+        self.tabBarController?.tabBar.isHidden = true
     }
-
-    /* @objc func login() {
-        
-    } */
     
 }

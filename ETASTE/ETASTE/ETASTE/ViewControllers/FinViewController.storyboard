@@ -65,7 +65,6 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="B7d-Ya-iAU"/>
                     </view>
-                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="favoriteButton" destination="TFO-yb-zJp" id="65A-ct-UGR"/>
                         <outlet property="finishButton" destination="0dz-Fx-9Zw" id="Cih-pc-TrM"/>
