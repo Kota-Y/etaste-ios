@@ -68,20 +68,22 @@ class FinViewController: UIViewController{
     
     //完了ボタンからdeal画面へ
     @IBAction func toDealViewButton(_ sender: Any) {
-        
-        let dealViewControllerStoryboard = UIStoryboard(name: "DealViewController", bundle: nil)
-        let dealViewController = dealViewControllerStoryboard.instantiateInitialViewController() as! DealViewController
-        self.navigationController?.pushViewController(dealViewController, animated: true)
+
+        let mainTabBarControllerStoryboard = UIStoryboard(name: "MainTabBarController", bundle: nil)
+        let mainTabBarController = mainTabBarControllerStoryboard.instantiateInitialViewController() as! MainTabBarController
+        present(mainTabBarController, animated: false, completion: nil)
+        mainTabBarController.selectedViewController = mainTabBarController.viewControllers![2]
         
     }
     
     
-
+    //「ホームへ」ラベルからHome画面へ
     @objc func toHomeButton(_ sender: UITapGestureRecognizer){
 
-        let homeViewControllerStoryboard = UIStoryboard(name: "HomeViewController", bundle: nil)
-        let homeViewController = homeViewControllerStoryboard.instantiateInitialViewController() as! HomeViewController
-    self.navigationController?.pushViewController(homeViewController, animated: true)
+        let mainTabBarControllerStoryboard = UIStoryboard(name: "MainTabBarController", bundle: nil)
+        let mainTabBarController = mainTabBarControllerStoryboard.instantiateInitialViewController() as! MainTabBarController
+        present(mainTabBarController, animated: false, completion: nil)
+        mainTabBarController.selectedViewController = mainTabBarController.viewControllers![0]
 
     }
     
