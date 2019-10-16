@@ -16,9 +16,74 @@ class FinViewController: UIViewController{
     @IBOutlet weak var finishButton: UIButton!
     @IBOutlet weak var toHomeLink: UILabel!
     
+    var store: Store!
+    var isfavorite = false
+    
+    let storeModel = StoreModel()
+    let storefavorite = StoreFavoriteModel()
+    
     override func viewDidLoad() {
         self.navigationItem.title = "購入完了"
+
+        //ホームへ遷移できるようにする
+        let myTap: UITapGestureRecognizer = UITapGestureRecognizer( target: self, 
+                                                                    action: #selector(FinViewController.toHomeButton(_ :)))
+        self.toHomeLink.isUserInteractionEnabled = true
+        self.toHomeLink.addGestureRecognizer(myTap)
+        
+        //タブバーを非表示にする
         self.tabBarController?.tabBar.isHidden = true
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        //Fin画面に戻って来たときにタブバーを消す
+        self.tabBarController?.tabBar.isHidden = true
+
+    }
+    
+    //お気に入りボタンのアクション
+    @IBAction func favorite(_ sender: Any) {
+        isfavorite = !isfavorite
+        if isfavorite {
+            storefavorite.createFavorite()
+        } else {
+            storefavorite.deleteFavorite(storeid: store._id)
+        }
+        switchfavorite()
+    }
+    
+    
+    //お気に入りボタンの切り替え
+    func switchfavorite(){
+        if isfavorite {
+            let image = UIImage(named: "fav1")
+            favoriteButton.setBackgroundImage(image, for: .normal)
+        } else {
+            let image = UIImage(named: "fav2")
+            favoriteButton.setBackgroundImage(image, for: .normal)
+        }
+    }
+    
+    //完了ボタンからdeal画面へ
+    @IBAction func toDealViewButton(_ sender: Any) {
+        
+        let dealViewControllerStoryboard = UIStoryboard(name: "DealViewController", bundle: nil)
+        let dealViewController = dealViewControllerStoryboard.instantiateInitialViewController() as! DealViewController
+        self.navigationController?.pushViewController(dealViewController, animated: true)
+        
+    }
+    
+    
+
+    @objc func toHomeButton(_ sender: UITapGestureRecognizer){
+
+        let homeViewControllerStoryboard = UIStoryboard(name: "HomeViewController", bundle: nil)
+        let homeViewController = homeViewControllerStoryboard.instantiateInitialViewController() as! HomeViewController
+    self.navigationController?.pushViewController(homeViewController, animated: true)
+
+    }
+    
     
 }

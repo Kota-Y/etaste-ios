@@ -54,7 +54,8 @@ class HomeViewController: UIViewController {
             mark.map=googleMap
             marker.append(mark)
         }
-
+        
+        //Fin画面から戻ってきたときにタブバーが消えないようにする
         self.tabBarController?.tabBar.isHidden = false
 
     }
