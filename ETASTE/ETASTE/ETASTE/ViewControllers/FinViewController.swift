@@ -17,8 +17,8 @@ class FinViewController: UIViewController{
     @IBOutlet weak var finishButton: UIButton!
     @IBOutlet weak var toHomeLink: UILabel!
     
-    var store: Store!
-    var isfavorite = false
+    //var store: Store!
+    var isfavorite = true
     
     let storeModel = StoreModel()
     let storefavorite = StoreFavoriteModel()
@@ -50,7 +50,8 @@ class FinViewController: UIViewController{
         if isfavorite {
             storefavorite.createFavorite()
         } else {
-            storefavorite.deleteFavorite(storeid: store._id)
+            //現段階では1で決め打ち
+            storefavorite.deleteFavorite(storeid: 1)
         }
         switchfavorite()
     }
