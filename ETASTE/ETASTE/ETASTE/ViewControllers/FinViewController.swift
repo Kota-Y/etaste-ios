@@ -12,7 +12,7 @@ import Alamofire
 class FinViewController: UIViewController{
     
     
-    @IBOutlet var messageLabel: UILabel!
+    @IBOutlet weak var storeNameLabel: UILabel!
     @IBOutlet weak var favoriteButton: UIButton!
     @IBOutlet weak var finishButton: UIButton!
     @IBOutlet weak var toHomeLink: UILabel!
@@ -31,9 +31,9 @@ class FinViewController: UIViewController{
                                                                     action: #selector(FinViewController.toHomeButton(_ :)))
         self.toHomeLink.isUserInteractionEnabled = true
         self.toHomeLink.addGestureRecognizer(tapToHome)
-        
-        //タブバーを非表示にする
-        self.tabBarController?.tabBar.isHidden = true
+
+        storeModel.delegate = self
+        storeModel.getStore(storeId: 1) // 店舗のIDは決め打ち
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -45,20 +45,18 @@ class FinViewController: UIViewController{
     }
     
     //お気に入りボタンのアクション
+    //storeidは1で決め打ち
     @IBAction func favorite(_ sender: Any) {
-        isfavorite = !isfavorite
-        if isfavorite {
-            storefavorite.createFavorite()
-        } else {
-            //現段階では1で決め打ち
-            storefavorite.deleteFavorite(storeid: 1)
-        }
+        isfavorite.toggle()
         switchfavorite()
+        return
+            isfavorite ? storefavorite.deleteFavorite(storeid: 1) : storefavorite.createFavorite()
     }
     
     
     //お気に入りボタンの切り替え
     func switchfavorite(){
+                
         if isfavorite {
             let image = UIImage(named: "fav1")
             favoriteButton.setBackgroundImage(image, for: .normal)
@@ -66,6 +64,7 @@ class FinViewController: UIViewController{
             let image = UIImage(named: "fav2")
             favoriteButton.setBackgroundImage(image, for: .normal)
         }
+        
     }
     
     //「完了」ボタンからdeal画面へ
@@ -88,6 +87,16 @@ class FinViewController: UIViewController{
         mainTabBarController.selectedViewController = mainTabBarController.viewControllers![0]
 
     }
-    
-    
+}
+
+//店舗名を動的に変更
+extension FinViewController: StoreModelDelegate {
+    func didRecieveStoreData(storeModel: StoreModel, store: Store) {
+        print(store.name)
+        storeNameLabel.text = store.name
+    }
+
+    func didRecieveStoreError(storeModel: StoreModel, error: Error) {
+        print("Error on getStore")
+    }
 }

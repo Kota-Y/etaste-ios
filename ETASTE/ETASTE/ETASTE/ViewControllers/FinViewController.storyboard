@@ -17,13 +17,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AXx-VL-8du">
-                                <rect key="frame" x="0.0" y="146" width="375" height="102"/>
+                                <rect key="frame" x="47" y="154" width="280" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="購入ありがとうございました！ Eパンをお気に入り登録しますか？">
+                                    <fragment content="購入ありがとうございました！">
                                         <attributes>
                                             <color key="NSColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                                            <font key="NSFont" size="23" name="HiraginoSans-W3"/>
+                                            <font key="NSFont" size="20" name="HiraginoSans-W3"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="23" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -67,6 +67,112 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CjD-xn-Q7r">
+                                <rect key="frame" x="23" y="189" width="81" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Eパン">
+                                        <attributes>
+                                            <color key="NSColor" red="0.43529000000000001" green="0.44313999999999998" blue="0.47450999999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="HiraginoSans-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="23" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="28">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="56">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="84">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="112">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="140">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="168">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="196">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="224">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="252">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="280">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="308">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="336">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6OJ-el-cBg">
+                                <rect key="frame" x="112" y="188" width="240" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="をお気に入りにしますか？">
+                                        <attributes>
+                                            <color key="NSColor" red="0.43529000000000001" green="0.44313999999999998" blue="0.47450999999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="HiraginoSans-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="23" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="28">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="56">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="84">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="112">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="140">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="168">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="196">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="224">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="252">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="280">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="308">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="336">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="B7d-Ya-iAU"/>
@@ -74,7 +180,7 @@
                     <connections>
                         <outlet property="favoriteButton" destination="TFO-yb-zJp" id="65A-ct-UGR"/>
                         <outlet property="finishButton" destination="0dz-Fx-9Zw" id="Cih-pc-TrM"/>
-                        <outlet property="messageLabel" destination="AXx-VL-8du" id="fZl-oK-ofh"/>
+                        <outlet property="storeNameLabel" destination="CjD-xn-Q7r" id="RME-4m-apM"/>
                         <outlet property="toHomeLink" destination="H9Q-WC-Ahw" id="SwD-nw-CJd"/>
                     </connections>
                 </viewController>
