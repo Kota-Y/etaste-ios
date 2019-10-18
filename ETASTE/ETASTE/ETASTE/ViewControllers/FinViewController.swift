@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Alamofire
 
 class FinViewController: UIViewController{
     
@@ -31,9 +30,6 @@ class FinViewController: UIViewController{
                                                                     action: #selector(FinViewController.toHomeButton(_ :)))
         self.toHomeLink.isUserInteractionEnabled = true
         self.toHomeLink.addGestureRecognizer(tapToHome)
-
-        storeModel.delegate = self
-        storeModel.getStore(storeId: 1) // 店舗のIDは決め打ち
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -49,8 +45,7 @@ class FinViewController: UIViewController{
     @IBAction func favorite(_ sender: Any) {
         isfavorite.toggle()
         switchfavorite()
-        return
-            isfavorite ? storefavorite.deleteFavorite(storeid: 1) : storefavorite.createFavorite()
+        isfavorite ? storefavorite.deleteFavorite(storeid: 1) : storefavorite.createFavorite()
     }
     
     
@@ -86,17 +81,5 @@ class FinViewController: UIViewController{
         present(mainTabBarController, animated: false, completion: nil)
         mainTabBarController.selectedViewController = mainTabBarController.viewControllers![0]
 
-    }
-}
-
-//店舗名を動的に変更
-extension FinViewController: StoreModelDelegate {
-    func didRecieveStoreData(storeModel: StoreModel, store: Store) {
-        print(store.name)
-        storeNameLabel.text = store.name
-    }
-
-    func didRecieveStoreError(storeModel: StoreModel, error: Error) {
-        print("Error on getStore")
     }
 }
