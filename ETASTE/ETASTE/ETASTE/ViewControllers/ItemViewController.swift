@@ -65,7 +65,6 @@ class ItemViewController: UIViewController {
         
     }
     
-    
     @IBAction func whySaleTitleTap(_ sender: UITapGestureRecognizer) {
         animationWhySaleText(animated: true)
     }
