@@ -10,9 +10,6 @@
 import Foundation
 import UIKit
 
-import Foundation
-import UIKit
-
 class ShopItem:UITableViewCell{
 
     @IBOutlet weak var ItemView: UIImageView!
