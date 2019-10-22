@@ -88,6 +88,8 @@
 		630EEFF422EF3DDD0030E302 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630EEFF322EF3DDD0030E302 /* HomeViewController.swift */; };
 		630EEFF622F08D820030E302 /* ShopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630EEFF522F08D820030E302 /* ShopModel.swift */; };
 		BBA0A12EC71EDA05B5EC4674 /* Pods_ETASTEUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77BE23D1B7392795678CE704 /* Pods_ETASTEUITests.framework */; };
+		CB501ADA235EE4C200C00491 /* ShopItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB501AD8235EE4C200C00491 /* ShopItemCell.swift */; };
+		CB501ADB235EE4C200C00491 /* ShopItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB501AD9235EE4C200C00491 /* ShopItemCell.xib */; };
 		CB9D60572354608A007D43D7 /* FinViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB9D60562354608A007D43D7 /* FinViewController.storyboard */; };
 		CB9D6059235460E8007D43D7 /* FinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9D6058235460E8007D43D7 /* FinViewController.swift */; };
 /* End PBXBuildFile section */
@@ -195,6 +197,8 @@
 		77BE23D1B7392795678CE704 /* Pods_ETASTEUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ETASTEUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		785291696FA3228D4BE184BC /* Pods-ETASTE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETASTE.debug.xcconfig"; path = "Target Support Files/Pods-ETASTE/Pods-ETASTE.debug.xcconfig"; sourceTree = "<group>"; };
 		A12D2E41460E47E723746E5E /* Pods-ETASTEUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETASTEUITests.release.xcconfig"; path = "Target Support Files/Pods-ETASTEUITests/Pods-ETASTEUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CB501AD8235EE4C200C00491 /* ShopItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopItemCell.swift; sourceTree = "<group>"; };
+		CB501AD9235EE4C200C00491 /* ShopItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopItemCell.xib; sourceTree = "<group>"; };
 		CB9D60562354608A007D43D7 /* FinViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FinViewController.storyboard; sourceTree = "<group>"; };
 		CB9D6058235460E8007D43D7 /* FinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinViewController.swift; sourceTree = "<group>"; };
 		DB3A248EB3E412C20BE8EE9F /* Pods-ETASTEUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETASTEUITests.debug.xcconfig"; path = "Target Support Files/Pods-ETASTEUITests/Pods-ETASTEUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -428,6 +432,7 @@
 		6301B05222EF37A70078844C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				CB501AD7235EE46700C00491 /* ShopItem */,
 				4F940BF3234C395700793F09 /* FavoriteItem */,
 				4FB18704232F9DCB00E9EFD2 /* UIViews */,
 				6301B05422EF382B0078844C /* SplashViewController.storyboard */,
@@ -464,6 +469,15 @@
 				A12D2E41460E47E723746E5E /* Pods-ETASTEUITests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		CB501AD7235EE46700C00491 /* ShopItem */ = {
+			isa = PBXGroup;
+			children = (
+				CB501AD8235EE4C200C00491 /* ShopItemCell.swift */,
+				CB501AD9235EE4C200C00491 /* ShopItemCell.xib */,
+			);
+			path = ShopItem;
 			sourceTree = "<group>";
 		};
 		EE57F7E2EE92F135E12F7EEA /* Frameworks */ = {
@@ -597,6 +611,7 @@
 				4F68F6DE231A4247002CE931 /* StoreViewController.storyboard in Resources */,
 				4F0F7ED322FDEE6C00AEB6E9 /* MainTabBarController.storyboard in Resources */,
 				6301B02B22EF36B60078844C /* Assets.xcassets in Resources */,
+				CB501ADB235EE4C200C00491 /* ShopItemCell.xib in Resources */,
 				630EEFF222EF3DC50030E302 /* HomeViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -759,6 +774,7 @@
 				4FCEFF352310DD100050D668 /* (null) in Sources */,
 				6301B05722EF38410078844C /* SplashViewController.swift in Sources */,
 				4FEE9B27232924A400A9B5AC /* TradeComplete.swift in Sources */,
+				CB501ADA235EE4C200C00491 /* ShopItemCell.swift in Sources */,
 				4FEE9B1E232924A400A9B5AC /* UserAPI.swift in Sources */,
 				4FEE9B35232924A400A9B5AC /* TradeStoreItem.swift in Sources */,
 				4FEE9B2C232924A400A9B5AC /* FoodCreate.swift in Sources */,

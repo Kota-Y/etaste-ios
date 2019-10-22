@@ -15,6 +15,8 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var googleMap: GMSMapView!
     @IBOutlet weak var searchBar: UISearchBar!
 
+    @IBOutlet var itemTableView: UITableView!
+    
     var shopModel:[ShopModel] = []
     var marker: [GMSMarker] = []
     var lalo:[[Double]] = [[32.815183,130.727428],[32.814949,130.727842],[32.814419,130.726572]]
