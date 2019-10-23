@@ -22,6 +22,22 @@ class ShopItem:UITableViewCell{
     let ItemPrice1: Int = 0
     let ItemPrice2: Int = 0
     let ItemTime1: Int = 0
+    
+//    override init(frame: CGRect){
+//           super.init(frame: frame)
+//           loadNib()
+//    }
+//    
+//   required init(coder aDecoder: NSCoder) {
+//       super.init(coder: aDecoder)!
+//       loadNib()
+//   }
+//    
+//   func loadNib(){
+//       let view = Bundle.main.loadNibNamed("ShopItemCell", owner: self, options: nil)?.first as! UIView
+//       view.frame = self.bounds
+//       self.addSubview(view)
+//   }
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -30,6 +46,8 @@ class ShopItem:UITableViewCell{
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
+
+    
 
 
 

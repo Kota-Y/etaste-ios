@@ -15,7 +15,8 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var googleMap: GMSMapView!
     @IBOutlet weak var searchBar: UISearchBar!
 
-    @IBOutlet var itemTableView: UITableView!
+    
+    @IBOutlet weak var itemTableView: UITableView!
     
     var shopModel:[ShopModel] = []
     var marker: [GMSMarker] = []
@@ -34,6 +35,8 @@ class HomeViewController: UIViewController {
                                                                  action: #selector(login))
                 
         searchBar.delegate = self
+        
+        shopItemViewTable()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -93,6 +96,13 @@ class HomeViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+
+    func shopItemViewTable() {
+        let itemXibView = ShopItem(frame: CGRect(x: 20, y: 200, width: 375, height: 631))
+        for _ in 0..<5 {
+            view.addSubview(itemXibView)
+        }
     }
     
 }
