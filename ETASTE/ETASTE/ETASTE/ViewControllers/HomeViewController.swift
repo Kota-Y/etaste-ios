@@ -16,8 +16,8 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
 
     
-    @IBOutlet weak var itemTableView: UITableView!
-    
+    var itemXibView: ShopItem!
+    var itemPosition = 0
     var shopModel:[ShopModel] = []
     var marker: [GMSMarker] = []
     var lalo:[[Double]] = [[32.815183,130.727428],[32.814949,130.727842],[32.814419,130.726572]]
@@ -93,16 +93,18 @@ class HomeViewController: UIViewController {
         self.navigationController?.pushViewController(finViewController, animated: true)
     }
     
+    func shopItemViewTable() {
+        for _ in 0..<5 {
+            itemXibView = ShopItem(frame: CGRect(x: 15, y: 450+itemPosition, width: 200, height: 200))
+            view.addSubview(itemXibView)
+            itemPosition = itemPosition + 210
+        }
+    }
+    
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    func shopItemViewTable() {
-        let itemXibView = ShopItem(frame: CGRect(x: 20, y: 200, width: 375, height: 631))
-        for _ in 0..<5 {
-            view.addSubview(itemXibView)
-        }
     }
     
 }

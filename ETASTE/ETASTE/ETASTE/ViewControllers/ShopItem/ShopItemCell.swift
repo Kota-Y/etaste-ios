@@ -10,7 +10,7 @@
 import Foundation
 import UIKit
 
-class ShopItem:UITableViewCell{
+class ShopItem:UIView{
 
     @IBOutlet weak var ItemView: UIImageView!
 
@@ -23,32 +23,30 @@ class ShopItem:UITableViewCell{
     let ItemPrice2: Int = 0
     let ItemTime1: Int = 0
     
-//    override init(frame: CGRect){
-//           super.init(frame: frame)
-//           loadNib()
-//    }
-//    
-//   required init(coder aDecoder: NSCoder) {
-//       super.init(coder: aDecoder)!
-//       loadNib()
-//   }
-//    
-//   func loadNib(){
-//       let view = Bundle.main.loadNibNamed("ShopItemCell", owner: self, options: nil)?.first as! UIView
-//       view.frame = self.bounds
-//       self.addSubview(view)
-//   }
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
+    override init(frame: CGRect){
+           super.init(frame: frame)
+           loadNib()
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-    }
-
+    
+   required init(coder aDecoder: NSCoder) {
+       super.init(coder: aDecoder)!
+       loadNib()
+   }
+    
+   func loadNib(){
+       let view = Bundle.main.loadNibNamed("ShopItemCell", owner: self, options: nil)?.first as! UIView
+       view.frame = self.bounds
+       self.addSubview(view)
+   }
     
 
+//    override func awakeFromNib() {
+//        super.awakeFromNib()
+//    }
+//
+//    override func setSelected(_ selected: Bool, animated: Bool) {
+//        super.setSelected(selected, animated: animated)
+//    }
 
 
 }
