@@ -54,7 +54,9 @@ class HomeViewController: UIViewController {
             mark.map=googleMap
             marker.append(mark)
         }
-
+        
+        //Fin画面から戻ってきたときにタブバーが消えないようにする
+        self.tabBarController?.tabBar.isHidden = false
 
     }
     
@@ -77,6 +79,13 @@ class HomeViewController: UIViewController {
     }
     @IBAction func tapToNoItemViewButton(_ sender: UIButton) {
         
+    }
+    
+    //購入完了画面への遷移テスト用
+    @IBAction func tapToFinViewButton(_ sender: UIButton) {
+        let finViewControllerStoryboard = UIStoryboard(name: "FinViewController", bundle: nil)
+        let finViewController = finViewControllerStoryboard.instantiateInitialViewController() as! FinViewController
+        self.navigationController?.pushViewController(finViewController, animated: true)
     }
     
     override func didReceiveMemoryWarning() {
