@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iKE-Y9-ZgY">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pay Confirming View Controller-->
+        <scene sceneID="AO8-gg-cth">
+            <objects>
+                <viewController id="iKE-Y9-ZgY" customClass="PayConfirmingViewController" customModule="ETASTE" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Ym-CM-QpT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AFP-BD-Ee3" userLabel="Frame" customClass="SimpleBlackFrame" customModule="ETASTE" customModuleProvider="target">
+                                <rect key="frame" x="52.5" y="113" width="270" height="108"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="購入商品：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HMQ-Ic-OrA" customClass="TextNormalBlackLabel" customModule="ETASTE" customModuleProvider="target">
+                                        <rect key="frame" x="29" y="24" width="60" height="12"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="受取時間：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bAz-sY-aUA" customClass="TextNormalBlackLabel" customModule="ETASTE" customModuleProvider="target">
+                                        <rect key="frame" x="29" y="72" width="60" height="12"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="購入個数：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Irf-Rt-1PR" customClass="TextNormalBlackLabel" customModule="ETASTE" customModuleProvider="target">
+                                        <rect key="frame" x="29" y="48" width="60" height="12"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="アンパン" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zkn-jH-ZyB" userLabel="Item Name Label" customClass="TextNormalBlackLabel" customModule="ETASTE" customModuleProvider="target">
+                                        <rect key="frame" x="89" y="24" width="47.5" height="12"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3個" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ulS-KL-uly" userLabel="Item Amount Label" customClass="TextNormalBlackLabel" customModule="ETASTE" customModuleProvider="target">
+                                        <rect key="frame" x="89" y="48" width="21" height="12"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wed 9 Sep 13:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EMb-ON-YlU" userLabel="Item Receive Time Label" customClass="TextNormalBlackLabel" customModule="ETASTE" customModuleProvider="target">
+                                        <rect key="frame" x="89" y="72" width="111.5" height="12"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="EMb-ON-YlU" firstAttribute="centerY" secondItem="bAz-sY-aUA" secondAttribute="centerY" id="2TR-Tj-e3P"/>
+                                    <constraint firstItem="HMQ-Ic-OrA" firstAttribute="leading" secondItem="AFP-BD-Ee3" secondAttribute="leading" constant="29" id="6CC-Wn-Qj2"/>
+                                    <constraint firstItem="zkn-jH-ZyB" firstAttribute="leading" secondItem="HMQ-Ic-OrA" secondAttribute="trailing" id="CVw-4U-27r"/>
+                                    <constraint firstItem="zkn-jH-ZyB" firstAttribute="centerY" secondItem="HMQ-Ic-OrA" secondAttribute="centerY" id="PMs-ch-umz"/>
+                                    <constraint firstItem="ulS-KL-uly" firstAttribute="centerY" secondItem="Irf-Rt-1PR" secondAttribute="centerY" id="XrZ-hO-qTf"/>
+                                    <constraint firstItem="ulS-KL-uly" firstAttribute="leading" secondItem="Irf-Rt-1PR" secondAttribute="trailing" id="YGU-nz-RJy"/>
+                                    <constraint firstItem="bAz-sY-aUA" firstAttribute="centerX" secondItem="HMQ-Ic-OrA" secondAttribute="centerX" id="bnq-xc-mbF"/>
+                                    <constraint firstItem="EMb-ON-YlU" firstAttribute="leading" secondItem="bAz-sY-aUA" secondAttribute="trailing" id="cCN-5q-JxB"/>
+                                    <constraint firstItem="Irf-Rt-1PR" firstAttribute="centerX" secondItem="HMQ-Ic-OrA" secondAttribute="centerX" id="fet-zw-pJS"/>
+                                    <constraint firstItem="HMQ-Ic-OrA" firstAttribute="top" secondItem="AFP-BD-Ee3" secondAttribute="top" constant="24" id="irZ-Rw-mJk"/>
+                                    <constraint firstItem="bAz-sY-aUA" firstAttribute="top" secondItem="Irf-Rt-1PR" secondAttribute="bottom" constant="12" id="jdG-3L-tHS"/>
+                                    <constraint firstAttribute="height" constant="108" id="lRH-0C-iQ4"/>
+                                    <constraint firstAttribute="width" constant="270" id="nYJ-6h-gsm"/>
+                                    <constraint firstItem="Irf-Rt-1PR" firstAttribute="top" secondItem="HMQ-Ic-OrA" secondAttribute="bottom" constant="12" id="zjc-oA-McR"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcw-tB-mqw" userLabel="Pay Confirm Finish Button">
+                                <rect key="frame" x="47.5" y="341" width="280" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="MV5-p0-9XJ"/>
+                                    <constraint firstAttribute="height" constant="45" id="feJ-ZF-DRx"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="ETASTEsFrame"/>
+                                <connections>
+                                    <action selector="tapPayConfirmFinishButton:" destination="iKE-Y9-ZgY" eventType="touchUpInside" id="vIN-GG-11S"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="確認完了" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="av6-Eb-ibk" customClass="TextBiggerWhiteLabel" customModule="ETASTE" customModuleProvider="target">
+                                <rect key="frame" x="47.5" y="341" width="280" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="AFP-BD-Ee3" firstAttribute="centerX" secondItem="3Ym-CM-QpT" secondAttribute="centerX" id="CKp-Zc-ygv"/>
+                            <constraint firstItem="bcw-tB-mqw" firstAttribute="top" secondItem="AFP-BD-Ee3" secondAttribute="bottom" constant="120" id="GhZ-f7-cER"/>
+                            <constraint firstItem="bcw-tB-mqw" firstAttribute="trailing" secondItem="av6-Eb-ibk" secondAttribute="trailing" id="MFX-kH-BMk"/>
+                            <constraint firstItem="av6-Eb-ibk" firstAttribute="top" secondItem="bcw-tB-mqw" secondAttribute="top" id="Ood-ff-3Hs"/>
+                            <constraint firstItem="bcw-tB-mqw" firstAttribute="bottom" secondItem="av6-Eb-ibk" secondAttribute="bottom" id="WMF-TI-t5D"/>
+                            <constraint firstItem="AFP-BD-Ee3" firstAttribute="top" secondItem="JMM-Wq-oR9" secondAttribute="top" constant="113" id="clW-ny-SBL"/>
+                            <constraint firstItem="av6-Eb-ibk" firstAttribute="leading" secondItem="bcw-tB-mqw" secondAttribute="leading" id="oXg-TH-K3T"/>
+                            <constraint firstItem="bcw-tB-mqw" firstAttribute="centerX" secondItem="3Ym-CM-QpT" secondAttribute="centerX" id="tPY-FJ-8WX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JMM-Wq-oR9"/>
+                    </view>
+                    <connections>
+                        <outlet property="itemAmountLabel" destination="ulS-KL-uly" id="eUZ-z2-dST"/>
+                        <outlet property="itemNameLabel" destination="zkn-jH-ZyB" id="F1h-jj-1NM"/>
+                        <outlet property="itemReceiveTimeLabel" destination="EMb-ON-YlU" id="JlI-bl-9yh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dXO-JN-xYA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-181" y="86"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ETASTEsFrame" width="278" height="46"/>
+    </resources>
+</document>

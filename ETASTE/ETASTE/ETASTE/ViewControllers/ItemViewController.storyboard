@@ -345,7 +345,7 @@ KUMADAIビル1F</string>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J4h-el-PiJ" userLabel="Amount Text Field">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J4h-el-PiJ" userLabel="Amount Text Field">
                                         <rect key="frame" x="52.5" y="61" width="270" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="NZ6-yT-LRB"/>
@@ -364,7 +364,7 @@ KUMADAIビル1F</string>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nmh-D8-3oC" userLabel="RecieveTime Text Field">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nmh-D8-3oC" userLabel="RecieveTime Text Field">
                                         <rect key="frame" x="52.5" y="131" width="270" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="fC0-Po-0ky"/>

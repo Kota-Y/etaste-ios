@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		05F896BC1F7BF329BFCB5A9C /* Pods_ETASTETests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F05A866A05821655B0026D /* Pods_ETASTETests.framework */; };
+		4F04A96023663B2C00E9296E /* PayConfirmingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F04A95F23663B2C00E9296E /* PayConfirmingViewController.storyboard */; };
+		4F04A96223663B4800E9296E /* PayConfirmingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F04A96123663B4800E9296E /* PayConfirmingViewController.swift */; };
 		4F0F7ED322FDEE6C00AEB6E9 /* MainTabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F0F7ED222FDEE6C00AEB6E9 /* MainTabBarController.storyboard */; };
 		4F0F7ED722FDFE6300AEB6E9 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0F7ED622FDFE6300AEB6E9 /* MainTabBarController.swift */; };
 		4F0F7ED922FE038E00AEB6E9 /* FavoriteViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F0F7ED822FE038E00AEB6E9 /* FavoriteViewController.storyboard */; };
@@ -114,6 +116,8 @@
 		37F05A866A05821655B0026D /* Pods_ETASTETests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ETASTETests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A94D815313D9931E83C197B /* Pods_ETASTE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ETASTE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		44D4B27AA0C7F00A6929DC16 /* Pods-ETASTE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETASTE.release.xcconfig"; path = "Target Support Files/Pods-ETASTE/Pods-ETASTE.release.xcconfig"; sourceTree = "<group>"; };
+		4F04A95F23663B2C00E9296E /* PayConfirmingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PayConfirmingViewController.storyboard; sourceTree = "<group>"; };
+		4F04A96123663B4800E9296E /* PayConfirmingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PayConfirmingViewController.swift; path = "/Users/haruya.i/Desktop/etaste-ios/ETASTE/ETASTE/ETASTE/ViewControllers/PayConfirmingViewController.swift"; sourceTree = "<absolute>"; };
 		4F0F7ED222FDEE6C00AEB6E9 /* MainTabBarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainTabBarController.storyboard; sourceTree = "<group>"; };
 		4F0F7ED622FDFE6300AEB6E9 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		4F0F7ED822FE038E00AEB6E9 /* FavoriteViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FavoriteViewController.storyboard; sourceTree = "<group>"; };
@@ -449,6 +453,8 @@
 				4F68F6DF231A4250002CE931 /* StoreViewController.swift */,
 				4FEE9B3F23294BA700A9B5AC /* ItemViewController.storyboard */,
 				4FEE9B4123294BB800A9B5AC /* ItemViewController.swift */,
+				4F04A95F23663B2C00E9296E /* PayConfirmingViewController.storyboard */,
+				4F04A96123663B4800E9296E /* PayConfirmingViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -597,6 +603,7 @@
 				4F0F7ED322FDEE6C00AEB6E9 /* MainTabBarController.storyboard in Resources */,
 				6301B02B22EF36B60078844C /* Assets.xcassets in Resources */,
 				630EEFF222EF3DC50030E302 /* HomeViewController.storyboard in Resources */,
+				4F04A96023663B2C00E9296E /* PayConfirmingViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -772,6 +779,7 @@
 				4FEE9B21232924A400A9B5AC /* FoodAPI.swift in Sources */,
 				4FEE9B2D232924A400A9B5AC /* ModelError.swift in Sources */,
 				4FEE9B2B232924A400A9B5AC /* UserLogin.swift in Sources */,
+				4F04A96223663B4800E9296E /* PayConfirmingViewController.swift in Sources */,
 				4FEE9B24232924A400A9B5AC /* JSONEncodableEncoding.swift in Sources */,
 				4F68F6E2231A4268002CE931 /* Label.swift in Sources */,
 				4F940BFF234D3E6400793F09 /* Animation.swift in Sources */,
@@ -945,7 +953,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 785291696FA3228D4BE184BC /* Pods-ETASTE.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 8H77536R8V;
 				INFOPLIST_FILE = ETASTE/Info.plist;
@@ -956,7 +964,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.ETASTE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = ETASTE_AdHoc;
+				PROVISIONING_PROFILE_SPECIFIER = ETASTE_Development;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -966,7 +974,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 44D4B27AA0C7F00A6929DC16 /* Pods-ETASTE.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 8H77536R8V;
 				INFOPLIST_FILE = ETASTE/Info.plist;
@@ -977,7 +985,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.ETASTE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = ETASTE_AdHoc;
+				PROVISIONING_PROFILE_SPECIFIER = ETASTE_Development;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
