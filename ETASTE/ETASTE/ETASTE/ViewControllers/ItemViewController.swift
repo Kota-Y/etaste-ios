@@ -31,6 +31,7 @@ class ItemViewController: TextFieldViewController {
     @IBOutlet weak var urlLabel: UILabel!
     @IBOutlet weak var googleMap: GMSMapView!
     
+    @IBOutlet weak var halfModalView: UIView!
     @IBOutlet weak var handleImage: UIImageView!
     @IBOutlet weak var amountTextField: UITextField!
     @IBOutlet weak var receiveTimeTextField: UITextField!
@@ -89,9 +90,10 @@ class ItemViewController: TextFieldViewController {
         defaultBackgroundOfPayButtonViewHeight = backgroundOfPayButtonViewHeightConstraint.constant
         
         // TextField
-//        setTextFieldsDelegate()
+        setUpNotificationForTextField()
         self.amountTextField.delegate = self
         self.receiveTimeTextField.delegate = self
+        viewWithTextField = halfModalView
         
         let amountPickerView = UIPickerView()
         let receiveTimePickerView = UIPickerView()
@@ -101,18 +103,30 @@ class ItemViewController: TextFieldViewController {
         receiveTimePickerView.tag = PickerSource.receiveTime.rawValue
         receiveTimePickerView.delegate = self
         receiveTimePickerView.dataSource = self
-        
-        print("amountPickerView.frame.height : ", amountPickerView.frame.height)
-        
+        amountPickerView.showsSelectionIndicator = true
+        receiveTimePickerView.showsSelectionIndicator = true
+        let amountTextFieldToolBar = UIToolbar(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 45))
+        let receiveTimeTextFieldToolBar = UIToolbar(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 45))
+        let rightArrorItem = UIBarButtonItem(image: UIImage(named: "RightArrow")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(tapRightArrow))
+        let leftArrorItem = UIBarButtonItem(image: UIImage(named: "LeftArrow")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(tapLeftArrow))
+        let flexibleSpaceItem = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil)
+        let fixedSpaceItem = UIBarButtonItem(barButtonSystemItem: .fixedSpace, target: self, action: nil)
+        fixedSpaceItem.width = 40
+        let doneItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(done))
+        let done2Item = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(done2))
+        amountTextFieldToolBar.setItems([fixedSpaceItem, rightArrorItem, flexibleSpaceItem, doneItem], animated: true)
+        receiveTimeTextFieldToolBar.setItems([leftArrorItem, flexibleSpaceItem, done2Item], animated: true)
         amountTextField.inputView = amountPickerView
         receiveTimeTextField.inputView = receiveTimePickerView
+        amountTextField.inputAccessoryView = amountTextFieldToolBar
+        receiveTimeTextField.inputAccessoryView  = receiveTimeTextFieldToolBar
         
         amountPickerData = [["1", "2", "3", "4", "5"], [""]]
         
-        for hour in 0..<24 {
+        for hour in 0 ..< 24 {
             receivePickerData[0].append(String(hour))
         }
-        for minutes in 0..<60 {
+        for minutes in 0 ..< 60 {
             receivePickerData[1].append(String(minutes))
         }
     }
@@ -120,7 +134,7 @@ class ItemViewController: TextFieldViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         // TextField
-        self.setUpNotificationForTextField()
+        //self.setUpNotificationForTextField()
     }
     
     @IBAction func whySaleTitleTap(_ sender: UITapGestureRecognizer) {
@@ -278,37 +292,22 @@ extension ItemViewController: FoodDetailModelDelegate {
     }
 }
 
-enum PickerSource: Int, CaseIterable {
-    case amount = 1
-    case receiveTime = 2
-    
-    var row: Int {
-        switch self {
-        case .amount:
-            return 1
-        case .receiveTime:
-            return 2
+extension ItemViewController: UIPickerViewDataSource {
+    enum PickerSource: Int, CaseIterable {
+        case amount = 1
+        case receiveTime = 2
+        
+        var row: Int {
+            switch self {
+            case .amount:
+                return 1
+            case .receiveTime:
+                return 2
+            }
         }
+        
     }
     
-//    var pickData: [[String]] {
-//        switch self {
-//        case .amount:
-//            return [["1", "2", "3", "4", "5"], [""]]
-//        case .receiveTime:
-//            var array: [[String]] = [[], []]
-//            for hour in 0..<24 {
-//                array[0].append(String(hour))
-//            }
-//            for minutes in 0..<60 {
-//                array[1].append(String(minutes))
-//            }
-//            return array
-//        }
-//    }
-}
-
-extension ItemViewController: UIPickerViewDataSource {
     // UIPickerViewの列の数
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return PickerSource(rawValue: pickerView.tag)!.row
@@ -318,9 +317,9 @@ extension ItemViewController: UIPickerViewDataSource {
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         switch PickerSource(rawValue: pickerView.tag) {
         case .amount?:
-            return amountPickerData[0].count - 1
+            return amountPickerData[0].count
         case .receiveTime?:
-            return receivePickerData[1].count - 1
+            return receivePickerData[component].count
         case _:
             return 0
         }
@@ -337,6 +336,22 @@ extension ItemViewController: UIPickerViewDataSource {
             return ""
         }
     }
+    
+    // 決定ボタン押下
+    @objc func done() {
+        amountTextField.endEditing(true)
+        receiveTimeTextField.endEditing(true)
+    }
+    @objc func done2() {
+        amountTextField.endEditing(true)
+        receiveTimeTextField.endEditing(true)
+    }
+    @objc func tapRightArrow() {
+        receiveTimeTextField.becomeFirstResponder()
+    }
+    @objc func tapLeftArrow() {
+        amountTextField.becomeFirstResponder()
+    }
 }
 
 extension ItemViewController: UIPickerViewDelegate {
@@ -351,5 +366,4 @@ extension ItemViewController: UIPickerViewDelegate {
         }
     }
 }
-
 

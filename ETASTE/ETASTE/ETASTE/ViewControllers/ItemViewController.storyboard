@@ -23,7 +23,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1234"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xas-6v-afo" userLabel="Lower View For Accordion">
-                                                <rect key="frame" x="0.0" y="343.5" width="375" height="220"/>
+                                                <rect key="frame" x="0.0" y="347" width="375" height="220"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RV6-KE-2kg" userLabel="Allergies Tag Title" customClass="RoundedETASTEOrangeiew" customModule="ETASTE" customModuleProvider="target">
                                                         <rect key="frame" x="38" y="145" width="140" height="30"/>
@@ -120,7 +120,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f37-RN-Oon" userLabel="Upper View For Accordion">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="343.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="347"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dqq-qw-GcF" userLabel="Item Image">
@@ -133,7 +133,7 @@
                                                 <rect key="frame" x="87.5" y="131" width="200" height="160"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="あんパン" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CrD-GN-jyK" userLabel="Item Name" customClass="TextBiggerBlackLabel" customModule="ETASTE" customModuleProvider="target">
-                                                        <rect key="frame" x="28" y="12" width="144" height="20.5"/>
+                                                        <rect key="frame" x="26" y="12" width="148" height="21"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="CrD-GN-jyK" secondAttribute="height" multiplier="148:21" id="BSH-u2-8SE"/>
                                                         </constraints>
@@ -142,7 +142,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="　100円 → 50円" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7S-Kc-01Y" userLabel="Item Price" customClass="TextNormalBlackLabel" customModule="ETASTE" customModuleProvider="target">
-                                                        <rect key="frame" x="-26.5" y="42.5" width="253" height="20.5"/>
+                                                        <rect key="frame" x="26" y="43" width="148" height="12"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="h7S-Kc-01Y" secondAttribute="height" multiplier="37:3" id="ChI-cb-kza"/>
                                                         </constraints>
@@ -151,7 +151,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="　受取時間 17:00~19:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YBm-95-G4b" userLabel="Item Time" customClass="TextNormalBlackLabel" customModule="ETASTE" customModuleProvider="target">
-                                                        <rect key="frame" x="26" y="73" width="148" height="20.5"/>
+                                                        <rect key="frame" x="26" y="65" width="148" height="12"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="148" id="J9P-a2-3sH"/>
                                                         </constraints>
@@ -160,7 +160,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   Eパン" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WDt-hM-3Uc" userLabel="Store Name In Item" customClass="TextNormalBlackLabel" customModule="ETASTE" customModuleProvider="target">
-                                                        <rect key="frame" x="-26.5" y="103.5" width="253" height="20.5"/>
+                                                        <rect key="frame" x="26" y="87" width="148" height="12"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="WDt-hM-3Uc" secondAttribute="height" multiplier="37:3" id="Yi3-Df-XWs"/>
                                                         </constraints>
@@ -184,7 +184,7 @@
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[-] 出品経緯" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7o2-hG-iUt" userLabel="Why Sale Title" customClass="TextBiggestPaleBlackLabel" customModule="ETASTE" customModuleProvider="target">
-                                                <rect key="frame" x="36" y="307" width="140" height="20.5"/>
+                                                <rect key="frame" x="36" y="307" width="140" height="24"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="140" id="bFj-mi-D0o"/>
@@ -197,13 +197,13 @@
                                                 </connections>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="43Z-Mz-ga3" userLabel="Store Image">
-                                                <rect key="frame" x="0.0" y="570" width="375" height="211"/>
+                                                <rect key="frame" x="0.0" y="573.5" width="375" height="211"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="43Z-Mz-ga3" secondAttribute="height" multiplier="375:211" id="ed5-uR-gzu"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eパン（熊本本店）" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yyn-cy-icS" userLabel="Store Name" customClass="TextTitlePaleBlackLabel" customModule="ETASTE" customModuleProvider="target">
-                                                <rect key="frame" x="84.5" y="802" width="206" height="20"/>
+                                                <rect key="frame" x="84.5" y="805.5" width="206" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="206" id="FwN-gT-wQr"/>
                                                 </constraints>
@@ -212,7 +212,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8：00～20：00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U6R-FA-oNN" userLabel="Store Time" customClass="TextNormalPaleBlackLabel" customModule="ETASTE" customModuleProvider="target">
-                                                <rect key="frame" x="84.5" y="832" width="206" height="12"/>
+                                                <rect key="frame" x="84.5" y="835.5" width="206" height="12"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="206" id="aFQ-9F-vm2"/>
                                                 </constraints>
@@ -221,7 +221,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="不定休（店休）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jtx-H3-KVR" userLabel="Holiday" customClass="TextNormalPaleBlackLabel" customModule="ETASTE" customModuleProvider="target">
-                                                <rect key="frame" x="84.5" y="854" width="206" height="12"/>
+                                                <rect key="frame" x="84.5" y="857.5" width="206" height="12"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="206" id="EOW-Dj-o7a"/>
                                                 </constraints>
@@ -230,7 +230,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="40a-Yt-p2G" userLabel="Address" customClass="TextNormalPaleBlackLabel" customModule="ETASTE" customModuleProvider="target">
-                                                <rect key="frame" x="84.5" y="876" width="206" height="36"/>
+                                                <rect key="frame" x="84.5" y="879.5" width="206" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="206" id="wqm-a0-TxX"/>
                                                 </constraints>
@@ -242,7 +242,7 @@ KUMADAIビル1F</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000-000-0000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ovs-u2-QoH" userLabel="TEL" customClass="TextNormalPaleBlackLabel" customModule="ETASTE" customModuleProvider="target">
-                                                <rect key="frame" x="84.5" y="922" width="206" height="12"/>
+                                                <rect key="frame" x="84.5" y="925.5" width="206" height="12"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="206" id="5fg-H9-vvQ"/>
                                                 </constraints>
@@ -251,7 +251,7 @@ KUMADAIビル1F</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="駐車場　徒歩5分にあり(有料)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T3E-R0-T1r" userLabel="Parking" customClass="TextNormalPaleBlackLabel" customModule="ETASTE" customModuleProvider="target">
-                                                <rect key="frame" x="84.5" y="944" width="206" height="12"/>
+                                                <rect key="frame" x="84.5" y="947.5" width="206" height="12"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="206" id="8aZ-sW-xyz"/>
                                                 </constraints>
@@ -260,7 +260,7 @@ KUMADAIビル1F</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="http://epan.jp" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AZe-xu-hSI" userLabel="URL" customClass="TextNormalPaleBlackLabel" customModule="ETASTE" customModuleProvider="target">
-                                                <rect key="frame" x="84.5" y="966" width="206" height="12"/>
+                                                <rect key="frame" x="84.5" y="969.5" width="206" height="12"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="206" id="3FN-5W-aJc"/>
                                                 </constraints>
@@ -269,7 +269,7 @@ KUMADAIビル1F</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rtT-MR-HSM" userLabel="GoogleMap" customClass="GMSMapView">
-                                                <rect key="frame" x="0.0" y="1006.5" width="375" height="211"/>
+                                                <rect key="frame" x="0.0" y="1010" width="375" height="211"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="rtT-MR-HSM" secondAttribute="height" multiplier="414:233" id="SBD-jU-Tpe"/>
@@ -458,6 +458,7 @@ KUMADAIビル1F</string>
                         <outlet property="backgroundOfPayButtonViewHeightConstraint" destination="fd5-Oz-a9M" id="4fQ-bc-1yK"/>
                         <outlet property="fadeView" destination="Win-sy-bsn" id="9MZ-VO-5j2"/>
                         <outlet property="googleMap" destination="rtT-MR-HSM" id="RHh-QD-Awg"/>
+                        <outlet property="halfModalView" destination="mpy-xw-Mse" id="tvj-Sg-Mhe"/>
                         <outlet property="halfModalViewHeightConstraint" destination="ctn-9O-v8T" id="fz2-OQ-7Mn"/>
                         <outlet property="handleImage" destination="VQK-y9-bWO" id="rBG-zS-4vE"/>
                         <outlet property="holidayLabel" destination="Jtx-H3-KVR" id="ohD-td-a04"/>
