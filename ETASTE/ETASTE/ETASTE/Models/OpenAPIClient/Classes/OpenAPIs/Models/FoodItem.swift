@@ -23,21 +23,21 @@ public struct FoodItem: Codable {
     public var mapLatitude: String
     public var mapLongitude: String
 
-    public init(_id: Int64, name: String, originalPrice: Int, salePrice: Int, startTime: String, endTime: String, allergys: [Allergy]?, whySale: String, image: String, mapLatitude: String, mapLongitude: String) {
+    public init(_id: Int64, name: String, originalPrice: Int, salePrice: Int, startTime: String, endTime: String, allergy: [Allergy]?, whySale: String, image: String, mapLatitude: String, mapLongitude: String) {
         self._id = _id
         self.name = name
         self.originalPrice = originalPrice
         self.salePrice = salePrice
         self.startTime = startTime
         self.endTime = endTime
-        self.allergys = allergys
+        self.allergys = allergy
         self.whySale = whySale
         self.image = image
         self.mapLatitude = mapLatitude
         self.mapLongitude = mapLongitude
     }
 
-    public enum CodingKeys: String, CodingKey {
+    public enum CodingKeys: String, CodingKey { 
         case _id = "id"
         case name
         case originalPrice

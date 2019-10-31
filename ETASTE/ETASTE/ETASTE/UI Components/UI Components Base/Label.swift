@@ -86,3 +86,10 @@ class CustomLabel: UILabel, DesinableLabel {
         font = UIFont(type: .bold, size: 13)
     }
 }
+
+@IBDesignable class TextBiggerWhiteLabel: CustomLabel {
+    override func setupStyle() {
+        textColor = UIColor.white
+        font = UIFont(type: .bold, size: 21)
+    }
+}

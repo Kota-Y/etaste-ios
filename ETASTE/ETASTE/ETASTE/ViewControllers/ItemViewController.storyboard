@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qFi-v6-GRc">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qFi-v6-GRc">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UXa-X1-GGJ">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nwk-hR-ly0" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1234"/>
@@ -327,12 +325,127 @@ KUMADAIビル1F</string>
                                     <constraint firstItem="nwk-hR-ly0" firstAttribute="leading" secondItem="UXa-X1-GGJ" secondAttribute="leading" id="zvN-yr-08j"/>
                                 </constraints>
                             </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mpy-xw-Mse" userLabel="Half-Modal View" customClass="UpperRoundedView" customModule="ETASTE" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="407" width="375" height="260"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="toCloseHandleOnHalf-ModalView" translatesAutoresizingMaskIntoConstraints="NO" id="VQK-y9-bWO" userLabel="HandleOnHalf-ModalView">
+                                        <rect key="frame" x="147.5" y="14" width="80" height="17"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="17" id="ggz-GC-amz"/>
+                                            <constraint firstAttribute="width" constant="80" id="jTT-mG-80r"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="購入個数" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0k7-7y-KGq" userLabel="Amount Title Label" customClass="TextNormalBlackLabel" customModule="ETASTE" customModuleProvider="target">
+                                        <rect key="frame" x="52.5" y="35" width="52" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="52" id="bYi-D3-y52"/>
+                                            <constraint firstAttribute="height" constant="21" id="q1r-bs-Mwo"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J4h-el-PiJ" userLabel="Amount Text Field">
+                                        <rect key="frame" x="52.5" y="61" width="270" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="NZ6-yT-LRB"/>
+                                            <constraint firstAttribute="width" constant="270" id="WkW-Vh-AOd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="受取時間" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWv-oc-jw5" userLabel="RecieveTime Title Label" customClass="TextNormalBlackLabel" customModule="ETASTE" customModuleProvider="target">
+                                        <rect key="frame" x="52.5" y="105" width="52" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="52" id="Ui1-WO-pEc"/>
+                                            <constraint firstAttribute="height" constant="21" id="h8d-z0-DtG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nmh-D8-3oC" userLabel="RecieveTime Text Field">
+                                        <rect key="frame" x="52.5" y="131" width="270" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="fC0-Po-0ky"/>
+                                            <constraint firstAttribute="width" constant="270" id="wgO-Nf-cS8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="aWv-oc-jw5" firstAttribute="leading" secondItem="Nmh-D8-3oC" secondAttribute="leading" id="1uf-fc-TWl"/>
+                                    <constraint firstItem="J4h-el-PiJ" firstAttribute="centerX" secondItem="mpy-xw-Mse" secondAttribute="centerX" id="2Of-eC-jsX"/>
+                                    <constraint firstItem="0k7-7y-KGq" firstAttribute="leading" secondItem="J4h-el-PiJ" secondAttribute="leading" id="5oZ-T0-JnN"/>
+                                    <constraint firstItem="J4h-el-PiJ" firstAttribute="top" secondItem="0k7-7y-KGq" secondAttribute="bottom" constant="5" id="ApN-6n-efk"/>
+                                    <constraint firstItem="J4h-el-PiJ" firstAttribute="top" secondItem="VQK-y9-bWO" secondAttribute="bottom" constant="30" id="DVM-nJ-EJA"/>
+                                    <constraint firstItem="Nmh-D8-3oC" firstAttribute="centerX" secondItem="mpy-xw-Mse" secondAttribute="centerX" id="HaI-sN-J3C"/>
+                                    <constraint firstItem="VQK-y9-bWO" firstAttribute="top" secondItem="mpy-xw-Mse" secondAttribute="top" constant="14" id="KJy-2O-gAP"/>
+                                    <constraint firstItem="VQK-y9-bWO" firstAttribute="centerX" secondItem="mpy-xw-Mse" secondAttribute="centerX" id="LiA-hB-LIR"/>
+                                    <constraint firstItem="Nmh-D8-3oC" firstAttribute="top" secondItem="aWv-oc-jw5" secondAttribute="bottom" constant="5" id="WP6-LH-ivP"/>
+                                    <constraint firstAttribute="height" constant="260" id="ctn-9O-v8T"/>
+                                    <constraint firstItem="Nmh-D8-3oC" firstAttribute="top" secondItem="J4h-el-PiJ" secondAttribute="bottom" constant="30" id="hOH-jV-4jB"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="uXh-O7-NbG" appends="YES" id="Z1c-49-gVn"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Win-sy-bsn" userLabel="Fade View">
+                                <rect key="frame" x="10" y="437" width="355" height="230"/>
+                                <color key="backgroundColor" systemColor="systemFillColor" red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UQk-kn-e4Z" userLabel="Background of Pay Button View">
+                                <rect key="frame" x="10" y="587" width="355" height="80"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="fd5-Oz-a9M"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZTr-Em-6QE" userLabel="Pay Button">
+                                <rect key="frame" x="47.5" y="602" width="280" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="8yG-1P-JQZ"/>
+                                    <constraint firstAttribute="height" constant="45" id="lCW-g6-OBN"/>
+                                </constraints>
+                                <state key="normal" image="ETASTEsFrame"/>
+                                <connections>
+                                    <action selector="payButtonTap:" destination="qFi-v6-GRc" eventType="touchUpInside" id="Rec-ZV-CIJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="購入" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwD-Mi-3MH" userLabel="Pay Button Title Label" customClass="TextBiggerWhiteLabel" customModule="ETASTE" customModuleProvider="target">
+                                <rect key="frame" x="47.5" y="602" width="280" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="U0j-EG-M08"/>
+                                    <constraint firstAttribute="width" constant="280" id="z7r-aV-udz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="UQk-kn-e4Z" firstAttribute="leading" secondItem="mpy-xw-Mse" secondAttribute="leading" constant="10" id="5Ec-nw-dHm"/>
+                            <constraint firstItem="UQk-kn-e4Z" firstAttribute="bottom" secondItem="vNh-eZ-22A" secondAttribute="bottom" id="Gg4-qk-3O0"/>
+                            <constraint firstItem="mpy-xw-Mse" firstAttribute="trailing" secondItem="vNh-eZ-22A" secondAttribute="trailing" id="J8W-6h-Rd5"/>
+                            <constraint firstItem="gwD-Mi-3MH" firstAttribute="centerX" secondItem="ZTr-Em-6QE" secondAttribute="centerX" id="JfD-Ic-DMp"/>
                             <constraint firstItem="UXa-X1-GGJ" firstAttribute="bottom" secondItem="vNh-eZ-22A" secondAttribute="bottom" id="LNT-rs-W3D"/>
+                            <constraint firstItem="vNh-eZ-22A" firstAttribute="trailing" secondItem="UQk-kn-e4Z" secondAttribute="trailing" constant="10" id="Lxh-xt-Sfn"/>
+                            <constraint firstItem="vNh-eZ-22A" firstAttribute="bottom" secondItem="mpy-xw-Mse" secondAttribute="bottom" id="Pfc-yZ-ePs"/>
+                            <constraint firstItem="Win-sy-bsn" firstAttribute="top" secondItem="mpy-xw-Mse" secondAttribute="top" constant="30" id="XLq-d8-CQ2"/>
+                            <constraint firstItem="vNh-eZ-22A" firstAttribute="bottom" secondItem="ZTr-Em-6QE" secondAttribute="bottom" constant="20" id="ZVk-I6-bCQ"/>
+                            <constraint firstItem="vNh-eZ-22A" firstAttribute="trailing" secondItem="mpy-xw-Mse" secondAttribute="trailing" id="b8T-RG-fgb"/>
                             <constraint firstItem="UXa-X1-GGJ" firstAttribute="trailing" secondItem="vNh-eZ-22A" secondAttribute="trailing" id="ede-Us-Dz3"/>
+                            <constraint firstItem="gwD-Mi-3MH" firstAttribute="centerY" secondItem="ZTr-Em-6QE" secondAttribute="centerY" id="hGL-bd-MD5"/>
+                            <constraint firstItem="vNh-eZ-22A" firstAttribute="bottom" secondItem="Win-sy-bsn" secondAttribute="bottom" id="kHV-Tk-Cjb"/>
+                            <constraint firstItem="ZTr-Em-6QE" firstAttribute="centerX" secondItem="JVh-aN-6x6" secondAttribute="centerX" id="khB-oU-DKt"/>
+                            <constraint firstItem="mpy-xw-Mse" firstAttribute="leading" secondItem="vNh-eZ-22A" secondAttribute="leading" id="qGj-dK-bK6"/>
                             <constraint firstItem="UXa-X1-GGJ" firstAttribute="leading" secondItem="vNh-eZ-22A" secondAttribute="leading" id="u4L-SC-stn"/>
+                            <constraint firstItem="UQk-kn-e4Z" firstAttribute="trailing" secondItem="Win-sy-bsn" secondAttribute="trailing" id="uYx-Oh-z6j"/>
+                            <constraint firstItem="Win-sy-bsn" firstAttribute="leading" secondItem="UQk-kn-e4Z" secondAttribute="leading" id="w3Q-Zf-OJm"/>
                             <constraint firstItem="UXa-X1-GGJ" firstAttribute="top" secondItem="vNh-eZ-22A" secondAttribute="top" id="y4m-K3-02u"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vNh-eZ-22A"/>
@@ -340,16 +453,26 @@ KUMADAIビル1F</string>
                     <connections>
                         <outlet property="addressLabel" destination="40a-Yt-p2G" id="qDo-PB-0Is"/>
                         <outlet property="allergiesTagTitleLabel" destination="3je-wM-xXv" id="f9A-5d-QdO"/>
-                        <outlet property="allergiesTagTitleView" destination="RV6-KE-2kg" id="UCG-Ie-BTE"/>
+                        <outlet property="allergiesTagTitleView" destination="RV6-KE-2kg" id="88u-i0-VYi"/>
+                        <outlet property="amountTextField" destination="J4h-el-PiJ" id="9Af-jY-B7p"/>
+                        <outlet property="backgroundOfPayButtonViewHeightConstraint" destination="fd5-Oz-a9M" id="4fQ-bc-1yK"/>
+                        <outlet property="fadeView" destination="Win-sy-bsn" id="9MZ-VO-5j2"/>
                         <outlet property="googleMap" destination="rtT-MR-HSM" id="RHh-QD-Awg"/>
+                        <outlet property="halfModalView" destination="mpy-xw-Mse" id="tvj-Sg-Mhe"/>
+                        <outlet property="halfModalViewHeightConstraint" destination="ctn-9O-v8T" id="fz2-OQ-7Mn"/>
+                        <outlet property="handleImage" destination="VQK-y9-bWO" id="rBG-zS-4vE"/>
                         <outlet property="holidayLabel" destination="Jtx-H3-KVR" id="ohD-td-a04"/>
                         <outlet property="itemImage" destination="Dqq-qw-GcF" id="cXj-G2-QFY"/>
                         <outlet property="itemNameLabel" destination="CrD-GN-jyK" id="iPn-iZ-hK7"/>
                         <outlet property="itemPriceLabel" destination="h7S-Kc-01Y" id="r3M-vm-vbv"/>
                         <outlet property="itemTimeLabel" destination="YBm-95-G4b" id="zh1-Jr-96c"/>
-                        <outlet property="lowerViewHight" destination="Yhs-D6-4Kt" id="uia-8F-amD"/>
+                        <outlet property="lowerViewHeight" destination="Yhs-D6-4Kt" id="K1C-ms-XiD"/>
                         <outlet property="lowerViewTopConstraint" destination="fBI-Aq-BEc" id="f7x-3i-MUE"/>
+                        <outlet property="panGestureRecognizerOnHalfModalView" destination="uXh-O7-NbG" id="kUw-kZ-gFt"/>
                         <outlet property="parkingLabel" destination="T3E-R0-T1r" id="QS9-ez-Ngt"/>
+                        <outlet property="payButton" destination="ZTr-Em-6QE" id="84g-El-Z3T"/>
+                        <outlet property="payButtonTitleLabel" destination="gwD-Mi-3MH" id="YNG-ZI-Cpu"/>
+                        <outlet property="receiveTimeTextField" destination="Nmh-D8-3oC" id="rmk-Mo-ZG9"/>
                         <outlet property="storeImage" destination="43Z-Mz-ga3" id="1Ou-ky-93Z"/>
                         <outlet property="storeNameInItemLabel" destination="WDt-hM-3Uc" id="JYt-QQ-LHh"/>
                         <outlet property="storeNameLabel" destination="Yyn-cy-icS" id="cO0-Rs-bRl"/>
@@ -372,12 +495,13 @@ KUMADAIビル1F</string>
                         <outletCollection property="labelsNeedPlaceHolder" destination="Ovs-u2-QoH" collectionClass="NSMutableArray" id="Wme-w6-Tp6"/>
                         <outletCollection property="labelsNeedPlaceHolder" destination="T3E-R0-T1r" collectionClass="NSMutableArray" id="cbh-Hx-Efu"/>
                         <outletCollection property="labelsNeedPlaceHolder" destination="AZe-xu-hSI" collectionClass="NSMutableArray" id="wBM-qA-JV5"/>
-                        <outletCollection property="viewsNeedPlaceHolder" destination="MLx-nl-deE" collectionClass="NSMutableArray" id="hqw-Gc-WE4"/>
-                        <outletCollection property="viewsNeedPlaceHolder" destination="RbI-6E-TS9" collectionClass="NSMutableArray" id="vS1-d1-bRr"/>
-                        <outletCollection property="viewsNeedPlaceHolder" destination="UVe-gy-ZSt" collectionClass="NSMutableArray" id="dm0-BU-TKe"/>
                         <outletCollection property="labelsNeedPlaceHolder" destination="3je-wM-xXv" collectionClass="NSMutableArray" id="eLn-ei-ptv"/>
-                        <outletCollection property="viewsNeedPlaceHolder" destination="RV6-KE-2kg" collectionClass="NSMutableArray" id="mmc-J5-F8J"/>
                         <outletCollection property="imagesNeedPlaceHolder" destination="Dqq-qw-GcF" collectionClass="NSMutableArray" id="B9n-Hj-soz"/>
+                        <outletCollection property="halfModalViewsParts" destination="mpy-xw-Mse" collectionClass="NSMutableArray" id="vSI-HX-F9F"/>
+                        <outletCollection property="halfModalViewsParts" destination="Win-sy-bsn" collectionClass="NSMutableArray" id="X5E-8k-73S"/>
+                        <outletCollection property="halfModalViewsParts" destination="UQk-kn-e4Z" collectionClass="NSMutableArray" id="Sv2-mt-57b"/>
+                        <outletCollection property="halfModalViewsParts" destination="ZTr-Em-6QE" collectionClass="NSMutableArray" id="Ddm-js-Z9b"/>
+                        <outletCollection property="halfModalViewsParts" destination="gwD-Mi-3MH" collectionClass="NSMutableArray" id="EZC-XF-aE1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXv-wk-xW7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -386,8 +510,17 @@ KUMADAIビル1F</string>
                         <action selector="whySaleTitleTap:" destination="qFi-v6-GRc" id="0fu-5T-z9t"/>
                     </connections>
                 </tapGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="uXh-O7-NbG">
+                    <connections>
+                        <action selector="panHalfModalView:" destination="qFi-v6-GRc" id="O0K-sb-xgV"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-660" y="-149.77511244377811"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ETASTEsFrame" width="278" height="46"/>
+        <image name="toCloseHandleOnHalf-ModalView" width="72" height="17"/>
+    </resources>
 </document>

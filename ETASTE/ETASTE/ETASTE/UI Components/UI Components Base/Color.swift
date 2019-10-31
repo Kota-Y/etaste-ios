@@ -37,7 +37,7 @@ extension UIColor {
         return UIColor.hex(string: "979797", alpha: 1.0)
     }
     
-    static var gray: UIColor {
+    static var etasteGray: UIColor {
         return UIColor.hex(string: "C5C5C5", alpha: 1.0)
     }
     
